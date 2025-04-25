@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // === CARROSSEL PRINCIPAL ===
   const slidesContainer = document.querySelector('.slides');
   const originalSlides = Array.from(document.querySelectorAll('.slide'));
   const setaEsquerda = document.querySelector('.prev');
@@ -10,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let autoSlideInterval;
 
   const totalOriginal = originalSlides.length;
-
 
   function clonarSlides(slides, quantidade, posicao) {
     const destino = posicao === 'inicio' ? 'prepend' : 'append';
@@ -70,12 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
     clearInterval(autoSlideInterval);
   }
 
-  
   setaEsquerda.setAttribute('aria-label', 'Slide anterior');
   setaDireita.setAttribute('aria-label', 'Próximo slide');
   setaEsquerda.setAttribute('role', 'button');
   setaDireita.setAttribute('role', 'button');
-
 
   setaEsquerda.addEventListener('click', () => moverSlide(-1));
   setaDireita.addEventListener('click', () => moverSlide(1));
@@ -93,8 +91,32 @@ document.addEventListener("DOMContentLoaded", () => {
   slidesContainer.addEventListener('mouseenter', pararAutoSlide);
   slidesContainer.addEventListener('mouseleave', iniciarAutoSlide);
 
-  
   calcularSlideWidth();
   atualizarSlide(false);
   iniciarAutoSlide();
+
+  // === CARROSSEL DE FEEDBACK ===
+  const feedbackContainer = document.querySelector('.feedback-carousel-track');
+  const feedbackSlides = Array.from(feedbackContainer?.querySelectorAll('.feedback-slide') || []);
+  const feedbackPrev = document.querySelector('.feedback-prev');
+  const feedbackNext = document.querySelector('.feedback-next');
+  let feedbackIndex = 0;
+
+  function atualizarFeedbackSlide() {
+    if (feedbackContainer) {
+      feedbackContainer.style.transform = `translateX(-${feedbackIndex * 100}%)`;
+    }
+  }
+
+  feedbackPrev?.addEventListener('click', () => {
+    feedbackIndex = (feedbackIndex - 1 + feedbackSlides.length) % feedbackSlides.length;
+    atualizarFeedbackSlide();
+  });
+
+  feedbackNext?.addEventListener('click', () => {
+    feedbackIndex = (feedbackIndex + 1) % feedbackSlides.length;
+    atualizarFeedbackSlide();
+  });
+
+  atualizarFeedbackSlide();
 });

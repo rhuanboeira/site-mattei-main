@@ -204,6 +204,7 @@ nav#top-menu .cta:hover {
   padding: 20px;
   line-height: 1.6;
   text-align: justify;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.205);
 }
 
 #sobre .cta {
@@ -233,6 +234,8 @@ nav#top-menu .cta:hover {
 
 #loja > p{
   font-size: 1.3em;
+  padding: 1.3em;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.267);
 }
 
 .carousel {
@@ -374,6 +377,117 @@ nav#top-menu .cta:hover {
   color: #fff;
 }
 
+/* Container geral */
+#feedback-carousel {
+  position: relative;
+  overflow: visible;
+  margin-top: 2em;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.719));
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+#feedback-carousel h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--cor1);
+}
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.feedback-carousel-track {
+  display: flex;
+  transition: 0.5s ease-in-out;
+}
+
+.feedback-slide {
+  min-width: 100%;
+  padding: 1rem;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.feedback-slide blockquote {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  color: #000000;
+}
+
+.feedback-slide footer {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--cor4);
+}
+
+/* Botões de navegação */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background-color: #555;
+}
+
+.feedback-prev,
+.feedback-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #001f4d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.feedback-prev {
+  left: 1rem;
+}
+
+.feedback-next {
+  right: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  #feedback-carousel h2 {
+    font-size: 1.5rem;
+  }
+
+  .feedback-slide blockquote {
+    font-size: 0.95rem;
+  }
+}
+
+
 /* ===== Contato ===== */
 #contato {
   padding: 4rem 1rem;
@@ -393,11 +507,73 @@ address {
 #contato form {
   max-width: 600px;
   margin: 0 auto 2rem;
+  font-weight: bold;
 }
 #contato label {
   display: block;
   margin-bottom: 0.5rem;
 }
+
+input#nome::placeholder{
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 8px;
+}
+
+input#email::placeholder{
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 8px;
+}
+
+/* Estilo para o label */
+label[for="mensagem"] {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+/* Estilo para o textarea */
+textarea#mensagem {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  transition: 0.3s ease, 0.3s ease;
+  box-sizing: border-box;
+}
+
+textarea#mensagem:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 8px rgba(0, 102, 204, 0.3);
+  outline: none;
+}
+
+textarea#mensagem::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Adiciona uma margem no final */
+textarea#mensagem {
+  margin-bottom: 15px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  textarea#mensagem {
+    font-size: 0.9rem;
+  }
+}
+
 #contato input {
   width: 100%;
   padding: 0.75rem;
