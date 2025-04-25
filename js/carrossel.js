@@ -1,0 +1,100 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const slidesContainer = document.querySelector('.slides');
+  const originalSlides = Array.from(document.querySelectorAll('.slide'));
+  const setaEsquerda = document.querySelector('.prev');
+  const setaDireita = document.querySelector('.next');
+
+  let slideIndex = 3;
+  let slideWidth;
+  let isTransitioning = false;
+  let autoSlideInterval;
+
+  const totalOriginal = originalSlides.length;
+
+
+  function clonarSlides(slides, quantidade, posicao) {
+    const destino = posicao === 'inicio' ? 'prepend' : 'append';
+    const parte = posicao === 'inicio' ? slides.slice(-quantidade) : slides.slice(0, quantidade);
+
+    parte.forEach(slide => {
+      const clone = slide.cloneNode(true);
+      clone.classList.add('clone');
+      slidesContainer[destino](clone);
+    });
+  }
+
+  clonarSlides(originalSlides, 3, 'inicio');
+  clonarSlides(originalSlides, 3, 'fim');
+
+  const totalSlides = document.querySelectorAll('.slide').length;
+
+  function calcularSlideWidth() {
+    const slide = originalSlides[0];
+    const estilos = window.getComputedStyle(slide);
+    const margemDireita = parseFloat(estilos.marginRight || 0);
+    slideWidth = slide.getBoundingClientRect().width + margemDireita;
+  }
+
+  function atualizarSlide(transicao = true) {
+    slidesContainer.style.transition = transicao ? 'transform 0.5s ease-in-out' : 'none';
+    slidesContainer.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+  }
+
+  function moverSlide(direcao) {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    slideIndex += direcao;
+    atualizarSlide(true);
+
+    slidesContainer.addEventListener('transitionend', resetarSlide, { once: true });
+  }
+
+  function resetarSlide() {
+    if (slideIndex >= totalSlides - 3) {
+      slideIndex = 3;
+      atualizarSlide(false);
+    } else if (slideIndex < 3) {
+      slideIndex = totalSlides - 6;
+      atualizarSlide(false);
+    }
+    isTransitioning = false;
+  }
+
+  function iniciarAutoSlide() {
+    pararAutoSlide();
+    autoSlideInterval = setInterval(() => moverSlide(1), 5000);
+  }
+
+  function pararAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  
+  setaEsquerda.setAttribute('aria-label', 'Slide anterior');
+  setaDireita.setAttribute('aria-label', 'Próximo slide');
+  setaEsquerda.setAttribute('role', 'button');
+  setaDireita.setAttribute('role', 'button');
+
+
+  setaEsquerda.addEventListener('click', () => moverSlide(-1));
+  setaDireita.addEventListener('click', () => moverSlide(1));
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') moverSlide(-1);
+    if (event.key === 'ArrowRight') moverSlide(1);
+  });
+
+  window.addEventListener('resize', () => {
+    calcularSlideWidth();
+    atualizarSlide(false);
+  });
+
+  slidesContainer.addEventListener('mouseenter', pararAutoSlide);
+  slidesContainer.addEventListener('mouseleave', iniciarAutoSlide);
+
+  
+  calcularSlideWidth();
+  atualizarSlide(false);
+  iniciarAutoSlide();
+});

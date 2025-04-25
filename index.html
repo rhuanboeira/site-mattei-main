@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mattei Materiais Elétricos: qualidade e atendimento especializado desde 1999.">
+  <meta name="format-detection" content="telephone=no">
+  <title>Mattei Materiais Elétricos</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="img/logoicon-mattei-br80.png" alt="Logo Mattei">
+    </div>
+    <button id="menu-toggle" aria-label="Abrir menu">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+    <nav id="top-menu" aria-label="Menu Principal">
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#loja">Loja</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a href="https://wa.me/555199640860" class="cta">Faça seu orçamento</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <img src="img/logo-mattei1050.png.png" alt="Logo Mattei">
+      <h1>Atendimento especializado para todos os tipos de instalações elétricas.</h1>
+    </section>
+
+    <section id="sobre">
+      <figure>
+        <img src="img/logomatteisobre-removebg-preview.png" alt="Logo Mattei Sobre">
+        <figcaption>
+          <h2>Sobre Nós</h2>
+          <p>Fundada em 1999, a Mattei Materiais Elétricos é especializada no comércio de materiais elétricos, hidráulicos, ferramentas e ferragens em Esteio/RS, oferecendo qualidade e atendimento personalizado para clientes residenciais e industriais.</p>
+          <a href="https://wa.me/555199640860" class="cta">Fale Conosco</a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="loja">
+      <h2>Nossa Loja</h2>
+      <p>Conheça o espaço físico da loja.</p>
+      <div class="carousel">
+        <button class="prev" aria-label="Slide anterior">&#10094;</button>
+        <div class="slides-wrapper">
+          <ul class="slides">
+            <li class="slide"><img src="img/loja01.jpg" alt="Foto da loja"></li>
+            <li class="slide"><img src="img/loja02.jpg" alt="Foto da loja"></li>
+            <li class="slide"><img src="img/loja03.jpg" alt="Foto da loja"></li>
+            <li class="slide"><img src="img/loja04.jpg" alt="Foto da loja"></li>
+            <li class="slide"><img src="img/loja05.jpg" alt="Foto da loja"></li>
+            <li class="slide"><img src="img/loja06.jpg" alt="Foto da loja"></li>
+          </ul>
+        </div>
+        <button class="next" aria-label="Próximo slide">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="produtos">
+      <h2>Produtos</h2>
+      <ul class="product-list">
+        <li>
+          <figure>
+            <img src="img/contatoras.png" alt="Contatoras">
+            <figcaption>
+              <h3>Contatoras</h3>
+              <p>Para controle de motores e máquinas industriais.</p>
+              <a href="produtos.html">Ver mais</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/disjuntores.png" alt="Disjuntores">
+            <figcaption>
+              <h3>Disjuntores</h3>
+              <p>Proteção contra sobrecarga e curto-circuito.</p>
+              <a href="produtos.html">Ver mais</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/led.png" alt="Iluminação LED">
+            <figcaption>
+              <h3>Iluminação LED</h3>
+              <p>Luminárias de alta eficiência para ambientes comerciais.</p>
+              <a href="produtos.html">Ver mais</a>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail">
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <address>
+        <h3>Nosso Endereço</h3>
+        <a href="https://www.google.com.br/maps/place/Rua+24+de+Agosto,+2756+-+Esteio,+RS" target="_blank">
+          Rua 24 de Agosto, 2756 - Esteio / RS
+        </a>
+        <iframe src="https://maps.google.com/maps?q=Rua+24+de+Agosto,+2756+-+Esteio,+RS&z=16&output=embed" loading="lazy" aria-label="Mapa do endereço"></iframe>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mattei. Todos os direitos reservados.</p>
+    <ul class="social">
+      <li><a href="https://instagram.com/matteimateriaiseletricos" aria-label="Instagram"><img src="img/icon-insta.png" alt="Instagram"></a></li>
+      <li><a href="https://wa.me/555199640860" aria-label="WhatsApp"><img src="img/icone-wpp-br.png" alt="WhatsApp"></a></li>
+    </ul>
+  </footer>
+
+  <script src="js/carrossel.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('top-menu');
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        menu.classList.toggle('active');
+        document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+      });
+      document.querySelectorAll('#top-menu a').forEach(link => link.addEventListener('click', () => {
+        toggle.classList.remove('active');
+        menu.classList.remove('active');
+        document.body.style.overflow = '';
+      }));
+    });
+  </script>
+</body>
+</html>
