@@ -28,6 +28,7 @@ body {
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   color: #333;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -377,13 +378,12 @@ nav#top-menu .cta:hover {
   color: #fff;
 }
 
-/* Container geral */
+/* Feedback */
 #feedback-carousel {
   position: relative;
-  overflow: visible;
   margin-top: 2em;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.719));
-  padding: 2rem 2rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -395,14 +395,16 @@ nav#top-menu .cta:hover {
 
 .carousel-wrapper {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 50em;
+  margin: auto;
   overflow: hidden;
 }
 
 .feedback-carousel-track {
   display: flex;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease;
+  width: 48em;
+  margin: auto;
 }
 
 .feedback-slide {
@@ -417,9 +419,10 @@ nav#top-menu .cta:hover {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   font-style: italic;
   color: #000000;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .feedback-slide footer {
@@ -428,7 +431,7 @@ nav#top-menu .cta:hover {
   color: var(--cor4);
 }
 
-/* Botões de navegação */
+/* Botão Feedback */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -445,7 +448,7 @@ nav#top-menu .cta:hover {
 }
 
 .carousel-btn:hover {
-  background-color: #555;
+  background-color: var(--cor1);
 }
 
 .feedback-prev,
@@ -453,22 +456,25 @@ nav#top-menu .cta:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #001f4d;
+  background: var(--cor4); /* ou a cor que você quiser */
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1.5rem;
-  cursor: pointer;
   border-radius: 50%;
-  z-index: 2;
+  width: 1.3em;
+  height: 1.3em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
 .feedback-prev {
-  left: 1rem;
+  left: 0.5em;
 }
 
 .feedback-next {
-  right: 1rem;
+  right: 0.5em;
 }
 
 /* Responsividade */
