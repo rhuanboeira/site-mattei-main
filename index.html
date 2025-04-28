@@ -7,6 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <title>Mattei Materiais Elétricos</title>
   <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -104,7 +105,7 @@
     </section>
 
     <section id="feedback-carousel" aria-labelledby="titulo-feedback">
-      <div class="container">
+      <div class="feedback">
         <h2 id="titulo-feedback">Feedback dos Clientes</h2>
     
         <div class="carousel-wrapper">
@@ -165,10 +166,25 @@
 
   <footer>
     <p>&copy; 2025 Mattei. Todos os direitos reservados.</p>
-    <ul class="social">
-      <li><a href="https://instagram.com/matteimateriaiseletricos" aria-label="Instagram" target="_blank"><img src="img/icon-insta.png" alt="Instagram"></a></li>
-      <li><a href="https://wa.me/555199640860" aria-label="WhatsApp"><img src="img/icone-wpp-br.png" alt="WhatsApp"></a></li>
-    </ul>
+    <section class="social-media">
+      <article class="icon instagram">
+        <div class="tooltip">Instagram</div>
+        <a href="https://instagram.com/matteimateriaiseletricos" target="_blank" aria-label="Instagram">
+          <span>
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+        </a>
+      </article>
+      
+      <article class="icon whatsapp">
+        <div class="tooltip">WhatsApp</div>
+        <a href="https://wa.me/555199640860" target="_blank" aria-label="WhatsApp">
+          <span>
+            <i class="fa-brands fa-whatsapp"></i>
+          </span>
+        </a>
+      </article>
+    </section>
   </footer>
 
   <script src="js/carrossel.js"></script>

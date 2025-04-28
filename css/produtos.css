@@ -155,5 +155,104 @@ body {
     justify-content: center;
     gap: 2em;
   }
-  
+
+  /* Configuração do container para exibir ícones em linha */
+.social-media {
+  display: inline-flex;
+}
+
+/* Estilização dos ícones dentro de cada "artigo" */
+.social-media .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+  margin: 0 20px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Ajuste do link para não ter underline */
+.social-media .icon a {
+  text-decoration: none;
+}
+
+/* Ajustando o tamanho e aparência do ícone circular */
+.social-media .icon a span {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor1);
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.103);
+  transition: background-color 0.3s ease;
+}
+
+/* Tamanho do ícone dentro do círculo */
+.social-media .icon a span i {
+  font-size: 36px;
+  color: black;
+}
+
+/* Efeito do ícone ao passar o mouse */
+.social-media .icon:hover a span i {
+  color: white;
+}
+
+/* Estilização do Tooltip (Texto de descrição) */
+.social-media .icon .tooltip {
+  background-color: #d2dae2;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.103);
+  color: white;
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Mostrar o Tooltip ao passar o mouse */
+.social-media .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+}
+
+/* Triângulo no Tooltip */
+.social-media .icon .tooltip::before {
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 15px;
+  bottom: -8px;
+  background-color: #d2dae2;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+}
+
+/* Efeito de sombra no hover */
+.social-media .icon:hover span,
+.social-media .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.404);
+}
+
+/* Estilo para o botão Instagram */
+.social-media .instagram:hover a span,
+.social-media .instagram:hover .tooltip,
+.social-media .instagram:hover .tooltip::before {
+  background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+}
+
+/* Estilo para o botão WhatsApp */
+.social-media .whatsapp:hover a span,
+.social-media .whatsapp:hover .tooltip,
+.social-media .whatsapp:hover .tooltip::before {
+  background-color: #25d366;
+}
   

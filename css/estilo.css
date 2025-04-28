@@ -331,7 +331,7 @@ nav#top-menu .cta:hover {
 .carousel .prev { left: 0; }
 .carousel .next { right: 0; }
 
-/* ===== Produtos ===== */
+/*-- Produtos --*/
 #produtos {
   padding: 4rem 1rem;
   background: rgba(255,255,255,0.1);
@@ -378,7 +378,7 @@ nav#top-menu .cta:hover {
   color: #fff;
 }
 
-/* Feedback */
+/*-- Feedback --*/
 #feedback-carousel {
   position: relative;
   margin-top: 2em;
@@ -431,7 +431,7 @@ nav#top-menu .cta:hover {
   color: var(--cor4);
 }
 
-/* Botão Feedback */
+/*-- Botão Feedback --*/
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -456,7 +456,7 @@ nav#top-menu .cta:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: var(--cor4); /* ou a cor que você quiser */
+  background: var(--cor4); 
   color: white;
   border: none;
   border-radius: 50%;
@@ -494,7 +494,7 @@ nav#top-menu .cta:hover {
 }
 
 
-/* ===== Contato ===== */
+/*-- Contato --*/
 #contato {
   padding: 4rem 1rem;
   color: #fff;
@@ -534,7 +534,6 @@ input#email::placeholder{
   border-radius: 8px;
 }
 
-/* Estilo para o label */
 label[for="mensagem"] {
   font-size: 1rem;
   font-weight: bold;
@@ -544,7 +543,6 @@ label[for="mensagem"] {
   transition: color 0.3s ease;
 }
 
-/* Estilo para o textarea */
 textarea#mensagem {
   width: 100%;
   padding: 12px;
@@ -568,7 +566,6 @@ textarea#mensagem::placeholder {
   font-style: italic;
 }
 
-/* Adiciona uma margem no final */
 textarea#mensagem {
   margin-bottom: 15px;
 }
@@ -617,7 +614,7 @@ address iframe {
   margin-top: 1rem;
 }
 
-/* ===== Footer ===== */
+/*-- Footer --*/
 footer {
   background-image:linear-gradient(to right, var(--cor0));
   border-radius: 10px 10px 0 0 ;
@@ -640,6 +637,94 @@ footer .social img {
   align-items: center;
   justify-content: center;
   gap: 2em;
+}
+
+/*-- Redes Sociais --*/
+.social-media {
+  display: inline-flex;
+}
+
+.social-media .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+  margin: 0 20px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-media .icon a {
+  text-decoration: none;
+}
+
+.social-media .icon a span {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor1);
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.103);
+  transition: background-color 0.3s ease;
+}
+
+.social-media .icon a span i {
+  font-size: 36px;
+  color: black;
+}
+
+.social-media .icon:hover a span i {
+  color: white;
+}
+
+.social-media .icon .tooltip {
+  background-color: #d2dae2;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.103);
+  color: white;
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-media .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+}
+.social-media .icon .tooltip::before {
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 15px;
+  bottom: -8px;
+  background-color: #d2dae2;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+}
+
+.social-media .icon:hover span,
+.social-media .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.404);
+}
+
+.social-media .instagram:hover a span,
+.social-media .instagram:hover .tooltip,
+.social-media .instagram:hover .tooltip::before {
+  background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.social-media .whatsapp:hover a span,
+.social-media .whatsapp:hover .tooltip,
+.social-media .whatsapp:hover .tooltip::before {
+  background-color: #25d366;
 }
 
 /* ===== Responsividade ===== */
