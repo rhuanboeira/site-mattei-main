@@ -181,8 +181,8 @@ body {
 /* Ajustando o tamanho e aparência do ícone circular */
 .social-media .icon a span {
   position: relative;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,7 +221,7 @@ body {
 /* Mostrar o Tooltip ao passar o mouse */
 .social-media .icon:hover .tooltip {
   top: -70px;
-  opacity: 1;
+  opacity: 0;
 }
 
 /* Triângulo no Tooltip */

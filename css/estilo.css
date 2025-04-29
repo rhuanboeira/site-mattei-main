@@ -85,7 +85,7 @@ nav#top-menu {
   gap: 1.5rem;
   background: var(--cor0);
   padding: 0.5rem 1rem;
-  border-radius: 30px;
+  border-radius: 30px 0 0 30px;
   backdrop-filter: blur(10px);
   margin: 0 auto;
 }
@@ -105,10 +105,14 @@ nav#top-menu a {
   color: white;
 }
 
+nav#top-menu li{
+  padding: 0.3em;
+}
+
 nav#top-menu li:hover {
   background: var(--cor2);
   border-radius: 50px;
-  padding: 0.3em;
+  transform: scale(1.1);
   transition: 0.3s
 }
 
@@ -395,20 +399,19 @@ nav#top-menu .cta:hover {
 
 .carousel-wrapper {
   position: relative;
-  max-width: 50em;
+  max-width: 100%; 
   margin: auto;
   overflow: hidden;
 }
 
 .feedback-carousel-track {
   display: flex;
-  transition: 0.5s ease;
-  width: 48em;
-  margin: auto;
+  transition: transform 0.5s ease;
+  width: 100%; 
 }
 
 .feedback-slide {
-  min-width: 100%;
+  min-width: 100%; 
   padding: 1rem;
   flex: 0 0 100%;
   box-sizing: border-box;
@@ -421,8 +424,8 @@ nav#top-menu .cta:hover {
   border-radius: 12px;
   font-style: italic;
   color: #000000;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
 .feedback-slide footer {
@@ -431,7 +434,7 @@ nav#top-menu .cta:hover {
   color: var(--cor4);
 }
 
-/*-- Botão Feedback --*/
+/* Botões do Carrossel */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -451,6 +454,48 @@ nav#top-menu .cta:hover {
   background-color: var(--cor1);
 }
 
+.feedback-prev {
+  left: 0.5em;
+}
+
+.feedback-next {
+  right: 0.5em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #feedback-carousel h2 {
+    font-size: 1.5rem;
+  }
+
+  .feedback-slide blockquote {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .feedback-slide blockquote {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .carousel-btn {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+.carousel-btn:hover {
+  background-color: var(--cor1);
+}
+
+/* Botões do Carrossel */
 .feedback-prev,
 .feedback-next {
   position: absolute;
@@ -477,19 +522,14 @@ nav#top-menu .cta:hover {
   right: 0.5em;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-  .carousel-btn {
-    font-size: 1.5rem;
-    padding: 0.3rem 0.7rem;
+/* Responsividade para telas menores */
+@media (max-width: 576px) {
+  .feedback-prev {
+    left: -0.3px;
   }
 
-  #feedback-carousel h2 {
-    font-size: 1.5rem;
-  }
-
-  .feedback-slide blockquote {
-    font-size: 0.95rem;
+  .feedback-next {
+    right: -0.3px;
   }
 }
 
@@ -661,8 +701,8 @@ footer .social img {
 
 .social-media .icon a span {
   position: relative;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -697,7 +737,7 @@ footer .social img {
 
 .social-media .icon:hover .tooltip {
   top: -70px;
-  opacity: 1;
+  opacity: 0;
 }
 .social-media .icon .tooltip::before {
   position: absolute;
