@@ -1,4 +1,4 @@
-<h1> Site: Mattei Materiais Elétricos </h1> <img src=![logoicon-mattei-br80](https://github.com/user-attachments/assets/0a3140b1-29ba-43b0-a303-801a53a084c9)
+<h1> Site: Mattei Materiais Elétricos </h1> <img src=![img logo](https://github.com/rhuanboeira/site-mattei-main/blob/0603e3b98b43cb85727f317d18c702898f9f2150/img/logoicon-mattei-br80.png)
  alt="logo mattei">
 <br>
 <h2>Reformulação do site da Mattei Materiais Elétricos</h2>
