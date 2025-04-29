@@ -45,7 +45,7 @@ a:hover {
   color: var(--cor1);
 }
 
-/* ===== Header & Nav ===== */
+/*-- Header & Nav --*/
 header {
   background: transparent;
   padding: 1rem;
@@ -75,17 +75,17 @@ header .branding img {
   height: 3px;
   margin: 5px 0;
   background: #fff;
-  transition: transform 0.3s, opacity 0.3s;
+  transition: 0.3s, 0.3s;
 }
 
-/* Nav padrão desktop */
+/*-- Nav padrão desktop --*/
 nav#top-menu {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   background: var(--cor0);
   padding: 0.5rem 1rem;
-  border-radius: 30px 0 0 30px;
+  border-radius: 30px;
   backdrop-filter: blur(10px);
   margin: 0 auto;
 }
@@ -124,7 +124,7 @@ nav#top-menu li:hover {
   z-index: 1000;
 }
 
-/* CTA */
+/*-- CTA --*/
 nav#top-menu .cta {
   background: #00c853;
   color: #fff;
@@ -138,36 +138,90 @@ nav#top-menu .cta:hover {
   background: #009624;
 }
 
-/* ===== Hero ===== */
+/*-- Hero --*/
 #hero {
-  background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89), transparent);
-  border-radius: 15px;
+  position: relative;
+  width: 100%;            
+  min-height: 80vh;      
+  background-image: url('../img/fachada-teste.jpg'); 
+  background-size: cover;   
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.76); 
+  z-index: 1;
+}
+
+#hero .overlay {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 1rem;
+  padding: 2rem;
+  color: white;
+  max-width: 90%;
+  margin: auto;
   text-align: center;
 }
-#hero h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #000;
-  margin-top: 50px;
-}
-#hero img {
-  max-width: 600px;
+
+#hero .overlay img {
+  max-width: 400px;
   width: 100%;
   height: auto;
+  margin-bottom: 1.5rem;
 }
 
-/* ===== Sobre ===== */
+#hero .overlay h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+
+/*-- Responsividade --*/
+@media (max-width: 768px) {
+  #hero {
+    min-height: 80vh;
+  }
+
+  #hero .overlay img {
+    max-width: 250px;
+  }
+
+  #hero .overlay h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero .overlay img {
+    max-width: 180px;
+  }
+
+  #hero .overlay h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/*-- Sobre --*/
 #sobre {
   max-width: 800px;  
-  margin: 0 auto;       
-  padding: 4rem 1rem;
+  margin: 0 auto;  
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 15px;
+  margin-top: 2em;
+  margin-bottom: 2em;     
+  padding: 3rem 1rem;
   color: white;
-  font-size: 18px;
+  font-size: 1.25em;
 }
 
 #sobre > h2{
@@ -222,14 +276,17 @@ nav#top-menu .cta:hover {
 }
 #sobre .cta:hover {
   background: var(--cor1);
-  color: rgba(255, 103, 42, 0.8);
+  color: white;
 }
 
-/* ===== Loja (Carrossel) ===== */
+/*-- Loja (Carrossel) --*/
 #loja {
-  padding: 3rem 2rem;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-radius: 15px;
+  padding: 2rem 2rem;
   text-align: center;
   color: #fff;
+  margin-bottom: 2em;
 }
 
 #loja > h2{
@@ -337,7 +394,8 @@ nav#top-menu .cta:hover {
 
 /*-- Produtos --*/
 #produtos {
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
+  border-radius: 15px;
   background: rgba(255,255,255,0.1);
   color: #fff;
   text-align: center;
@@ -386,7 +444,8 @@ nav#top-menu .cta:hover {
 #feedback-carousel {
   position: relative;
   margin-top: 2em;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.719));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.295));
+  border-radius: 50px;
   padding: 2rem;
   text-align: center;
 }
@@ -406,7 +465,7 @@ nav#top-menu .cta:hover {
 
 .feedback-carousel-track {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: 0.5s ease;
   width: 100%; 
 }
 
@@ -434,7 +493,7 @@ nav#top-menu .cta:hover {
   color: var(--cor4);
 }
 
-/* Botões do Carrossel */
+/*-- Botões do Carrossel --*/
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -462,7 +521,7 @@ nav#top-menu .cta:hover {
   right: 0.5em;
 }
 
-/* Responsividade */
+/*-- Responsividade --*/
 @media (max-width: 768px) {
   #feedback-carousel h2 {
     font-size: 1.5rem;
@@ -495,7 +554,7 @@ nav#top-menu .cta:hover {
   background-color: var(--cor1);
 }
 
-/* Botões do Carrossel */
+/*-- Botões do Carrossel --*/
 .feedback-prev,
 .feedback-next {
   position: absolute;
@@ -522,7 +581,7 @@ nav#top-menu .cta:hover {
   right: 0.5em;
 }
 
-/* Responsividade para telas menores */
+/*-- Responsividade para telas menores --*/
 @media (max-width: 576px) {
   .feedback-prev {
     left: -0.3px;
@@ -562,6 +621,7 @@ address {
 
 input#nome::placeholder{
   font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 8px;
@@ -569,6 +629,7 @@ input#nome::placeholder{
 
 input#email::placeholder{
   font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 8px;
@@ -602,6 +663,7 @@ textarea#mensagem:focus {
 }
 
 textarea#mensagem::placeholder {
+  font-family: 'Courier New', Courier, monospace;
   color: #888;
   font-style: italic;
 }
@@ -709,7 +771,7 @@ footer .social img {
   background-color: var(--cor1);
   border-radius: 50%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.103);
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .social-media .icon a span i {
@@ -767,7 +829,7 @@ footer .social img {
   background-color: #25d366;
 }
 
-/* ===== Responsividade ===== */
+/*-- Responsividade --*/
 @media (max-width: 992px) {
   nav#top-menu {
     padding: 0.5rem;

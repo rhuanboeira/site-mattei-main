@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // === CARROSSEL PRINCIPAL ===
+  //-- CARROSSEL PRINCIPAL 
   const slidesContainer = document.querySelector('.slides');
   const originalSlides = Array.from(document.querySelectorAll('.slide'));
   const setaEsquerda = document.querySelector('.prev');
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
   atualizarSlide(false);
   iniciarAutoSlide();
 
-  // === CARROSSEL DE FEEDBACK ===
+  //-- CARROSSEL DE FEEDBACK 
   const feedbackContainer = document.querySelector('.feedback-carousel-track');
   const feedbackSlides = Array.from(feedbackContainer?.querySelectorAll('.feedback-slide') || []);
   const feedbackPrev = document.querySelector('.feedback-prev');
