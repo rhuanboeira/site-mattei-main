@@ -592,6 +592,23 @@ nav#top-menu .cta:hover {
   }
 }
 
+/*-- Endereço --*/
+address {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+address a {
+  color: #fff;
+  font-weight: bold;
+}
+address iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
 
 /*-- Contato --*/
 #contato {
@@ -602,6 +619,7 @@ nav#top-menu .cta:hover {
   text-align: center;
   font-size: 2.3em;
   margin-bottom: 2rem;
+  margin-top: 1.8em;
 }
 #contato form,
 address {
@@ -698,22 +716,6 @@ textarea#mensagem {
 }
 #contato button:hover {
   background: #009624;
-}
-address {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-address a {
-  color: #fff;
-  font-weight: bold;
-}
-address iframe {
-  width: 100%;
-  height: 300px;
-  border: 0;
-  border-radius: 10px;
-  margin-top: 1rem;
 }
 
 /*-- Footer --*/

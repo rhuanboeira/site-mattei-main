@@ -2,11 +2,13 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mattei Materiais Elétricos: qualidade e atendimento especializado desde 1999.">
   <meta name="format-detection" content="telephone=no">
   <title>Mattei Materiais Elétricos</title>
   <link rel="stylesheet" href="css/estilo.css">
+  <script defer src="js/formulario.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -26,7 +28,7 @@
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#loja">Loja</a></li>
         <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
       <a href="https://wa.me/555199640860" class="cta">Faça seu orçamento</a>
     </nav>
@@ -144,8 +146,20 @@
     </section>
 
     <section id="contato">
-      <h2>Entre em Contato</h2>
-      <form action="https://formsubmit.co/rhuannboeira@gmail.com" method="POST">
+    <section>
+      <address>
+        <h3>Nosso Endereço</h3>
+        <a href="https://www.google.com.br/maps/place/Rua+24+de+Agosto,+2756+-+Esteio,+RS" target="_blank">
+          Rua 24 de Agosto, 2756 - Esteio / RS
+        </a>
+        <iframe src="https://maps.google.com/maps?q=Rua+24+de+Agosto,+2756+-+Esteio,+RS&z=16&output=embed" loading="lazy" aria-label="Mapa do endereço"></iframe>
+      </address>
+
+    <h2>Entre em Contato</h2>
+      <form 
+      action="https://formsubmit.co/ajax/rhuannboeira@gmail.com" 
+      method="POST"
+      data-form>
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome" required placeholder="Seu nome">
 
@@ -155,16 +169,8 @@
         <label for="mensagem">Mensagem</label>
         <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem"></textarea>
         <br>
-        <button type="submit">Enviar</button>
+        <button type="submit" data-button>Enviar</button>
       </form>
-
-      <address>
-        <h3>Nosso Endereço</h3>
-        <a href="https://www.google.com.br/maps/place/Rua+24+de+Agosto,+2756+-+Esteio,+RS" target="_blank">
-          Rua 24 de Agosto, 2756 - Esteio / RS
-        </a>
-        <iframe src="https://maps.google.com/maps?q=Rua+24+de+Agosto,+2756+-+Esteio,+RS&z=16&output=embed" loading="lazy" aria-label="Mapa do endereço"></iframe>
-      </address>
     </section>
   </main>
 
