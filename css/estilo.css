@@ -45,7 +45,7 @@ body {
 }
 
 body {
-  background-image: linear-gradient(to right, var(--cor10), var(--cor5));
+  background-color: var(--fundo-transparente-claro);
   overflow-x: hidden;
 }
 
@@ -75,6 +75,9 @@ header .branding img {
   height: 10vh;
   display: block;
   margin: right;
+  padding: 0.2em;
+  background-color: rgb(129, 129, 129);
+  border-radius: 10px;
 }
 #menu-toggle {
   display: none;
@@ -88,7 +91,7 @@ header .branding img {
   width: 25px;
   height: 3px;
   margin: 5px 0;
-  background: #fff;
+  background: var(--cor1);
   transition: 0.3s, 0.3s;
 }
 
@@ -189,7 +192,7 @@ nav#top-menu .cta:hover {
 }
 
 #hero .overlay img {
-  max-width: 400px;
+  max-width: 650px;
   width: 100%;
   height: auto;
   margin-bottom: 1.5rem;
@@ -237,7 +240,7 @@ nav#top-menu .cta:hover {
 #sobre {
   max-width: 800px;  
   margin: 0 auto;  
-  background-color: rgba(255, 255, 255, 0.13);
+  background-color: rgba(177, 177, 177, 0.274);
   border-radius: 15px;
   margin-top: 2em;
   margin-bottom: 2em;     
@@ -305,7 +308,7 @@ nav#top-menu .cta:hover {
 
 /*-- Loja (Carrossel) --*/
 #loja {
-  background-color: rgba(255, 255, 255, 0.103);
+  background-color: rgba(177, 177, 177, 0.274);
   border-radius: 15px;
   padding: 2rem 2rem;
   text-align: center;
@@ -371,7 +374,7 @@ nav#top-menu .cta:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(177, 177, 177, 0.274);
   border: none;
   font-size: 2rem;
   cursor: pointer;
@@ -422,7 +425,7 @@ nav#top-menu .cta:hover {
 #produtos {
   padding: 3rem 1rem;
   border-radius: 15px;
-  background: rgba(255,255,255,0.1);
+  background-color: rgba(177, 177, 177, 0.274);
   color: var(--branco);
   text-align: center;
 }
@@ -441,7 +444,7 @@ nav#top-menu .cta:hover {
   list-style: none;
 }
 .product-list li {
-  background: rgba(255,255,255,0.1);
+  background-color: rgba(110, 110, 110, 0.274);
   border-radius: 10px;
   padding: 1.5rem;
   width: 300px;
@@ -478,7 +481,7 @@ nav#top-menu .cta:hover {
 #feedback-carousel {
   position: relative;
   margin-top: 2em;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.295));
+  background-color: rgba(177, 177, 177, 0.274);
   border-radius: 50px;
   padding: 2rem;
   text-align: center;
@@ -655,6 +658,7 @@ address iframe {
   color: #fff;
 }
 #contato h2 {
+  color: var(--texto-principal);
   text-align: center;
   font-size: 2.3em;
   margin-bottom: 2rem;
@@ -662,7 +666,8 @@ address iframe {
 }
 #contato form,
 address {
-  background: rgba(255,255,255,0.1);
+  color: var(--texto-suave);
+  background-color: rgba(177, 177, 177, 0.274);
   padding: 2rem;
   border-radius: 10px;
 }
@@ -696,7 +701,7 @@ label[for="mensagem"] {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 8px;
-  color: white;
+  color: var(--texto-suave);
   display: block;
   transition: color 0.3s ease;
 }
