@@ -154,7 +154,7 @@ nav#top-menu .cta:hover {
   position: relative;
   width: 100%;            
   min-height: 70vh;      
-  background-image: url('../img/fachada-teste.jpg'); 
+  background-image: url('../img/fachada.jpg'); 
   background-size: cover;   
   background-position: center;
   display: flex;
@@ -168,7 +168,7 @@ nav#top-menu .cta:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.55); 
+  background-color: rgba(0, 0, 0, 0.759); 
   z-index: 1;
 }
 
@@ -199,7 +199,8 @@ nav#top-menu .cta:hover {
 }
 
 #hero .overlay p{
-  font-size: 1.1em;
+  font-size: 1.2em;
+  padding: 0.7em;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
