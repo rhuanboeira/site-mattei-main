@@ -741,6 +741,8 @@ address {
   max-width: 600px;
   margin: 0 auto 2rem;
   font-weight: bold;
+  box-shadow: 0 2px 8px var(--sombra-leve);
+  padding-bottom: 1em;
 }
 #contato label {
   display: block;
@@ -800,6 +802,8 @@ textarea#mensagem {
   margin-bottom: 15px;
 }
 
+
+/*- Contato --*/
 .contato-conteudo {
   display: flex;
   gap: 2rem;
@@ -818,6 +822,7 @@ textarea#mensagem {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px var(--sombra-leve);
+  margin-bottom: 20%;
 }
 
 #contatos {
@@ -830,6 +835,8 @@ textarea#mensagem {
   margin-bottom: 1rem;
   color: var(--texto-suave);
   font-weight: 500;
+  font-size: 18px;
+  
 }
 
 @media (max-width: 768px) {
