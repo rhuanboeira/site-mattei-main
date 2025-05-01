@@ -42,6 +42,7 @@ body {
 }
 
 body {
+  margin-top: 80px;
   background-color: var(--fundo-transparente-claro);
   overflow-x: hidden;
 }
@@ -60,10 +61,14 @@ a:hover {
 header {
   background: transparent;
   padding: 1rem;
-  position: relative;
   display: flex;
   justify-content: center; 
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header .branding img {
@@ -90,11 +95,12 @@ header .branding img {
 }
 
 /*-- Nav padrão desktop --*/
+
 nav#top-menu {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background: var(--cor0);
+  background: #0000009a;
   padding: 0.5rem 1rem;
   border-radius: 16px;
   backdrop-filter: blur(10px);
@@ -162,7 +168,6 @@ nav#top-menu .cta:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 1em;
 }
 
 #hero::before {
@@ -702,7 +707,7 @@ address {
   text-align: center;
 }
 address a {
-  color: #fff;
+  color: var(--cor2);
   font-weight: bold;
 }
 address iframe {
@@ -795,6 +800,44 @@ textarea#mensagem {
   margin-bottom: 15px;
 }
 
+.contato-conteudo {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contato-conteudo form,
+.contato-conteudo .meios {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.meios {
+  background-color: var(--cor6);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--sombra-leve);
+}
+
+#contatos {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+#contatos li {
+  margin-bottom: 1rem;
+  color: var(--texto-suave);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .contato-conteudo {
+    flex-direction: column;
+  }
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 600px) {
   textarea#mensagem {
@@ -833,7 +876,7 @@ footer {
   color: #fff;
 }
 footer p {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 footer .social {
   list-style: none;
