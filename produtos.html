@@ -11,9 +11,20 @@
     
 </head>
 <body>
-    <header>
-        <p><a href="index.html" rel="prev" target="_self">Página Inicial</a></p>
-    </header>
+  <header>
+    <button id="menu-toggle" aria-label="Abrir menu">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+    <nav id="top-menu" aria-label="Menu Principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+      </ul>
+      <a href="https://wa.me/555199640860" target="_blank" class="cta">Faça seu orçamento</a>
+    </nav>
+  </header>
     <main>
         <section id="catalogo" aria-labelledby="titulo-catalogo">
             <h2 id="titulo-catalogo">Catálogo de Produtos</h2>
@@ -89,8 +100,6 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Mattei. Todos os direitos reservados.</p>
-
         <section class="social-media">
           <article class="icon instagram">
             <div class="tooltip">Instagram</div>
@@ -110,6 +119,7 @@
             </a>
           </article>
         </section>
+        <p>&copy; 2025 Mattei. Todos os direitos reservados.</p>
       </footer>
 </body>
 </html>

@@ -59,6 +59,113 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HEADER RESPONSIVO */
+header {
+  background: transparent;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .branding img {
+  height: 10vh;
+  background-color: rgb(129, 129, 129);
+  border-radius: 10px;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background: var(--cor1);
+  transition: 0.3s;
+}
+
+nav#top-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  margin: 0 auto;
+}
+
+nav#top-menu ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav#top-menu li {
+  padding: 0.3em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+nav#top-menu a {
+  color: var(--cor5);
+  text-decoration: none;
+}
+
+nav#top-menu li:hover {
+  background: var(--cor1);
+  border-radius: 50px;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+nav#top-menu .cta {
+  background: var(--cor4);
+  color: var(--branco);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+nav#top-menu .cta:hover {
+  background: #006618;
+  transition: all 0.3s ease-in-out;
+}
+
 #catalogo {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -139,7 +246,7 @@ body {
     color: #fff;
   }
   footer p {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   footer .social {
     list-style: none;

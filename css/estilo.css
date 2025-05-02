@@ -369,7 +369,7 @@ nav#top-menu .cta:hover {
 #sobre figure > img{
   content: '';
   inset: 0;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.384) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.205) 0%, transparent 58%);
   pointer-events: none;
 }
 
@@ -393,7 +393,7 @@ nav#top-menu .cta:hover {
   padding: 20px;
   line-height: 1.6;
   text-align: left;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.205);
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.11);
 }
 
 #sobre .cta {
@@ -428,7 +428,7 @@ nav#top-menu .cta:hover {
 #loja > p{
   font-size: 1.3em;
   color: var(--texto-suave);
-  padding: 1.3em;
+  padding: 1em;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.267);
 }
 
@@ -626,6 +626,7 @@ nav#top-menu .cta:hover {
   color: #000000;
   margin: 0 auto;
   max-width: 90%;
+  box-shadow: 2px 3px 5px 2px var(--sombra-leve);
 }
 
 .feedback-slide footer {
@@ -1132,11 +1133,15 @@ nav#top-menu .cta:hover,
 }
 
 #sobre,
-#feedback-carousel,
 address {
-  background-color: var(--cor6);
   color: var(--texto-suave);
   border-bottom: var(--divisoria);
+  background-color: rgba(185, 185, 185, 0.034);
+  box-shadow: 2px 3px 5px 2px var(--sombra-leve);
+}
+
+#feedback-carousel{
+  background: transparent;
 }
 
 #loja,
@@ -1240,8 +1245,8 @@ img {
 
 /* HEADER RESPONSIVO */
 header {
-  background: transparent;
-  padding: 1rem;
+  background: var(--cor0);
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1570,7 +1575,7 @@ nav#top-menu .cta {
 
 #hero .overlay-text p {
   font-family: 'Inter', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.4rem;
   font-weight: 300;
   color: #e0e0e0;
 }
@@ -1591,4 +1596,18 @@ footer, address, .meios ul li {
 
 footer > p{
   color: white;
+}
+
+#produtos {
+  background: transparent;
+}
+
+#loja{
+  background: transparent;
+}
+#loja > .carousel{
+  background-color: rgba(85, 85, 85, 0.034);
+  box-shadow: 2px 3px 5px 2px var(--sombra-leve);
+  padding: 25px;
+  border-radius: 15px;
 }
