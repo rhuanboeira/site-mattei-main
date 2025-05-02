@@ -100,7 +100,7 @@ nav#top-menu {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background: #0000009a;
+  background: transparent;
   padding: 0.5rem 1rem;
   border-radius: 16px;
   backdrop-filter: blur(10px);
@@ -119,15 +119,21 @@ nav#top-menu ul {
 
 nav#top-menu a {
   font-weight: unset;
-  color: white;
+  color: var(--cor5);
 }
 
 nav#top-menu li{
   padding: 0.3em;
+  font-family: 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  white-space: nowrap;
+  transition: 0.3s;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.075);
 }
 
 nav#top-menu li:hover {
-  background: var(--cor2);
+  background: var(--cor1);
   border-radius: 50px;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
@@ -184,30 +190,43 @@ nav#top-menu .cta:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 2rem;
+  justify-content: space-between;
+  padding: 3rem 2rem;
   color: white;
-  max-width: 90%;
+  max-width: 1200px;
   margin: auto;
-  text-align: center;
+  gap: 2rem;
+  text-align: left;
 }
 
 #hero .overlay img {
-  max-width: 650px;
-  width: 30%;
+  width: 35%;
+  max-width: 400px;
   height: auto;
 }
 
-#hero .overlay h1 {
-  margin-top: 1.2em;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+#hero .overlay-text {
+  flex: 1;
 }
 
-#hero .overlay p{
-  font-size: 1.2em;
-  padding: 0.7em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+#hero .overlay-text h1 > span{
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#hero .overlay-text > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5em;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
@@ -236,7 +255,6 @@ nav#top-menu .cta:hover {
   }
 }
 
-/* ===== Responsividade ===== */
 @media (max-width: 992px) {
   nav#top-menu {
     padding: 0.5rem;
@@ -302,6 +320,26 @@ nav#top-menu .cta:hover {
   }
 }
 
+@media (max-width: 768px) {
+  #hero .overlay {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero .overlay img {
+    width: 50%;
+    max-width: 220px;
+  }
+
+  #hero .overlay-text h1 {
+    font-size: 1.8rem;
+  }
+
+  #hero .overlay-text p {
+    font-size: 1rem;
+  }
+}
+
 /*-- Sobre --*/
 #sobre {
   max-width: 800px;  
@@ -317,7 +355,7 @@ nav#top-menu .cta:hover {
 
 #sobre > h2{
   font-size: 2.3em;
-  color: var(--texto-principal);
+  color: var(--cor2);
 }
 #sobre figure {
   display: flex;
@@ -351,10 +389,10 @@ nav#top-menu .cta:hover {
   margin: 0.5rem 0 1.5rem;
 }
 #sobre figcaption p {
-  margin-bottom: 0;
+  margin-bottom: 0.5em;
   padding: 20px;
   line-height: 1.6;
-  text-align: justify;
+  text-align: left;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.205);
 }
 
@@ -765,15 +803,6 @@ input#email::placeholder{
   border-radius: 8px;
 }
 
-label[for="mensagem"] {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: var(--texto-suave);
-  display: block;
-  transition: color 0.3s ease;
-}
-
 textarea#mensagem {
   width: 100%;
   padding: 12px;
@@ -804,19 +833,6 @@ textarea#mensagem {
 
 
 /*- Contato --*/
-.contato-conteudo {
-  display: flex;
-  gap: 2rem;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contato-conteudo form,
-.contato-conteudo .meios {
-  flex: 1 1 300px;
-  min-width: 280px;
-}
-
 .meios {
   background-color: var(--cor6);
   padding: 2rem;
@@ -833,10 +849,45 @@ textarea#mensagem {
 
 #contatos li {
   margin-bottom: 1rem;
-  color: var(--texto-suave);
+  color: var(--cor0);
   font-weight: 500;
   font-size: 18px;
-  
+}
+
+.contato-conteudo {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: stretch; 
+  flex-wrap: wrap;
+}
+
+.contato-conteudo form,
+.contato-conteudo .meios {
+  flex: 1 1 300px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--cor6);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--sombra-leve);
+}
+
+.contato-conteudo form {
+  height: 100%;
+}
+
+.contato-conteudo form button {
+  align-self: flex-start;
+}
+
+#contato form {
+  margin-bottom: 0;
+}
+article.meios {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -1012,7 +1063,7 @@ footer .social img {
     width: 80%;
     max-width: 300px;
     height: 100vh;
-    background: rgba(242,68,5,0.98);
+    background: rgba(0, 0, 0, 0.24);
     backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: center;
@@ -1098,7 +1149,7 @@ address {
 
 h2,
 h3{
-  color: var(--cor0);
+  color: var(--cor1);
 }
 
 .product-list a:hover,
@@ -1136,4 +1187,35 @@ h3{
   background-color: var(--cor1);
   color: white;
   box-shadow: 0 4px 8px var(--sombra-media);
+}
+
+#sobre h2, #loja h2, #produtos h2, #contato h2{
+  color: var(--cor1);
+}
+
+label[for="nome"] {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--cor1);
+  display: block;
+  transition: color 0.3s ease;
+}
+
+label[for="email"] {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--cor1);
+  display: block;
+  transition: color 0.3s ease;
+}
+
+label[for="mensagem"] {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--cor1);
+  display: block;
+  transition: color 0.3s ease;
 }
