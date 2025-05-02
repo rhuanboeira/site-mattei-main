@@ -51,12 +51,11 @@ main{
 html,
 body {
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: 'Poppins', Tahoma, Verdana, sans-serif;
   color: #333;
 }
 
 body {
-  background: linear-gradient(to right, var(--cor4), var(--cor5));
   overflow-x: hidden;
 }
 
@@ -71,7 +70,7 @@ body {
   }
   
   #catalogo h2 {
-    background-image: linear-gradient(to right, transparent, rgb(248, 85, 21), transparent);
+    background-image: linear-gradient(to right, rgb(248, 85, 21));
     font-size: 2rem;
     margin-bottom: 2rem;
     color: var(--cor0);
