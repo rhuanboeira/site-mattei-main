@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
-    <link rel="stylesheet" href="css/produtos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Produtos - Mattei</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/produtos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -20,106 +18,103 @@
     <nav id="top-menu" aria-label="Menu Principal">
       <ul>
         <li><a href="index.html">Início</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
       </ul>
       <a href="https://wa.me/555199640860" target="_blank" class="cta">Faça seu orçamento</a>
     </nav>
   </header>
-    <main>
-        <section id="catalogo" aria-labelledby="titulo-catalogo">
-            <h2 id="titulo-catalogo">Catálogo de Produtos</h2>
-            <div class="grid-produtos">
-              
-              <article class="card-produto">
-                <figure>
-                  <img src="img/contatoras.png" alt="Contatoras">
-                  <figcaption>
-                    <h3>Contatoras</h3>
-                    <p>Para controle de motores e máquinas industriais.</p>
-                  </figcaption>
-                </figure>
-                <a href="#" class="botao" aria-label="Ver mais sobre Contatoras">Saiba mais</a>
-              </article>
-          
-              <article class="card-produto">
-                <figure>
-                  <img src="img/disjuntores.png" alt="Disjuntores">
-                  <figcaption>
-                    <h3>Disjuntores</h3>
-                    <p>Proteção contra sobrecarga e curto-circuito.</p>
-                  </figcaption>
-                </figure>
-                <a href="#" class="botao" aria-label="Ver mais sobre Disjuntores">Saiba mais</a>
-              </article>
-          
-              <article class="card-produto">
-                <figure>
-                  <img src="img/led.png" alt="Iluminação LED">
-                  <figcaption>
-                    <h3>Iluminação LED</h3>
-                    <p>Luminárias de alta eficiência para ambientes comerciais.</p>
-                  </figcaption>
-                </figure>
-                <a href="#" class="botao" aria-label="Ver mais sobre Iluminação LED">Saiba mais</a>
-              </article>
-          
-              <article class="card-produto">
-                <figure>
-                  <img src="img/duchas.jpg" alt="Duchas">
-                  <figcaption>
-                    <h3>Duchas</h3>
-                    <p>Modelos variados de duchas para garantir conforto e economia no banho, com opções de controle de temperatura e alta durabilidade.</p>
-                  </figcaption>
-                </figure>
-                <a href="#" class="botao" aria-label="Ver mais sobre Iluminação LED">Saiba mais</a>
-              </article>
 
-              <article class="card-produto">
-                <figure>
-                  <img src="img/ferramentas.jpg" alt="Ferramentas">
-                  <figcaption>
-                    <h3>Fertamentas</h3>
-                    <p>Ferramentas manuais e elétricas ideais para uso profissional e doméstico, oferecendo precisão e resistência para qualquer tipo de serviço.</p>
-                  </figcaption>
-                </figure>
-                <a href="#" class="botao" aria-label="Ver mais sobre Iluminação LED">Saiba mais</a>
-              </article>
+  <main>
+    <section class="catalog">
+      <h1>Catálogo de Produtos</h1>
+      <aside class="filters">
+        <h2>Filtros</h2>
+        <form>
+          <label for="category">Categoria:</label>
+          <select id="category" name="category">
+            <option value="all">Todas</option>
+            <option value="iluminacao">Iluminação</option>
+            <option value="ferramentas">Ferramentas</option>
+            <option value="conexoes">Conexões</option>
+            <option value="disjuntores">Disjuntores</option>
+            <option value="contatores">Contatores</option>
+            <option value="duchas">Duchas</option>
+          </select>
+        </form>
+      </aside>
+      <div class="product-grid">
+        <article class="product-card" data-category="iluminacao">
+          <img src="img/led.png" alt="Iluminação de LED">
+          <h3>Iluminação de LED</h3>
+          <button class="view-details" data-id="1">Ver Detalhes</button>
+          <a href="https://wa.me/555199640860" target="_blank" class="contact-btn">Entrar em Contato</a>
+        </article>
+        <article class="product-card" data-category="ferramentas">
+          <img src="img/ferramentas.jpg" alt="Ferramentas">
+          <h3>Ferramentas</h3>
+          <button class="view-details" data-id="2">Ver Detalhes</button>
+          <a href="https://wa.me/555199640860" target="_blank" class="contact-btn">Entrar em Contato</a>
+        </article>
+        <article class="product-card" data-category="conexoes">
+          <img src="img/conexoes.jpg" alt="Conexões PVC">
+          <h3>Conexões PVC</h3>
+          <button class="view-details" data-id="3">Ver Detalhes</button>
+          <a href="https://wa.me/555199640860" target="_blank" class="contact-btn">Entrar em Contato</a>
+        </article>
+        <article class="product-card" data-category="disjuntores">
+          <img src="img/disjuntores.png" alt="Disjuntores">
+          <h3>Disjuntores</h3>
+          <button class="view-details" data-id="4">Ver Detalhes</button>
+          <a href="https://wa.me/555199640860" target="_blank" class="contact-btn">Entrar em Contato</a>
+        </article>
+        <article class="product-card" data-category="contatores">
+          <img src="img/contatoras.png" alt="Contatoras">
+          <h3>Contatores</h3>
+          <button class="view-details" data-id="5">Ver Detalhes</button>
+          <a href="https://wa.me/555199640860" target="_blank" class="contact-btn">Entrar em Contato</a>
+        </article>
+        <article class="product-card" data-category="duchas">
+          <img src="img/duchas.jpg" alt="Duchas">
+          <h3>Duchas</h3>
+          <button class="view-details" data-id="6">Ver Detalhes</button>
+          <a href="https://wa.me/555199640860" target="_blank" class="contact-btn">Entrar em Contato</a>
+        </article>
+      </div>
+    </section>
 
-              <article class="card-produto">
-                <figure>
-                  <img src="img/conexoes.jpg" alt="Conexões PVC">
-                  <figcaption>
-                    <h3>Conexões PVC</h3>
-                    <p>Peças em PVC de alta qualidade para montagem de redes hidráulicas, garantindo vedação eficiente e fácil instalação.</p>
-                  </figcaption>
-                </figure>
-                <a href="#" class="botao" aria-label="Ver mais sobre Iluminação LED">Saiba mais</a>
-              </article>
-            </div>
-          </section>
-    </main>
+    <!-- Modal -->
+    <div id="product-modal" class="modal" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <span class="close-btn" aria-label="Fechar modal">×</span>
+        <img id="modal-image" src="" alt="Imagem do produto">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <a href="https://wa.me/555199640860" target="_blank" class="contact-btn">Entrar em Contato</a>
+      </div>
+    </div>
+  </main>
 
-    <footer>
-        <section class="social-media">
-          <article class="icon instagram">
-            <div class="tooltip">Instagram</div>
-            <a href="https://instagram.com/matteimateriaiseletricos" target="_blank" aria-label="Instagram">
-              <span>
-                <i class="fa-brands fa-instagram"></i>
-              </span>
-            </a>
-          </article>
-          
-          <article class="icon whatsapp">
-            <div class="tooltip">WhatsApp</div>
-            <a href="https://wa.me/555199640860" target="_blank" aria-label="WhatsApp">
-              <span>
-                <i class="fa-brands fa-whatsapp"></i>
-              </span>
-            </a>
-          </article>
-        </section>
-        <p>&copy; 2025 Mattei. Todos os direitos reservados.</p>
-      </footer>
+  <footer>
+    <section class="social-media">
+      <article class="icon instagram">
+        <div class="tooltip">Instagram</div>
+        <a href="https://instagram.com/matteimateriaiseletricos" target="_blank" aria-label="Instagram">
+          <span>
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+        </a>
+      </article>
+      <article class="icon whatsapp">
+        <div class="tooltip">WhatsApp</div>
+        <a href="https://wa.me/555199640860" target="_blank" aria-label="WhatsApp">
+          <span>
+            <i class="fa-brands fa-whatsapp"></i>
+          </span>
+        </a>
+      </article>
+    </section>
+    <p>© 2025 Mattei Materiais Elétricos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/catalogo.js"></script>
 </body>
 </html>
