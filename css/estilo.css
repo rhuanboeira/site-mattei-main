@@ -60,7 +60,7 @@ a:hover {
 /*-- Header & Nav --*/
 header {
   background: transparent;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -1549,7 +1549,10 @@ p, li, a, label, input, textarea, button {
 }
 
 span{
-  color: var(--cor5);
+  color: var(--branco);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-style: italic;
 }
 
 nav#top-menu li {
