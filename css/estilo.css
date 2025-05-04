@@ -410,6 +410,81 @@ nav#top-menu .cta:hover {
   transition: all 0.3s ease-in-out;
 }
 
+/* Estilização da seção Sobre */
+#sobre {
+  background-color: var(--cor6);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Estilização do figure */
+#sobre figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; /* Para posicionar o ::before */
+}
+
+/* Estilização da imagem */
+#sobre figure > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sobreposição com gradiente usando ::before */
+#sobre figure > img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.205) 0%, transparent 58%);
+  pointer-events: none;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+  #sobre {
+    padding: 1.5rem;
+  }
+
+  #sobre figure {
+    gap: 1rem;
+  }
+
+  #sobre figure > img {
+    max-width: 45%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #sobre {
+    padding: 1rem;
+  }
+
+  #sobre figure {
+    gap: 0.75rem;
+  }
+
+  #sobre figure > img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*-- Loja (Carrossel) --*/
 #loja {
   background-color: rgba(177, 177, 177, 0.274);
@@ -1436,7 +1511,7 @@ nav#top-menu .cta:hover {
     width: 80%;
     max-width: 300px;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.068);
+    background: rgba(0, 0, 0, 0.205);
     backdrop-filter: blur(10px);
     border-radius: 50px 0 0 50px;
     flex-direction: column;
