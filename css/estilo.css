@@ -244,7 +244,7 @@ nav#top-menu .cta:hover {
 
 @media (max-width: 768px) {
   header {
-    padding: 1rem;
+    padding: 1.8rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -264,7 +264,7 @@ nav#top-menu .cta:hover {
     cursor: pointer;
     z-index: 1001;
     width: 30px;
-    height: 20px; /* Ajustado para garantir espaço para as 3 linhas */
+    height: 20px; 
     padding: 0;
   }
 
