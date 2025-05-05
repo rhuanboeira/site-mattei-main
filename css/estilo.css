@@ -342,21 +342,23 @@ nav#top-menu .cta:hover {
 
 /*-- Sobre --*/
 #sobre {
-  max-width: 800px;  
-  margin: 0 auto;  
-  background-color: rgba(177, 177, 177, 0.274);
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--cor6, rgba(177, 177, 177, 0.274));
   border-radius: 15px;
   margin-top: 2em;
-  margin-bottom: 2em;     
-  padding: 3rem 1rem;
+  margin-bottom: 2em;
+  padding: 2rem;
   color: var(--texto-suave);
   font-size: 1.25em;
+  text-align: center;
 }
 
-#sobre > h2{
+#sobre > h2 {
   font-size: 2.3em;
   color: var(--cor2);
 }
+
 #sobre figure {
   display: flex;
   flex-direction: column;
@@ -366,21 +368,24 @@ nav#top-menu .cta:hover {
   margin: 0 auto;
 }
 
-#sobre figure > img{
-  content: '';
-  inset: 0;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.205) 0%, transparent 58%);
-  pointer-events: none;
+#sobre figure > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
 }
 
-#sobre figcaption h2{
+#sobre figcaption h2 {
   font-size: 2rem;
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 1.5rem;
-}             
+}
 
 #sobre .decorativa {
   width: 40px;
@@ -388,6 +393,7 @@ nav#top-menu .cta:hover {
   border-top: 4px solid #fff;
   margin: 0.5rem 0 1.5rem;
 }
+
 #sobre figcaption p {
   margin-bottom: 0.5em;
   padding: 20px;
@@ -404,42 +410,12 @@ nav#top-menu .cta:hover {
   font-weight: bold;
   transition: 0.3s, color 0.3s;
 }
+
 #sobre .cta:hover {
   background: var(--cor1);
   color: white;
-  transition: all 0.3s ease-in-out;
 }
 
-/* Estilização da seção Sobre */
-#sobre {
-  background-color: var(--cor6);
-  padding: 2rem;
-  text-align: center;
-}
-
-/* Estilização do figure */
-#sobre figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative; 
-}
-
-/* Estilização da imagem */
-#sobre figure > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  position: relative;
-  z-index: 1;
-  object-fit: contain;
-}
-
-/* Ajustes para mobile */
 @media (max-width: 768px) {
   #sobre {
     padding: 1.5rem;
@@ -450,7 +426,7 @@ nav#top-menu .cta:hover {
   }
 
   #sobre figure > img {
-    width: 45%;
+    max-width: 45%;
     height: auto;
   }
 }
@@ -465,7 +441,7 @@ nav#top-menu .cta:hover {
   }
 
   #sobre figure > img {
-    width: 100%;
+    max-width: 55%;
     height: auto;
   }
 }
@@ -1157,10 +1133,7 @@ footer .social img {
   #hero h1 {
     font-size: 1.25rem;
   }
-  #sobre figure {
-    flex-direction: column;
-    text-align: center;
-  }
+
   .product-list,
   #contato form,
   address {
