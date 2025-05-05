@@ -7,10 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let slideIndex = 3;
   let slideWidth;
+  let slidesPerView = 6;
   let isTransitioning = false;
   let autoSlideInterval;
 
   const totalOriginal = originalSlides.length;
+
+  if (!slidesContainer || !originalSlides.length || !setaEsquerda || !setaDireita) {
+    console.error('Erro: Elementos do carrossel não encontrados.');
+    return;
+  }
 
   function clonarSlides(slides, quantidade, posicao) {
     const destino = posicao === 'inicio' ? 'prepend' : 'append';
@@ -32,12 +38,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const slide = originalSlides[0];
     const estilos = window.getComputedStyle(slide);
     const margemDireita = parseFloat(estilos.marginRight || 0);
-    slideWidth = slide.getBoundingClientRect().width + margemDireita;
+    const slideIndividualWidth = slide.getBoundingClientRect().width + margemDireita;
+
+    if (window.innerWidth <= 600) {
+      slidesPerView = 1;
+    } else if (window.innerWidth <= 900) {
+      slidesPerView = 2;
+    } else {
+      slidesPerView = totalOriginal;
+    }
+
+    slideWidth = slideIndividualWidth * slidesPerView;
   }
 
   function atualizarSlide(transicao = true) {
     slidesContainer.style.transition = transicao ? 'transform 0.5s ease-in-out' : 'none';
-    slidesContainer.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+    slidesContainer.style.transform = `translateX(-${slideIndex * (slideWidth / slidesPerView)}px)`;
   }
 
   function moverSlide(direcao) {
@@ -51,11 +67,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function resetarSlide() {
-    if (slideIndex >= totalSlides - 3) {
-      slideIndex = 3;
+    if (slideIndex >= totalSlides - slidesPerView + 1) {
+      slideIndex = 0;
       atualizarSlide(false);
-    } else if (slideIndex < 3) {
-      slideIndex = totalSlides - 6;
+    } else if (slideIndex < 0) {
+      slideIndex = totalSlides - slidesPerView;
       atualizarSlide(false);
     }
     isTransitioning = false;
