@@ -114,8 +114,8 @@ p, li, label, input, textarea, button {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 2rem;
-    background: rgba(170, 170, 170, 0.190);
+    padding: 1rem 2em;
+    background: rgba(223, 223, 223, 0.459);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 1000;
@@ -160,7 +160,6 @@ nav#top-menu {
 
 nav#top-menu ul {
   display: flex;
-  gap: 1rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -243,9 +242,13 @@ nav#top-menu .cta:hover {
 }
 
 @media (max-width: 768px) {
+  body{
+    margin-top: 58px;
+   }
+   
   header {
     padding: 1.8rem;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(236, 236, 236, 0.548);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
@@ -314,7 +317,7 @@ nav#top-menu .cta:hover {
     right: -100%;
     width: 70%;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.671);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     flex-direction: column;
@@ -334,6 +337,7 @@ nav#top-menu .cta:hover {
     gap: 1.5rem;
     width: 100%;
     align-items: center;
+    padding: 0;
   }
 
   nav#top-menu li {
@@ -345,7 +349,7 @@ nav#top-menu .cta:hover {
   }
 
   nav#top-menu li a {
-    color: var(--cor2);
+    color: var(--branco);
     display: block;
   }
 
@@ -406,7 +410,7 @@ nav#top-menu .cta:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.753);
   z-index: 1;
 }
 
