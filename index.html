@@ -13,6 +13,8 @@
     
     <link rel="stylesheet" href="css/estilo.css">
     <script defer src="js/formulario.js"></script>
+    <script defer src="js/carrossel.js"></script>
+    <script defer src="js/menu.js"></script>
     
     <!-- Font Awesome (manter versão 6.7.2) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -222,23 +224,5 @@
     </section>
     <p>&copy; 2025 Mattei Materiais Elétricos. Todos os direitos reservados.</p>
   </footer>
-
-  <script src="js/carrossel.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggle = document.getElementById('menu-toggle');
-      const menu = document.getElementById('top-menu');
-      toggle.addEventListener('click', () => {
-        toggle.classList.toggle('active');
-        menu.classList.toggle('active');
-        document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
-      });
-      document.querySelectorAll('#top-menu a').forEach(link => link.addEventListener('click', () => {
-        toggle.classList.remove('active');
-        menu.classList.remove('active');
-        document.body.style.overflow = '';
-      }));
-    });
-  </script>
 </body>
 </html>
