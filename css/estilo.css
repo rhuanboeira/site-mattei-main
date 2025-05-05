@@ -1495,6 +1495,9 @@ nav#top-menu .cta:hover {
   header {
     flex-direction: column;
     align-items: flex-start;
+    position: fixed;
+    padding: 1.7rem 1rem;
+    background-color: var(--cor0);
   }
 
   #menu-toggle {
