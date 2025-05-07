@@ -41,21 +41,21 @@ sr.reveal('#sobre figure img', {
   origin: 'right',
   distance: '40px',
   opacity: 0,
-  delay: 400
+  delay: 300
 });
 
 sr.reveal('#sobre figcaption p', {
   origin: 'bottom',
   distance: '20px',
   opacity: 0,
-  delay: 600
+  delay: 500
 });
 
 sr.reveal('#sobre .cta', {
   origin: 'bottom',
   distance: '20px',
   opacity: 0,
-  delay: 800
+  delay: 700
 });
 
 // Seção Loja (#loja)
@@ -77,7 +77,7 @@ sr.reveal('#loja .carousel', {
   origin: 'bottom',
   distance: '40px',
   opacity: 0,
-  delay: 600
+  delay: 500
 });
 
 // Seção Produtos (#produtos)
