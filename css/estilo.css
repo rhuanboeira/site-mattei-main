@@ -395,7 +395,7 @@ nav#top-menu .cta:hover {
   width: 100%;
   min-height: 60vh;
   max-height: 700px;
-  background-image: url('../assets/img/fachada.jpg');
+  background-image: url('../img/fachada.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
