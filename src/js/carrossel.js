@@ -118,30 +118,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const feedbackNext = document.querySelector('.feedback-next');
   let feedbackIndex = 0;
 
+  console.log('Número de feedbacks:', feedbackSlides.length);
+
   function atualizarFeedbackSlide() {
-    if (feedbackContainer) {
+    if (feedbackContainer && feedbackSlides.length > 0) {
       feedbackContainer.style.transform = `translateX(-${feedbackIndex * 100}%)`;
+      console.log('Índice atual:', feedbackIndex); 
     }
   }
 
-  feedbackPrev?.addEventListener('click', () => {
-    feedbackIndex = (feedbackIndex - 1 + feedbackSlides.length) % feedbackSlides.length;
-    atualizarFeedbackSlide();
-  });
+  if (feedbackContainer && feedbackSlides.length > 0 && feedbackPrev && feedbackNext) {
+    feedbackPrev.addEventListener('click', () => {
+      feedbackIndex = (feedbackIndex - 1 + feedbackSlides.length) % feedbackSlides.length;
+      atualizarFeedbackSlide();
+    });
 
-  feedbackNext?.addEventListener('click', () => {
-    feedbackIndex = (feedbackIndex + 1) % feedbackSlides.length;
-    atualizarFeedbackSlide();
-  });
+    feedbackNext.addEventListener('click', () => {
+      feedbackIndex = (feedbackIndex + 1) % feedbackSlides.length;
+      atualizarFeedbackSlide();
+    });
 
-  atualizarFeedbackSlide();
-});
-
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('header');
-  if (window.scrollY > 50) {
-    header.classList.add('scrolled');
+    atualizarFeedbackSlide(); 
   } else {
-    header.classList.remove('scrolled');
+    console.error('Elementos do carrossel não encontrados ou vazios:', {
+      feedbackContainer,
+      feedbackSlides,
+      feedbackPrev,
+      feedbackNext
+    });
   }
 });

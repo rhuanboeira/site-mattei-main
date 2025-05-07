@@ -33,32 +33,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const productDetails = {
     1: {
       title: 'Iluminação de LED',
-      image: 'img/led.png',
+      image: '../assets/img/led.png',
       description: 'Trabalhamos com uma ampla variedade de soluções em iluminação, incluindo refletores, lâmpadas LED bulbo, fitas LED e painéis LED, perfeitos para ambientes internos e externos.'
     },
     2: {
       title: 'Ferramentas',
-      image: 'img/ferramentas.jpg',
+      image: '../assets/img/ferramentas.jpg',
       description: 'Oferecemos ferramentas de alta qualidade, como chaves de fenda, alicates, furadeiras e kits completos para uso profissional e doméstico.'
     },
     3: {
       title: 'Conexões PVC',
-      image: 'img/conexoes.jpg',
+      image: '../assets/img/conexoes.jpg',
       description: 'Disponibilizamos conexões PVC para instalações hidráulicas e elétricas, incluindo joelhos, luvas, adaptadores e tubos de diversas especificações.'
     },
     4: {
       title: 'Disjuntores',
-      image: 'img/disjuntores.png',
+      image: '../assets/img/disjuntores.png',
       description: 'Nossa linha de disjuntores inclui modelos monofásicos, bifásicos e trifásicos, garantindo segurança e eficiência em instalações elétricas.'
     },
     5: {
       title: 'Contatores',
-      image: 'img/contatoras.png',
+      image: '../assets/img/contatoras.png',
       description: 'Trabalhamos com contatores para automação e controle de circuitos elétricos, ideais para aplicações industriais e comerciais.'
     },
     6: {
       title: 'Duchas',
-      image: 'img/duchas.jpg',
+      image: '../assets/img/duchas.jpg',
       description: 'Oferecemos duchas elétricas e acessórios, com opções de diferentes potências e designs, garantindo conforto e praticidade.'
     }
   };

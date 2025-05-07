@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://matteimateriaiseletricos.com.br/sitemap.xml
