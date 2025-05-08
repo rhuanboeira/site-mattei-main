@@ -14,7 +14,7 @@
     📄 Documentação Técnica
   </a>
   •
-  <a href="https://github.com/rhuanboeira/site-mattei-main/blob/5a8d99ebf59bab7ce8937ff4461cc46ab440ffd5/LICENSEl">
+  <a href="https://github.com/rhuanboeira/site-mattei-main/blob/5a8d99ebf59bab7ce8937ff4461cc46ab440ffd5/LICENSE">
     📘 Licença
   </a>
 </p>
