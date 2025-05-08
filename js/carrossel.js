@@ -112,39 +112,29 @@ document.addEventListener("DOMContentLoaded", () => {
   iniciarAutoSlide();
 
   //-- CARROSSEL DE FEEDBACK 
-  const feedbackContainer = document.querySelector('.feedback-carousel-track');
-  const feedbackSlides = Array.from(feedbackContainer?.querySelectorAll('.feedback-slide') || []);
-  const feedbackPrev = document.querySelector('.feedback-prev');
-  const feedbackNext = document.querySelector('.feedback-next');
-  let feedbackIndex = 0;
+const feedbackContainer = document.querySelector('.feedback-track');
+const feedbackItems = Array.from(feedbackContainer?.querySelectorAll('.feedback-item') || []);
+const feedbackPrev = document.querySelector('.feedback-prev');
+const feedbackNext = document.querySelector('.feedback-next');
+let feedbackIndex = 0;
 
-  console.log('Número de feedbacks:', feedbackSlides.length);
-
-  function atualizarFeedbackSlide() {
-    if (feedbackContainer && feedbackSlides.length > 0) {
-      feedbackContainer.style.transform = `translateX(-${feedbackIndex * 100}%)`;
-      console.log('Índice atual:', feedbackIndex); 
-    }
+function updateFeedbackSlide() {
+  if (feedbackContainer && feedbackItems.length > 0) {
+    feedbackContainer.style.transform = `translateX(-${feedbackIndex * 100}%)`;
   }
+}
 
-  if (feedbackContainer && feedbackSlides.length > 0 && feedbackPrev && feedbackNext) {
-    feedbackPrev.addEventListener('click', () => {
-      feedbackIndex = (feedbackIndex - 1 + feedbackSlides.length) % feedbackSlides.length;
-      atualizarFeedbackSlide();
-    });
+if (feedbackContainer && feedbackItems.length > 0 && feedbackPrev && feedbackNext) {
+  feedbackPrev.addEventListener('click', () => {
+    feedbackIndex = (feedbackIndex - 1 + feedbackItems.length) % feedbackItems.length;
+    updateFeedbackSlide();
+  });
 
-    feedbackNext.addEventListener('click', () => {
-      feedbackIndex = (feedbackIndex + 1) % feedbackSlides.length;
-      atualizarFeedbackSlide();
-    });
+  feedbackNext.addEventListener('click', () => {
+    feedbackIndex = (feedbackIndex + 1) % feedbackItems.length;
+    updateFeedbackSlide();
+  });
 
-    atualizarFeedbackSlide(); 
-  } else {
-    console.error('Elementos do carrossel não encontrados ou vazios:', {
-      feedbackContainer,
-      feedbackSlides,
-      feedbackPrev,
-      feedbackNext
-    });
-  }
+  updateFeedbackSlide();
+}
 });
