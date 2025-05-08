@@ -14,7 +14,7 @@
     📄 Documentação Técnica
   </a>
   •
-  <a href="#-licença-de-uso-educacional">
+  <a href="#[-licença-de-uso-educaciona](https://github.com/rhuanboeira/site-mattei-main/blob/5a8d99ebf59bab7ce8937ff4461cc46ab440ffd5/LICENSE)l">
     📘 Licença
   </a>
 </p>
