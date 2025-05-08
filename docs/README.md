@@ -1,18 +1,77 @@
-<h1> Reformulação do site: Mattei Materiais Elétricos </h1> <img src="img/logo-mattei-br500-readme.png" alt="logo">
-<h3>Para acessar a <strong>documentação técnica completa</strong>, <a href="https://github.com/rhuanboeira/site-mattei-main/blob/b6cb8a96e2077246d86404e07dcc4b1053203b3e/Projeto-Mattei.pdf"> Clique Aqui</a></h2>
-<br>
-<h2> 📘 Licença de Uso Educacional </h2>
+<p align="center">
+  <img src="img/logo-mattei-br500-readme.png" alt="Logo Mattei" width="250"/>
+</p>
 
-Este projeto foi desenvolvido por **Rhuan Boeira** para fins comerciais internos de uma empresa parceira. O código está disponível publicamente **exclusivamente para fins educacionais**.
+<h1 align="center">🌐 Reformulação do site: Mattei Materiais Elétricos</h1>
 
-**É permitido:**
-- Visualizar e estudar o código.
-- Compartilhar o repositório com fins não comerciais e educacionais.
-- Usar como referência para aprendizado, com os devidos créditos.
+<p align="center">
+  <strong>Projeto institucional e catálogo interativo de produtos</strong><br>
+  <em>Desenvolvido com HTML, CSS e JavaScript</em>
+</p>
 
-**É proibido:**
-- Modificar e redistribuir versões alteradas.
-- Utilizar qualquer parte do projeto para fins comerciais.
+<p align="center">
+  <a href="https://github.com/rhuanboeira/site-mattei-main/blob/b6cb8a96e2077246d86404e07dcc4b1053203b3e/Projeto-Mattei.pdf">
+    📄 Documentação Técnica
+  </a>
+  •
+  <a href="#-licença-de-uso-educacional">
+    📘 Licença
+  </a>
+</p>
 
-Para a licença formal, consulte o arquivo [`LICENSE`](./LICENSE).
+---
+
+## ✨ Sobre o Projeto
+
+O site da **Mattei Materiais Elétricos** foi reformulado com foco em **experiência do usuário**, **acessibilidade** e **apresentação comercial**. Ele conta com:
+
+- Página inicial institucional
+- Catálogo de produtos com filtros por categoria
+- Modal de detalhes do produto
+- Botões de contato direto via WhatsApp
+- Design responsivo (desktop, tablet e mobile)
+
+> 📍 Projeto realizado para empresa parceira com fins educacionais e demonstração de portfólio.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**
+- **CSS3 (Flexbox e Grid)**
+- **JavaScript Vanilla**
+- Font Awesome (ícones)
+- Google Fonts (tipografia)
+
+📄 Documentação Técnica
+Acesse a documentação completa do projeto, com:
+
+Objetivos da reformulação
+
+Paleta de cores e fontes
+
+Estrutura das páginas
+
+Detalhes técnicos e decisões de UX/UI
+
+📘 Licença de Uso Educacional
+Este projeto foi desenvolvido por Rhuan Boeira e está disponível exclusivamente para fins educacionais.
+
+✅ É permitido:
+
+Visualizar e estudar o código
+
+Compartilhar com fins não comerciais
+
+Usar como referência em projetos próprios, com créditos
+
+❌ É proibido:
+
+Copiar ou redistribuir versões modificadas
+
+Utilizar para fins comerciais sem autorização
+
+Para mais detalhes, veja o arquivo LICENSE.
+
+<p align="center"> <strong>💡 Obrigado por visitar este projeto!</strong><br> <em>Curtiu? Deixe uma ⭐ no repositório!</em> </p> 
 
