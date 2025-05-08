@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   categoryFilter.addEventListener('change', filterProducts);
-  categoryFilter.addEventListener('touchstart', filterProducts); // Adicionado para toque
+  categoryFilter.addEventListener('touchstart', filterProducts); 
 
   // Modal
   const modal = document.getElementById('product-modal');
@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     button.addEventListener('touchstart', (e) => {
-      e.preventDefault(); // Evita comportamento padrão de toque
-      button.click(); // Simula o clique
+      e.preventDefault(); 
+      button.click(); 
     });
   });
 
@@ -72,11 +72,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
   });
 
-  // Lógica para exibir e centralizar a imagem da categoria filtrada
+  
   const categoryImage = document.createElement('div');
   categoryImage.className = 'category-image';
   categoryImage.innerHTML = '<img src="" alt="Imagem da categoria filtrada" id="category-image">';
-  document.querySelector('.catalog').insertBefore(categoryImage, document.querySelector('.product-grid'));
+  document.querySelector('.product-grid').insertAdjacentElement('beforebegin', categoryImage);
+
 
   function updateCategoryImage() {
     const selectedCategory = categoryFilter.value;
