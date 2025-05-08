@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function filterProducts() {
     const selectedCategory = categoryFilter.value;
-
     productCards.forEach(card => {
       const cardCategory = card.dataset.category;
       card.style.display = selectedCategory === 'all' || cardCategory === selectedCategory ? 'block' : 'none';
@@ -12,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   categoryFilter.addEventListener('change', filterProducts);
+  categoryFilter.addEventListener('touchstart', filterProducts); // Adicionado para toque
 
   // Modal
   const modal = document.getElementById('product-modal');
@@ -20,45 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalDescription = document.getElementById('modal-description');
   const closeBtn = document.querySelector('.close-btn');
 
-  // Dados dos produtos (descrições por segmento)
   const productDetails = {
-    1: {
-      title: 'Iluminação de LED',
-      image: 'img/led.png',
-      description: 'Trabalhamos com uma ampla variedade de soluções em iluminação, incluindo refletores, lâmpadas LED bulbo, fitas LED e painéis LED, perfeitos para ambientes internos e externos.'
-    },
-    2: {
-      title: 'Ferramentas',
-      image: 'img/ferramentas.jpg',
-      description: 'Oferecemos ferramentas de alta qualidade, como chaves de fenda, alicates, furadeiras e kits completos para uso profissional e doméstico.'
-    },
-    3: {
-      title: 'Conexões PVC',
-      image: 'img/conexoes.jpg',
-      description: 'Disponibilizamos conexões PVC para instalações hidráulicas e elétricas, incluindo joelhos, luvas, adaptadores e tubos de diversas especificações.'
-    },
-    4: {
-      title: 'Disjuntores',
-      image: 'img/disjuntores.png',
-      description: 'Nossa linha de disjuntores inclui modelos monofásicos, bifásicos e trifásicos, garantindo segurança e eficiência em instalações elétricas.'
-    },
-    5: {
-      title: 'Contatores',
-      image: 'img/contatoras.png',
-      description: 'Trabalhamos com contatores para automação e controle de circuitos elétricos, ideais para aplicações industriais e comerciais.'
-    },
-    6: {
-      title: 'Duchas',
-      image: 'img/duchas.jpg',
-      description: 'Oferecemos duchas elétricas e acessórios, com opções de diferentes potências e designs, garantindo conforto e praticidade.'
-    }
+    1: { title: 'Iluminação de LED', image: 'img/led.png', description: 'Trabalhamos com uma ampla variedade de soluções em iluminação...' },
+    2: { title: 'Ferramentas', image: 'img/ferramentas.jpg', description: 'Oferecemos ferramentas de alta qualidade...' },
+    3: { title: 'Conexões PVC', image: 'img/conexoes.jpg', description: 'Disponibilizamos conexões PVC...' },
+    4: { title: 'Disjuntores', image: 'img/disjuntores.png', description: 'Nossa linha de disjuntores inclui modelos...' },
+    5: { title: 'Contatores', image: 'img/contatoras.png', description: 'Trabalhamos com contatores...' },
+    6: { title: 'Duchas', image: 'img/duchas.jpg', description: 'Oferecemos duchas elétricas...' }
   };
 
   document.querySelectorAll('.view-details').forEach(button => {
     button.addEventListener('click', () => {
       const productId = button.dataset.id;
       const product = productDetails[productId];
-
       if (product) {
         modalImage.src = product.image;
         modalImage.alt = product.title;
@@ -69,6 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.focus();
       }
     });
+    button.addEventListener('touchstart', (e) => {
+      e.preventDefault(); // Evita comportamento padrão de toque
+      button.click(); // Simula o clique
+    });
   });
 
   function closeModal() {
@@ -77,12 +55,49 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   closeBtn.addEventListener('click', closeModal);
+  closeBtn.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    closeModal();
+  });
 
   modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  modal.addEventListener('touchstart', (e) => {
     if (e.target === modal) closeModal();
   });
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
   });
+
+  // Lógica para exibir e centralizar a imagem da categoria filtrada
+  const categoryImage = document.createElement('div');
+  categoryImage.className = 'category-image';
+  categoryImage.innerHTML = '<img src="" alt="Imagem da categoria filtrada" id="category-image">';
+  document.querySelector('.catalog').insertBefore(categoryImage, document.querySelector('.product-grid'));
+
+  function updateCategoryImage() {
+    const selectedCategory = categoryFilter.value;
+    const img = document.getElementById('category-image');
+    const categoryImageContainer = document.querySelector('.category-image');
+
+    if (selectedCategory !== 'all') {
+      img.src = imageMap[selectedCategory] || '';
+      categoryImageContainer.style.display = 'block';
+    } else {
+      categoryImageContainer.style.display = 'none';
+    }
+  }
+
+  categoryFilter.addEventListener('change', () => {
+    filterProducts();
+    updateCategoryImage();
+  });
+  categoryFilter.addEventListener('touchstart', () => {
+    filterProducts();
+    updateCategoryImage();
+  });
+  updateCategoryImage();
 });

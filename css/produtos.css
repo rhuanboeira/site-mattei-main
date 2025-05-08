@@ -1078,3 +1078,17 @@ footer > p {
   max-width: 50%;
   margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .product-card {
+    padding: 0.5rem;
+  }
+  .view-details, .contact-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+  #menu-toggle {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
