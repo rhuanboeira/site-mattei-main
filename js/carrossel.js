@@ -91,8 +91,17 @@ document.addEventListener("DOMContentLoaded", () => {
   setaEsquerda.setAttribute('role', 'button');
   setaDireita.setAttribute('role', 'button');
 
-  setaEsquerda.addEventListener('click', () => moverSlide(-1));
-  setaDireita.addEventListener('click', () => moverSlide(1));
+  function addTouchSupport(button, direction) {
+  button.addEventListener('click', () => moverSlide(direction));
+  button.addEventListener('touchstart', (e) => {
+    e.preventDefault(); 
+    moverSlide(direction);
+  }, { passive: false });
+}
+
+addTouchSupport(setaEsquerda, -1);
+addTouchSupport(setaDireita, 1);
+
 
   document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowLeft') moverSlide(-1);
