@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/rhuanboeira/site-mattei-main/blob/4dda541f824670cf9da53c91e50cefc586ee321c/img/logo-mattei-br500-readme.png" alt="Logo Mattei" width="250"/>
+  <img src="img/logo-mattei-br500-readme.png" alt="Logo Mattei" width="250"/>
 </p>
 
 <h1 align="center">🌐 Reformulação do site: Mattei Materiais Elétricos</h1>
