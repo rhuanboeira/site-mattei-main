@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/rhuanboeira/site-mattei-main/blob/b6cb8a96e2077246d86404e07dcc4b1053203b3e/Projeto-Mattei.pdf">
+  <a href="https://github.com/rhuanboeira/site-mattei-main/blob/21eff459ccb88e45b1131a0c8feafdecfadc9b28/docs/Projeto-Mattei.pdf">
     📄 Documentação Técnica
   </a>
   •
