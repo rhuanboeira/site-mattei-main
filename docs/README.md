@@ -38,7 +38,7 @@ O site da **Mattei Materiais Elétricos** foi reformulado com foco em **experiê
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5**
-- **CSS3 (Flexbox e Grid)**
+- **CSS3**
 - **JavaScript Vanilla**
 - Font Awesome (ícones)
 - Google Fonts (tipografia)
