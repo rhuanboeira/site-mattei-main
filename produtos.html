@@ -10,19 +10,18 @@
   <meta property="og:title" content="Catálogo de Produtos - Mattei Materiais Elétricos">
   <meta property="og:description" content="Explore o catálogo de materiais elétricos, iluminação LED, disjuntores e contatoras da Mattei em Esteio/RS.">
   <meta property="og:image" content="img/icone-mattei250.png">
-  <meta property="og:url" content="https://mattei.com.br">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://mattei.com.br">
+  <meta property="og:url" content="https://matteimateriaiseletricos.com.br/produtos.html">
+  <link rel="canonical" href="https://matteimateriaiseletricos.com.br/produtos.html">
   <title>Catálogo de Produtos - Mattei Materiais Elétricos</title>
   
   <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/produtos.css">
-  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="css/produtos.css">
+
   <script type="application/ld+json">
   [
     {
@@ -37,10 +36,10 @@
         "postalCode": "93260-000",
         "addressCountry": "BR"
       },
-      "telephone": "+555199640860",
-      "url": "https://mattei.com.br",
+      "telephone": "+555134733115",
+      "url": "https://matteimateriaiseletricos.com.br",
       "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-12:00",
-      "image": "https://mattei.com.br/img/icone-mattei250.png",
+      "image": "https://matteimateriaiseletricos.com.br/img/icone-mattei250.png",
       "description": "Loja de materiais elétricos, iluminação LED e suprimentos industriais em Esteio/RS."
     },
     {
@@ -48,7 +47,7 @@
       "@type": "Product",
       "name": "Iluminação de LED",
       "description": "Luminárias LED de alta eficiência para ambientes residenciais e comerciais.",
-      "image": "https://mattei.com.br/img/led.png",
+      "image": "https://matteimateriaiseletricos.com.br/img/led.png",
       "brand": {
         "@type": "Brand",
         "name": "Mattei Materiais Elétricos"
@@ -59,7 +58,7 @@
       "@type": "Product",
       "name": "Disjuntores",
       "description": "Disjuntores para proteção contra sobrecarga e curto-circuito.",
-      "image": "https://mattei.com.br/img/disjuntores.png",
+      "image": "https://matteimateriaiseletricos.com.br/img/disjuntores.png",
       "brand": {
         "@type": "Brand",
         "name": "Mattei Materiais Elétricos"
@@ -70,7 +69,7 @@
       "@type": "Product",
       "name": "Contatoras",
       "description": "Contatoras para controle de motores e máquinas industriais.",
-      "image": "https://mattei.com.br/img/contatoras.png",
+      "image": "https://matteimateriaiseletricos.com.br/img/contatoras.png",
       "brand": {
         "@type": "Brand",
         "name": "Mattei Materiais Elétricos"
@@ -82,29 +81,37 @@
 </head>
 <body>
   <header>
-    <button id="menu-toggle" aria-label="Abrir menu">
+    <button id="botao-carrinho-mobile" class="mobile-only" aria-label="Ver carrinho">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="contador-itens-carrinho-mobile" class="cart-badge">0</span>
+    </button>
+
+    <nav id="top-menu">
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+      </ul>
+      <button id="ver-carrinho-btn" class="cta desktop-only">
+        Ver Carrinho (<span id="contador-itens-carrinho-desktop">0</span>)
+      </button>
+      <a href="https://wa.me/555199640860" target="_blank" class="cta">Faça seu orçamento</a>
+    </nav>
+
+    <button id="menu-toggle" class="mobile-only" aria-label="Abrir menu">
       <span class="hamburger"></span>
       <span class="hamburger"></span>
       <span class="hamburger"></span>
     </button>
-    <nav id="top-menu" aria-label="Menu Principal">
-      <ul>
-        <li><a href="index.html" aria-current="page">Início</a></li>
-      </ul>
-      <a href="https://wa.me/555199640860" target="_blank" class="cta">Faça seu orçamento</a>
-    </nav>
   </header>
 
   <main>
     <section class="catalog">
       <h1>Catálogo de Produtos da Mattei</h1>
       <p class="catalog-intro">Conheça os materiais elétricos da Mattei em Esteio/RS: iluminação LED, disjuntores e mais.</p>
+      
       <aside class="filters">
         <h2>Filtros</h2>
         <form aria-label="Filtrar produtos por categoria">
-          <label for="category">Categoria:</label>
-          <select id="category" name="category">
-            <option value="all">Todas</option>
+          <label for="categoria">Categoria:</label> <select id="categoria" name="categoria"> <option value="all">Todas</option>
             <option value="iluminacao">Iluminação</option>
             <option value="ferramentas">Ferramentas</option>
             <option value="conexoes">Conexões</option>
@@ -114,58 +121,39 @@
           </select>
         </form>
       </aside>
-      <div class="product-grid">
-        <article class="product-card" data-category="iluminacao">
-          <img src="img/led.png" alt="Iluminação LED eficiente Mattei em Esteio" loading="lazy">
-          <h3>Iluminação de LED</h3>
-          <button class="view-details" data-id="1">Ver Detalhes</button>
-          <a href="https://wa.me/555199640860?text=Quero%20mais%20informações%20sobre%20Iluminação%20LED" target="_blank" class="contact-btn">Entrar em Contato</a>
-        </article>
-        
-        <article class="product-card" data-category="ferramentas">
-          <img src="img/ferramentas.jpg" alt="Ferramentas elétricas Mattei em Esteio" loading="lazy">
-          <h3>Ferramentas</h3>
-          <button class="view-details" data-id="2">Ver Detalhes</button>
-          <a href="https://wa.me/555199640860?text=Quero%20mais%20informações%20sobre%20Ferramentas" target="_blank" class="contact-btn">Entrar em Contato</a>
-        </article>
-
-        <article class="product-card" data-category="conexoes">
-          <img src="img/conexoes.jpg" alt="Conexões PVC para instalações Mattei em Esteio" loading="lazy">
-          <h3>Conexões PVC</h3>
-          <button class="view-details" data-id="3">Ver Detalhes</button>
-          <a href="https://wa.me/555199640860?text=Quero%20mais%20informações%20sobre%20Conexões%20PVC" target="_blank" class="contact-btn">Entrar em Contato</a>
-        </article>
-
-        <article class="product-card" data-category="disjuntores">
-          <img src="img/disjuntores.png" alt="Disjuntores para proteção elétrica Mattei em Esteio" loading="lazy">
-          <h3>Disjuntores</h3>
-          <button class="view-details" data-id="4">Ver Detalhes</button>
-          <a href="https://wa.me/555199640860?text=Quero%20mais%20informações%20sobre%20Disjuntores" target="_blank" class="contact-btn">Entrar em Contato</a>
-        </article>
-
-        <article class="product-card" data-category="contatores">
-          <img src="img/contatoras.png" alt="Contatoras para motores industriais Mattei em Esteio" loading="lazy">
-          <h3>Contatoras</h3>
-          <button class="view-details" data-id="5">Ver Detalhes</button>
-          <a href="https://wa.me/555199640860?text=Quero%20mais%20informações%20sobre%20Contatoras" target="_blank" class="contact-btn">Entrar em Contato</a>
-        </article>
-
-        <article class="product-card" data-category="duchas">
-          <img src="img/duchas.jpg" alt="Duchas elétricas Mattei em Esteio" loading="lazy">
-          <h3>Duchas</h3>
-          <button class="view-details" data-id="6">Ver Detalhes</button>
-          <a href="https://wa.me/555199640860?text=Quero%20mais%20informações%20sobre%20Duchas" target="_blank" class="contact-btn">Entrar em Contato</a>
-        </article>
+      
+      <div class="category-image hidden">
+        <img src="" alt="Imagem da categoria filtrada" id="category-image">
       </div>
+
+      <div class="grade-produtos">
+        </div>
     </section>
 
-    <div id="product-modal" class="modal" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-        <span class="close-btn" aria-label="Fechar modal">×</span>
-        <img id="modal-image" src="" alt="Imagem do produto" loading="lazy">
-        <h3 id="modal-title"></h3>
-        <p id="modal-description"></p>
+    <div id="modal-produto" class="modal" role="dialog" aria-hidden="true">
+      <div class="conteudo-modal">
+        <span id="fechar-btn-produto" class="fechar-btn" aria-label="Fechar modal">×</span>
+        <img id="imagem-modal-produto" src="" alt="Imagem do produto" loading="lazy">
+        <h3 id="titulo-modal-produto"></h3>
+        <p id="descricao-modal-produto"></p>
         <a href="https://wa.me/555199640860" target="_blank" class="contact-btn">Entrar em Contato</a>
+      </div>
+    </div>
+
+    <div id="modal-carrinho" class="modal" role="dialog" aria-hidden="true">
+      <div class="conteudo-modal">
+        <div class="modal-header">
+          <h3 class="modal-title-text">Seu Carrinho</h3>
+          <button id="fechar-btn-carrinho" class="fechar-btn" aria-label="Fechar carrinho">×</button>
+        </div>
+        <div id="itens-carrinho">
+          <p class="empty-cart-message">Seu carrinho está vazio.</p>
+        </div>
+        <div id="resumo-carrinho" class="modal-footer">
+          <p class="cart-total-text">Total: <span id="total-carrinho">R$ 0,00</span></p> <button id="finalizar-whatsapp-btn" class="contact-btn whatsapp-btn">
+            Finalizar Pedido via WhatsApp
+          </button>
+        </div>
       </div>
     </div>
   </main>
@@ -192,8 +180,6 @@
     <p>© 2025 Mattei Materiais Elétricos. Todos os direitos reservados.</p>
   </footer>
 
-  <script defer src="js/catalogo.js"></script>
-  <script defer src="js/menu.js"></script>
-  <script defer src="js/scroll-animation.js"></script>
+  <script src="js/catalogo.js"></script>
 </body>
 </html>
