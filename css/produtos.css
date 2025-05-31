@@ -64,7 +64,7 @@ a {
 }
 
 a:hover {
-  color: var(--branco);
+  color: var(--cor1);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,20 +116,20 @@ header.scrolled {
 }
 
 /* Estilos para o estado 'scrolled' */
-header.scrolled #botao-carrinho-mobile i { /* Apenas o ícone muda de cor */
+header.scrolled #botao-carrinho-mobile i {
   color: var(--branco); 
 }
 
-header.scrolled #botao-carrinho-mobile { /* Garante que o fundo do botão seja transparente */
+header.scrolled #botao-carrinho-mobile {
   background: none; 
 }
 
-header.scrolled #botao-carrinho-mobile .cart-badge { /* Mantém a cor do badge */
+header.scrolled #botao-carrinho-mobile .cart-badge {
   background-color: var(--cor5); 
   color: var(--branco); 
 }
 
-header.scrolled #menu-toggle .hamburger { /* Cor do hamburger no scroll */
+header.scrolled #menu-toggle .hamburger {
   background-color: var(--branco); 
 }
 
@@ -233,7 +233,7 @@ nav#top-menu li:hover {
   border-radius: 50px;
   font-weight: 700;
   white-space: nowrap;
-  transition: 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Transição explícita */
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -253,7 +253,7 @@ nav#top-menu li:hover {
 /* Ícone do Carrinho (Mobile) */
 #botao-carrinho-mobile {
   display: none; /* Escondido por padrão, mostrado no mobile */
-  background: none; /* Garante que o fundo seja transparente inicialmente */
+  background: none;
   border: none;
   cursor: pointer;
   font-size: 1.8rem;
@@ -330,6 +330,23 @@ nav#top-menu li:hover {
   font-size: 1rem;
   min-width: 150px;
 }
+
+/* Estilos para os novos campos de filtro (pesquisa e ordenação) */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start; /* Alinha labels e inputs à esquerda dentro do grupo */
+}
+
+.filter-group input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  min-width: 200px; /* Ajuste conforme necessário */
+}
+
 
 /* Imagem da Categoria Filtrada */
 .category-image {
@@ -424,12 +441,14 @@ nav#top-menu li:hover {
 .contact-btn {
   background: var(--cor5);
   color: var(--branco);
-  transition: 0.3s;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Transição explícita */
   font-weight: bold;
 }
 
 .contact-btn:hover {
   background: #006618;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Modals (Product Details & Cart) */
@@ -506,65 +525,25 @@ nav#top-menu li:hover {
   border-radius: 20px;
 }
 
-/* Estilos Específicos do Carrinho */
-#modal-carrinho .conteudo-modal {
-  max-width: 600px; /* Largura maior para o modal do carrinho */
-  text-align: left;
+/* Estilos Específicos do Carrinho (Página carrinho.html) */
+.cart-page {
+  background: var(--branco);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
 }
 
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #eee;
-}
-
-.modal-title-text {
+.cart-page h1 {
   text-align: center;
+  margin-bottom: 1.5rem;
   color: var(--cor1);
-  flex-grow: 1;
-  font-size: 1.5rem; /* Ajuste para o título do modal */
 }
 
-.modal-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 100%;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid #eee;
-}
-
-.cart-total-text {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--texto-principal);
-  margin-bottom: 0.5rem;
-}
-
-#total-carrinho {
-  color: var(--cor5);
-  font-size: 1.5rem;
-}
-
-.whatsapp-btn {
-  background-color: #25D366; /* Cor do WhatsApp */
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Adicionado para transição suave */
-}
-
-.whatsapp-btn:hover {
-  background-color: #1DA851; /* Tom mais escuro ao passar o mouse */
-  transform: translateY(-2px); /* Animação de levantar */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
-}
-
-#finalizar-whatsapp-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+#itens-carrinho-pagina {
+  margin-bottom: 2rem;
+  border-top: 1px solid var(--cor6-alt);
+  padding-top: 1.5rem;
 }
 
 .item-carrinho-container {
@@ -576,7 +555,7 @@ nav#top-menu li:hover {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   margin-bottom: 0.75rem;
-  flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+  flex-wrap: wrap;
 }
 
 .item-carrinho-container img {
@@ -610,9 +589,9 @@ nav#top-menu li:hover {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 0.5rem; /* Espaçamento no mobile */
-  width: 100%; /* Ocupa a largura total no mobile */
-  justify-content: flex-end; /* Alinha à direita no mobile */
+  margin-top: 0.5rem;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .input-quantidade {
@@ -642,6 +621,78 @@ nav#top-menu li:hover {
   color: var(--texto-suave);
   font-style: italic;
   padding: 1rem;
+}
+
+.resumo-carrinho-pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-top: 1px solid var(--cor6-alt);
+  padding-top: 1.5rem;
+  gap: 1rem;
+}
+
+.texto-total-carrinho {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--texto-principal);
+}
+
+#total-carrinho-pagina {
+  color: var(--cor5);
+  font-size: 1.8rem;
+}
+
+/* Estilos específicos para o botão "Finalizar Pedido via WhatsApp" na página do carrinho */
+#finalizar-whatsapp-btn-pagina {
+  background-color: #25D366; /* Cor do WhatsApp */
+  width: 100%;
+  max-width: 300px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--branco); /* Garante a cor do texto branca */
+  border: none; /* Garante que não tenha borda */
+  cursor: pointer; /* Garante que o cursor seja um ponteiro */
+  text-decoration: none; /* Remove sublinhado se for um link */
+  display: inline-block; /* Garante que se comporte como um bloco inline */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transição para hover */
+}
+
+#finalizar-whatsapp-btn-pagina:hover {
+  background-color: #1DA851; /* Tom mais escuro ao passar o mouse */
+  transform: translateY(-2px); /* Animação de levantar */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+/* Ajuste para o estado disabled, caso o botão esteja desabilitado */
+#finalizar-whatsapp-btn-pagina:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none; /* Remove a transformação de hover quando desabilitado */
+  box-shadow: none; /* Remove a sombra de hover quando desabilitado */
+}
+
+
+.continuar-comprando-btn {
+  background: var(--cor1);
+  color: var(--branco);
+  width: 100%;
+  max-width: 300px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0.5rem;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Adicionado para transição suave */
+}
+
+.continuar-comprando-btn:hover {
+  background: var(--cor2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer (Original) */
@@ -763,6 +814,19 @@ footer p {
     margin-top: 0;
     justify-content: flex-start;
   }
+  /* Ajustes para a página do carrinho em desktop */
+  .resumo-carrinho-pagina {
+    align-items: flex-end;
+  }
+  #finalizar-whatsapp-btn-pagina,
+  .continuar-comprando-btn {
+    width: auto; /* Permite que o botão se ajuste ao conteúdo */
+    max-width: 300px; /* Limita a largura máxima */
+  }
+  .filter-group {
+    flex-direction: row; /* Volta para linha em desktop */
+    align-items: center;
+  }
 }
 
 /* Tablet e Mobile (max-width: 768px) */
@@ -771,8 +835,6 @@ footer p {
 
   header {
     padding: 1rem 1.5rem; /* Padding ajustado para mobile */
-    /* Removido justify-content: space-between; para permitir posicionamento absoluto dos botões */
-    /* position: fixed; width: 100%; left: 0; top: 0; */ /* Já está no HTML */
   }
 
   /* Mostra o menu toggle e o ícone do carrinho */
@@ -849,6 +911,25 @@ footer p {
   }
   .grade-produtos {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  /* Ajustes para a página do carrinho em mobile */
+  .cart-page {
+    padding: 1.5rem;
+  }
+  .resumo-carrinho-pagina {
+    align-items: center; /* Centraliza botões e total no mobile */
+  }
+  #finalizar-whatsapp-btn-pagina,
+  .continuar-comprando-btn {
+    max-width: 90%; /* Ajusta largura para mobile */
+  }
+  .filter-group {
+    flex-direction: column; /* Em coluna em mobile */
+    align-items: center;
+  }
+  .filter-group input[type="text"] {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 250px; /* Limita a largura máxima para não ficar muito grande */
   }
 }
 

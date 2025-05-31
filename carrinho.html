@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seu carrinho de compras na Mattei Materiais Elétricos. Revise seus produtos e finalize seu pedido.">
+  <meta name="keywords" content="carrinho de compras, materiais elétricos, iluminação LED, disjuntores, contatoras, Esteio, Mattei">
+  <meta name="format-detection" content="telephone=no">
+  <title>Seu Carrinho - Mattei Materiais Elétricos</title>
+  
+  <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" xintegrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/produtos.css"> 
+</head>
+<body>
+  <header>
+    <nav id="top-menu">
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="produtos.html">Catálogo</a></li> </ul>
+      <a href="https://wa.me/555199640860" target="_blank" class="cta">Faça seu orçamento</a>
+    </nav>
+
+    <button id="menu-toggle" class="mobile-only" aria-label="Abrir menu">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="cart-page">
+      <h1>Seu Carrinho de Compras</h1>
+      
+      <div id="itens-carrinho-pagina">
+        <p class="empty-cart-message">Seu carrinho está vazio.</p>
+      </div>
+
+      <div class="resumo-carrinho-pagina">
+        <p class="texto-total-carrinho">Total: <span id="total-carrinho-pagina">R$ 0,00</span></p>
+        <button id="finalizar-whatsapp-btn-pagina" class="contact-btn whatsapp-btn">
+          Finalizar Pedido via WhatsApp
+        </button>
+        <a href="produtos.html" class="cta continuar-comprando-btn">Continuar Comprando</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="social-media">
+      <article class="icon instagram">
+        <div class="tooltip">Instagram</div>
+        <a href="https://instagram.com/matteimateriaiseletricos" target="_blank" aria-label="Instagram da Mattei Materiais Elétricos">
+          <span>
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+        </a>
+      </article>
+      <article class="icon whatsapp">
+        <div class="tooltip">WhatsApp</div>
+        <a href="https://wa.me/555199640860" target="_blank" aria-label="WhatsApp da Mattei Materiais Elétricos">
+          <span>
+            <i class="fa-brands fa-whatsapp"></i>
+          </span>
+        </a>
+      </article>
+    </section>
+    <p>© 2025 Mattei Materiais Elétricos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/carrinho.js"></script>
+  <script src="js/scroll-animation.js"></script> 
+</body>
+</html>

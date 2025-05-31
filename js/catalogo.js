@@ -1,41 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   // --- Elementos do DOM ---
-  // Atualizado: categoryFilter para filtroCategoria
-  const filtroCategoria = document.getElementById('categoria'); // Alterado de 'category' para 'categoria'
-  // Atualizado: productGrid para gradeProdutos
-  const gradeProdutos = document.querySelector('.grade-produtos'); // Alterado de '.product-grid' para '.grade-produtos'
+  const filtroCategoria = document.getElementById('categoria');
+  const campoPesquisa = document.getElementById('pesquisa'); // Adicionado: Campo de pesquisa
+  const selectOrdenar = document.getElementById('ordenar'); // Adicionado: Select de ordenação
+  const gradeProdutos = document.querySelector('.grade-produtos');
   
   // Modal de detalhes do produto
-  // Atualizado: productModal para modalProduto
-  const modalProduto = document.getElementById('modal-produto'); // Alterado de 'product-modal' para 'modal-produto'
-  // Atualizado: modalImage para imagemModalProduto
-  const imagemModalProduto = document.getElementById('imagem-modal-produto'); // Alterado de 'modal-image' para 'imagem-modal-produto'
-  // Atualizado: modalTitle para tituloModalProduto
-  const tituloModalProduto = document.getElementById('titulo-modal-produto'); // Alterado de 'modal-title' para 'titulo-modal-produto'
-  // Atualizado: modalDescription para descricaoModalProduto
-  const descricaoModalProduto = document.getElementById('descricao-modal-produto'); // Alterado de 'modal-description' para 'descricao-modal-produto'
-  // Atualizado: closeProductModalBtn para fecharBtnProduto
-  const fecharBtnProduto = modalProduto.querySelector('#fechar-btn-produto'); // Alterado de '.close-btn' para '#fechar-btn-produto'
+  const modalProduto = document.getElementById('modal-produto');
+  const imagemModalProduto = document.getElementById('imagem-modal-produto');
+  const tituloModalProduto = document.getElementById('titulo-modal-produto');
+  const descricaoModalProduto = document.getElementById('descricao-modal-produto');
+  const fecharBtnProduto = modalProduto.querySelector('#fechar-btn-produto');
 
-  // Modal do carrinho
-  // Atualizado: cartModal para modalCarrinho
-  const modalCarrinho = document.getElementById('modal-carrinho'); // Alterado de 'cart-modal' para 'modal-carrinho'
-  // Atualizado: viewCartBtn para verCarrinhoBtn
-  const verCarrinhoBtn = document.getElementById('ver-carrinho-btn'); // Alterado de 'view-cart-btn' para 'ver-carrinho-btn'
-  // Atualizado: mobileCartBtn para botaoCarrinhoMobile
-  const botaoCarrinhoMobile = document.getElementById('botao-carrinho-mobile'); // Alterado de 'mobile-cart-btn' para 'botao-carrinho-mobile'
-  // Atualizado: closeCartModalBtn para fecharBtnCarrinho
-  const fecharBtnCarrinho = document.getElementById('fechar-btn-carrinho'); // Alterado de 'close-cart-modal-btn' para 'fechar-btn-carrinho'
-  // Atualizado: cartItemCountDesktop para contadorItensCarrinhoDesktop
-  const contadorItensCarrinhoDesktop = document.getElementById('contador-itens-carrinho-desktop'); // Alterado de 'cart-item-count-desktop' para 'contador-itens-carrinho-desktop'
-  // Atualizado: cartItemCountMobile para contadorItensCarrinhoMobile
-  const contadorItensCarrinhoMobile = document.getElementById('contador-itens-carrinho-mobile'); // Alterado de 'cart-item-count-mobile' para 'contador-itens-carrinho-mobile'
-  // Atualizado: cartItemsContainer para itensCarrinhoContainer
-  const itensCarrinhoContainer = document.getElementById('itens-carrinho'); // Alterado de 'cart-items' para 'itens-carrinho'
-  // Atualizado: cartTotalSpan para totalCarrinhoSpan
-  const totalCarrinhoSpan = document.getElementById('total-carrinho'); // Alterado de 'cart-total' para 'total-carrinho'
-  // Atualizado: checkoutWhatsappBtn para finalizarWhatsappBtn
-  const finalizarWhatsappBtn = document.getElementById('finalizar-whatsapp-btn'); // Alterado de 'checkout-whatsapp-btn' para 'finalizar-whatsapp-btn'
+  // Contadores do carrinho no header
+  const contadorItensCarrinhoDesktop = document.getElementById('contador-itens-carrinho-desktop');
+  const contadorItensCarrinhoMobile = document.getElementById('contador-itens-carrinho-mobile');
 
   // Menu Toggle (Hamburger)
   const menuToggle = document.getElementById('menu-toggle');
@@ -98,7 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ];
 
-  let cart = []; // Array para armazenar os itens do carrinho
+  // Carrega o carrinho do localStorage ou inicializa como vazio
+  let cart = JSON.parse(localStorage.getItem('cart')) || []; 
 
   // Mapeamento de imagens para categorias
   const imageMap = {
@@ -110,15 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
     duchas: 'img/duchas.jpg',
   };
 
-  // --- Funções de Renderização e Filtragem ---
+  // --- Funções de Renderização, Filtragem e Ordenação ---
 
   // Função para renderizar os produtos na página
-  function renderProducts(filteredProducts) {
-    gradeProdutos.innerHTML = ''; // Limpa o grid antes de renderizar (Atualizado: productGrid para gradeProdutos)
-    filteredProducts.forEach(product => {
+  function renderProducts(productsToRender) { // Renomeado para clareza
+    gradeProdutos.innerHTML = ''; 
+    productsToRender.forEach(product => { // Usa os produtos já filtrados e ordenados
       const productCard = document.createElement('article');
-      // Atualizado: product-card para cartao-produto
-      productCard.className = 'cartao-produto'; // Classe para estilização
+      productCard.className = 'cartao-produto'; 
       productCard.setAttribute('data-category', product.category);
       productCard.setAttribute('data-id', product.id);
 
@@ -129,12 +108,11 @@ document.addEventListener('DOMContentLoaded', () => {
         <button class="ver-detalhes" data-id="${product.id}">Ver Detalhes</button>
         <button class="adicionar-ao-carrinho-btn contact-btn" data-product-id="${product.id}">Adicionar ao Carrinho</button>
       `;
-      gradeProdutos.appendChild(productCard); // Atualizado: productGrid para gradeProdutos
+      gradeProdutos.appendChild(productCard);
     });
 
     // Adiciona event listeners aos botões "Ver Detalhes"
-    // Atualizado: .view-details para .ver-detalhes
-    document.querySelectorAll('.ver-detalhes').forEach(button => { // Alterado
+    document.querySelectorAll('.ver-detalhes').forEach(button => {
       button.addEventListener('click', (event) => {
         const productId = parseInt(event.target.dataset.id);
         openProductModal(productId);
@@ -142,8 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Adiciona event listeners aos botões "Adicionar ao Carrinho"
-    // Atualizado: .add-to-cart-btn para .adicionar-ao-carrinho-btn
-    document.querySelectorAll('.adicionar-ao-carrinho-btn').forEach(button => { // Alterado
+    document.querySelectorAll('.adicionar-ao-carrinho-btn').forEach(button => {
       button.addEventListener('click', (event) => {
         const productId = parseInt(event.target.dataset.productId);
         addToCart(productId);
@@ -151,21 +128,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Função para filtrar produtos e renderizá-los
-  function filterProducts() {
-    // Atualizado: categoryFilter para filtroCategoria
-    const selectedCategory = filtroCategoria.value; // Alterado
-    const filtered = selectedCategory === 'all'
-      ? products
-      : products.filter(product => product.category === selectedCategory);
-    renderProducts(filtered);
-    updateCategoryImage();
+  // Função principal para aplicar filtros e ordenação
+  function applyFiltersAndSort() {
+    let currentProducts = [...products]; // Cria uma cópia para não modificar o array original
+
+    // 1. Filtrar por categoria
+    const selectedCategory = filtroCategoria.value;
+    if (selectedCategory !== 'all') {
+      currentProducts = currentProducts.filter(product => product.category === selectedCategory);
+    }
+
+    // 2. Filtrar por pesquisa (implementação futura, por enquanto apenas prepara a estrutura)
+    const searchTerm = campoPesquisa.value.toLowerCase().trim();
+    if (searchTerm) {
+      currentProducts = currentProducts.filter(product => 
+        product.name.toLowerCase().includes(searchTerm) || 
+        product.description.toLowerCase().includes(searchTerm)
+      );
+    }
+
+    // 3. Ordenar
+    const sortOption = selectOrdenar.value;
+    switch (sortOption) {
+      case 'nome-asc':
+        currentProducts.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case 'nome-desc':
+        currentProducts.sort((a, b) => b.name.localeCompare(a.name));
+        break;
+      case 'preco-asc':
+        currentProducts.sort((a, b) => a.price - b.price);
+        break;
+      case 'preco-desc':
+        currentProducts.sort((a, b) => b.price - a.price);
+        break;
+      case 'default':
+      default:
+        // Mantém a ordem original ou uma ordem padrão se desejar
+        // Para manter a ordem original dos dados, não faz nada aqui.
+        // Se quiser uma ordem padrão fixa, pode redefinir o array original aqui.
+        break;
+    }
+
+    renderProducts(currentProducts); // Renderiza os produtos filtrados e ordenados
+    updateCategoryImage(); // Atualiza a imagem da categoria
   }
 
   // Função para atualizar a imagem da categoria filtrada
   function updateCategoryImage() {
-    // Atualizado: categoryFilter para filtroCategoria
-    const selectedCategory = filtroCategoria.value; // Alterado
+    const selectedCategory = filtroCategoria.value;
     
     if (selectedCategory !== 'all' && imageMap[selectedCategory]) {
       categoryImage.src = imageMap[selectedCategory];
@@ -179,45 +190,41 @@ document.addEventListener('DOMContentLoaded', () => {
   function openProductModal(productId) {
     const product = products.find(p => p.id === productId);
     if (product) {
-      imagemModalProduto.src = product.image; // Atualizado: modalImage para imagemModalProduto
-      imagemModalProduto.alt = product.name; // Atualizado: modalImage para imagemModalProduto
-      tituloModalProduto.textContent = product.name; // Atualizado: modalTitle para tituloModalProduto
-      descricaoModalProduto.textContent = product.description; // Atualizado: modalDescription para descricaoModalProduto
-      modalProduto.style.display = 'flex'; // Torna o modal visível (Atualizado: productModal para modalProduto)
-      modalProduto.setAttribute('aria-hidden', 'false'); // Atualizado: productModal para modalProduto
-      modalProduto.focus(); // Atualizado: productModal para modalProduto
+      imagemModalProduto.src = product.image;
+      imagemModalProduto.alt = product.name;
+      tituloModalProduto.textContent = product.name;
+      descricaoModalProduto.textContent = product.description;
+      modalProduto.style.display = 'flex';
+      modalProduto.setAttribute('aria-hidden', 'false');
+      modalProduto.focus();
     }
   }
 
   function closeProductModal() {
-    modalProduto.style.display = 'none'; // Esconde o modal (Atualizado: productModal para modalProduto)
-    modalProduto.setAttribute('aria-hidden', 'true'); // Atualizado: productModal para modalProduto
+    modalProduto.style.display = 'none';
+    modalProduto.setAttribute('aria-hidden', 'true');
   }
 
-  // Atualizado: closeProductModalBtn para fecharBtnProduto
-  fecharBtnProduto.addEventListener('click', closeProductModal); // Alterado
-  fecharBtnProduto.addEventListener('touchstart', (e) => { // Alterado
+  fecharBtnProduto.addEventListener('click', closeProductModal);
+  fecharBtnProduto.addEventListener('touchstart', (e) => {
     e.preventDefault();
     closeProductModal();
   });
 
-  // Atualizado: productModal para modalProduto
-  modalProduto.addEventListener('click', (e) => { // Alterado
-    if (e.target === modalProduto) closeProductModal(); // Alterado
+  modalProduto.addEventListener('click', (e) => {
+    if (e.target === modalProduto) closeProductModal();
   });
 
-  // Atualizado: productModal para modalProduto
-  modalProduto.addEventListener('touchstart', (e) => { // Alterado
-    if (e.target === modalProduto) closeProductModal(); // Alterado
+  modalProduto.addEventListener('touchstart', (e) => {
+    if (e.target === modalProduto) closeProductModal();
   });
 
-  // Atualizado: productModal para modalProduto
-  document.addEventListener('keydown', (e) => { // Alterado
-    if (e.key === 'Escape' && modalProduto.style.display === 'flex') closeProductModal(); // Alterado
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalProduto.style.display === 'flex') closeProductModal();
   });
 
 
-  // --- Funções e Event Listeners para o Carrinho e Modal do Carrinho ---
+  // --- Funções para o Carrinho (com localStorage) ---
 
   // Função para adicionar um produto ao carrinho
   function addToCart(productId) {
@@ -229,173 +236,22 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         cart.push({ ...product, quantity: 1 });
       }
-      updateCartDisplay();
+      saveCart();
+      updateCartCountDisplay();
     }
   }
 
-  // Função para remover um item do carrinho
-  function removeFromCart(productId) {
-    cart = cart.filter(item => item.id !== productId);
-    updateCartDisplay();
+  // Função para salvar o carrinho no localStorage
+  function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
   }
 
-  // Função para atualizar a quantidade de um item no carrinho
-  function updateCartQuantity(productId, newQuantity) {
-    const item = cart.find(item => item.id === productId);
-    if (item) {
-      if (newQuantity <= 0) {
-        removeFromCart(productId);
-      } else {
-        item.quantity = newQuantity;
-      }
-      updateCartDisplay();
-    }
-  }
-
-  // Função para atualizar a exibição do carrinho e o contador
-  function updateCartDisplay() {
+  // Função para atualizar a exibição dos contadores do carrinho no header
+  function updateCartCountDisplay() {
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-    // Atualiza contadores (verifica se existem antes)
-    // Atualizado: cartItemCountDesktop para contadorItensCarrinhoDesktop
-    if (contadorItensCarrinhoDesktop) contadorItensCarrinhoDesktop.textContent = totalItems; // Alterado
-    // Atualizado: cartItemCountMobile para contadorItensCarrinhoMobile
-    if (contadorItensCarrinhoMobile) contadorItensCarrinhoMobile.textContent = totalItems; // Alterado
-
-    itensCarrinhoContainer.innerHTML = ''; // Limpa os itens atuais do carrinho (Atualizado: cartItemsContainer para itensCarrinhoContainer)
-
-    let total = 0;
-
-    if (cart.length === 0) {
-      const emptyMessage = document.createElement('p');
-      // Atualizado: empty-cart-message
-      emptyMessage.className = 'empty-cart-message'; // Alterado
-      emptyMessage.textContent = 'Seu carrinho está vazio.';
-      itensCarrinhoContainer.appendChild(emptyMessage); // Atualizado: cartItemsContainer para itensCarrinhoContainer
-      // Atualizado: checkoutWhatsappBtn para finalizarWhatsappBtn
-      finalizarWhatsappBtn.disabled = true; // Desabilita o botão se o carrinho estiver vazio
-      // Atualizado: checkoutWhatsappBtn para finalizarWhatsappBtn
-      finalizarWhatsappBtn.classList.add('opacity-50'); // Adiciona classe para estilo desabilitado
-    } else {
-      // Atualizado: checkoutWhatsappBtn para finalizarWhatsappBtn
-      finalizarWhatsappBtn.disabled = false; // Habilita o botão
-      // Atualizado: checkoutWhatsappBtn para finalizarWhatsappBtn
-      finalizarWhatsappBtn.classList.remove('opacity-50'); // Remove classe de estilo desabilitado
-
-      cart.forEach(item => {
-        const itemTotal = item.price * item.quantity;
-        total += itemTotal;
-
-        const cartItemDiv = document.createElement('div');
-        // Atualizado: cart-item-container para item-carrinho-container
-        cartItemDiv.className = 'item-carrinho-container'; // Classe para estilização
-
-        cartItemDiv.innerHTML = `
-          <img src="${item.image}" alt="${item.name}">
-          <div class="informacoes-item-carrinho">
-              <h4>${item.name}</h4>
-              <p>R$ ${item.price.toFixed(2).replace('.', ',')}</p>
-          </div>
-          <div class="acoes-item-carrinho">
-              <input type="number" min="1" value="${item.quantity}"
-                  class="input-quantidade" data-product-id="${item.id}">
-              <span class="price">R$ ${(itemTotal).toFixed(2).replace('.', ',')}</span>
-              <button class="remover-item-carrinho" data-product-id="${item.id}">
-                  <i class="fa-solid fa-trash-can"></i>
-              </button>
-          </div>
-        `;
-        itensCarrinhoContainer.appendChild(cartItemDiv); // Atualizado: cartItemsContainer para itensCarrinhoContainer
-      });
-
-      // Adiciona event listeners para remover itens e atualizar quantidades
-      // Atualizado: .cart-item-remove para .remover-item-carrinho
-      document.querySelectorAll('.remover-item-carrinho').forEach(button => { // Alterado
-        button.addEventListener('click', (event) => {
-          const productId = parseInt(event.currentTarget.dataset.productId);
-          removeFromCart(productId);
-        });
-      });
-
-      // Atualizado: .quantity-input para .input-quantidade
-      document.querySelectorAll('.input-quantidade').forEach(input => { // Alterado
-        input.addEventListener('change', (event) => {
-          const productId = parseInt(event.target.dataset.productId);
-          const newQuantity = parseInt(event.target.value);
-          updateCartQuantity(productId, newQuantity);
-        });
-      });
-    }
-
-    totalCarrinhoSpan.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`; // Atualizado: cartTotalSpan para totalCarrinhoSpan
+    if (contadorItensCarrinhoDesktop) contadorItensCarrinhoDesktop.textContent = totalItems;
+    if (contadorItensCarrinhoMobile) contadorItensCarrinhoMobile.textContent = totalItems;
   }
-
-  // Função para abrir o modal do carrinho
-  function openCartModal() {
-    modalCarrinho.style.display = 'flex'; // Torna o modal visível (Atualizado: cartModal para modalCarrinho)
-    modalCarrinho.setAttribute('aria-hidden', 'false'); // Atualizado: cartModal para modalCarrinho
-    updateCartDisplay(); // Garante que o carrinho esteja atualizado ao abrir
-  }
-
-  // Função para fechar o modal do carrinho
-  function closeCartModal() {
-    modalCarrinho.style.display = 'none'; // Esconde o modal (Atualizado: cartModal para modalCarrinho)
-    modalCarrinho.setAttribute('aria-hidden', 'true'); // Atualizado: cartModal para modalCarrinho
-  }
-
-  // Event listeners para abrir o modal do carrinho
-  // Atualizado: viewCartBtn para verCarrinhoBtn
-  if (verCarrinhoBtn) verCarrinhoBtn.addEventListener('click', openCartModal); // Botão desktop (Alterado)
-  // Atualizado: mobileCartBtn para botaoCarrinhoMobile
-  if (botaoCarrinhoMobile) botaoCarrinhoMobile.addEventListener('click', openCartModal); // Ícone mobile (Alterado)
-
-  // Event listeners para fechar o modal do carrinho
-  // Atualizado: closeCartModalBtn para fecharBtnCarrinho
-  fecharBtnCarrinho.addEventListener('click', closeCartModal); // Alterado
-  fecharBtnCarrinho.addEventListener('touchstart', (e) => { // Alterado
-    e.preventDefault();
-    closeCartModal();
-  });
-
-  // Fechar modal clicando fora
-  // Atualizado: cartModal para modalCarrinho
-  modalCarrinho.addEventListener('click', (e) => { // Alterado
-    if (e.target === modalCarrinho) { // Alterado
-      closeCartModal();
-    }
-  });
-
-  // Fechar modal com a tecla ESC
-  // Atualizado: cartModal para modalCarrinho
-  document.addEventListener('keydown', (e) => { // Alterado
-    if (e.key === 'Escape' && modalCarrinho.style.display === 'flex') { // Alterado
-      closeCartModal();
-    }
-  });
-
-  // Função para gerar a mensagem do WhatsApp e redirecionar
-  // Atualizado: checkoutWhatsappBtn para finalizarWhatsappBtn
-  finalizarWhatsappBtn.addEventListener('click', () => { // Alterado
-    if (cart.length === 0) {
-      console.warn("Seu carrinho está vazio. Adicione produtos antes de finalizar o pedido.");
-      return;
-    }
-
-    const phoneNumber = '555199640860'; 
-    let message = 'Olá! Gostaria de fazer o seguinte pedido na Mattei Materiais Elétricos:\n\n';
-
-    cart.forEach((item, index) => {
-      message += `${index + 1}. ${item.name} (Quantidade: ${item.quantity}) - Valor Unitário: R$ ${item.price.toFixed(2).replace('.', ',')} - Subtotal: R$ ${(item.price * item.quantity).toFixed(2).replace('.', ',')}\n`;
-    });
-
-    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    message += `\nTotal do Pedido: R$ ${total.toFixed(2).replace('.', ',')}`;
-    message += `\n\nPor favor, confirme a disponibilidade e o valor final. Aguardo seu retorno!`;
-
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-    window.open(whatsappUrl, '_blank');
-  });
 
   // --- Lógica do Menu Toggle (Hamburger) ---
   if (menuToggle && navMenu) {
@@ -424,8 +280,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // --- Inicialização da Página ---
-  filtroCategoria.addEventListener('change', filterProducts); // Adicionado event listener para o filtro
-  filterProducts(); // Renderiza todos os produtos inicialmente
-  updateCartDisplay(); // Garante que o contador do carrinho esteja correto ao carregar
+  // --- Inicialização da Página e Event Listeners para Filtros/Ordenação ---
+  filtroCategoria.addEventListener('change', applyFiltersAndSort); // Chama a função principal de filtro/ordenação
+  campoPesquisa.addEventListener('input', applyFiltersAndSort); // Adicionado: Evento para pesquisa em tempo real
+  selectOrdenar.addEventListener('change', applyFiltersAndSort); // Adicionado: Evento para ordenação
+
+  applyFiltersAndSort(); // Aplica os filtros e ordenação iniciais ao carregar a página
+  updateCartCountDisplay(); // Garante que o contador do carrinho esteja correto ao carregar
 });

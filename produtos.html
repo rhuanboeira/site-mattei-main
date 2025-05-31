@@ -15,7 +15,7 @@
   <title>Catálogo de Produtos - Mattei Materiais Elétricos</title>
   
   <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" xintegrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
@@ -81,18 +81,18 @@
 </head>
 <body>
   <header>
-    <button id="botao-carrinho-mobile" class="mobile-only" aria-label="Ver carrinho">
+    <a href="carrinho.html" id="botao-carrinho-mobile" class="mobile-only" aria-label="Ver carrinho">
       <i class="fa-solid fa-cart-shopping"></i>
       <span id="contador-itens-carrinho-mobile" class="cart-badge">0</span>
-    </button>
+    </a>
 
     <nav id="top-menu">
       <ul>
         <li><a href="index.html" aria-current="page">Início</a></li>
       </ul>
-      <button id="ver-carrinho-btn" class="cta desktop-only">
+      <a href="carrinho.html" id="ver-carrinho-btn" class="cta desktop-only">
         Ver Carrinho (<span id="contador-itens-carrinho-desktop">0</span>)
-      </button>
+      </a>
       <a href="https://wa.me/555199640860" target="_blank" class="cta">Faça seu orçamento</a>
     </nav>
 
@@ -110,15 +110,35 @@
       
       <aside class="filters">
         <h2>Filtros</h2>
-        <form aria-label="Filtrar produtos por categoria">
-          <label for="categoria">Categoria:</label> <select id="categoria" name="categoria"> <option value="all">Todas</option>
-            <option value="iluminacao">Iluminação</option>
-            <option value="ferramentas">Ferramentas</option>
-            <option value="conexoes">Conexões</option>
-            <option value="disjuntores">Disjuntores</option>
-            <option value="contatores">Contatores</option>
-            <option value="duchas">Duchas</option>
-          </select>
+        <form aria-label="Filtrar e ordenar produtos">
+          <div class="filter-group">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+              <option value="all">Todas</option>
+              <option value="iluminacao">Iluminação</option>
+              <option value="ferramentas">Ferramentas</option>
+              <option value="conexoes">Conexões</option>
+              <option value="disjuntores">Disjuntores</option>
+              <option value="contatores">Contatores</option>
+              <option value="duchas">Duchas</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="pesquisa">Pesquisar:</label>
+            <input type="text" id="pesquisa" name="pesquisa" placeholder="Buscar produtos...">
+          </div>
+
+          <div class="filter-group">
+            <label for="ordenar">Ordenar por:</label>
+            <select id="ordenar" name="ordenar">
+              <option value="default">Padrão</option>
+              <option value="nome-asc">Nome (A-Z)</option>
+              <option value="nome-desc">Nome (Z-A)</option>
+              <option value="preco-asc">Preço (Menor para Maior)</option>
+              <option value="preco-desc">Preço (Maior para Menor)</option>
+            </select>
+          </div>
         </form>
       </aside>
       
@@ -140,23 +160,7 @@
       </div>
     </div>
 
-    <div id="modal-carrinho" class="modal" role="dialog" aria-hidden="true">
-      <div class="conteudo-modal">
-        <div class="modal-header">
-          <h3 class="modal-title-text">Seu Carrinho</h3>
-          <button id="fechar-btn-carrinho" class="fechar-btn" aria-label="Fechar carrinho">×</button>
-        </div>
-        <div id="itens-carrinho">
-          <p class="empty-cart-message">Seu carrinho está vazio.</p>
-        </div>
-        <div id="resumo-carrinho" class="modal-footer">
-          <p class="cart-total-text">Total: <span id="total-carrinho">R$ 0,00</span></p> <button id="finalizar-whatsapp-btn" class="contact-btn whatsapp-btn">
-            Finalizar Pedido via WhatsApp
-          </button>
-        </div>
-      </div>
-    </div>
-  </main>
+    </main>
 
   <footer>
     <section class="social-media">
@@ -181,5 +185,6 @@
   </footer>
 
   <script src="js/catalogo.js"></script>
+  <script src="js/scroll-animation.js"></script>
 </body>
 </html>
