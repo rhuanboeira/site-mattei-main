@@ -633,7 +633,7 @@ nav#top-menu .cta:hover {
   border-radius: 15px;
   min-height: 250px;
   position: relative;
-  overflow: hidden; /* Revertido para hidden no desktop */
+  overflow: hidden; 
 }
 
 #loja h2 {
@@ -659,7 +659,7 @@ nav#top-menu .cta:hover {
 .slides-wrapper {
   width: 100%;
   min-height: 200px;
-  overflow: hidden; /* Revertido para hidden no desktop */
+  overflow: hidden; 
 }
 
 .slides {

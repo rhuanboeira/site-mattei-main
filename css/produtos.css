@@ -1,4 +1,3 @@
-/* Variáveis de cor personalizadas */
 :root {
   --cor0: #001B40;
   --cor1: #0056B3;
@@ -31,22 +30,22 @@ html {
 
 body {
   margin: 0;
-  margin-top: 80px; /* Espaço para o header fixo */
+  margin-top: 80px; 
   padding: 0;
-  min-height: 100vh; /* Garante que o body ocupe a altura total */
+  min-height: 100vh; 
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
   color: var(--texto-suave);
   background-color: var(--fundo-transparente-claro);
-  overflow-x: hidden; /* Evita scroll horizontal */
+  overflow-x: hidden; 
 }
 
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: clamp(1rem, 2vw, 2rem); /* Padding responsivo */
+  padding: clamp(1rem, 2vw, 2rem); 
 }
 
 img {
@@ -64,7 +63,7 @@ a {
 }
 
 a:hover {
-  color: var(--cor1);
+  color: var(--branco);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,9 +96,9 @@ p, li, label, input, textarea, button {
 /* Header */
 header {
   display: flex;
-  justify-content: space-between; /* Espaço entre os itens principais */
+  justify-content: space-between;
   align-items: center;
-  position: fixed; /* Fixa o header no topo */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
@@ -136,11 +135,11 @@ header.scrolled #menu-toggle .hamburger {
 
 /* Menu Toggle (Hamburger) */
 #menu-toggle {
-  display: none; /* Escondido por padrão, mostrado no mobile */
+  display: none; 
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1001; /* Acima da navegação */
+  z-index: 1001; 
   width: 30px;
   height: 20px;
   padding: 0;
@@ -153,7 +152,7 @@ header.scrolled #menu-toggle .hamburger {
   margin: 5px 0;
   background: var(--cor1);
   transition: transform 0.3s ease, opacity 0.1s ease;
-  position: absolute; /* Para animação de X */
+  position: absolute; 
   left: 0;
 }
 
@@ -172,7 +171,7 @@ nav#top-menu {
   gap: 2rem;
   padding: 0;
   background: transparent;
-  margin: 0 auto; /* Centraliza no desktop */
+  margin: 0 auto; 
 }
 
 nav#top-menu ul {
@@ -233,7 +232,7 @@ nav#top-menu li:hover {
   border-radius: 50px;
   font-weight: 700;
   white-space: nowrap;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Transição explícita */
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; 
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -252,19 +251,19 @@ nav#top-menu li:hover {
 
 /* Ícone do Carrinho (Mobile) */
 #botao-carrinho-mobile {
-  display: none; /* Escondido por padrão, mostrado no mobile */
+  display: none; 
   background: none;
   border: none;
   cursor: pointer;
   font-size: 1.8rem;
-  color: var(--cor1); /* Cor inicial do ícone do carrinho */
-  position: absolute; /* Posicionamento absoluto no header */
+  color: var(--cor1); 
+  position: absolute; 
   top: 50%;
   left: 1.5rem;
   transform: translateY(-50%);
   z-index: 1001;
   padding: 0;
-  transition: color 0.3s ease; /* Adicionado para transição de cor suave */
+  transition: color 0.3s ease; 
 }
 
 #botao-carrinho-mobile .cart-badge {
@@ -336,7 +335,7 @@ nav#top-menu li:hover {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  align-items: flex-start; /* Alinha labels e inputs à esquerda dentro do grupo */
+  align-items: flex-start; 
 }
 
 .filter-group input[type="text"] {
@@ -344,7 +343,7 @@ nav#top-menu li:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
-  min-width: 200px; /* Ajuste conforme necessário */
+  min-width: 200px; 
 }
 
 
@@ -425,8 +424,8 @@ nav#top-menu li:hover {
   font-size: 1rem;
   margin: 0.3rem auto;
   text-decoration: none;
-  width: calc(100% - 1rem); /* Ocupa quase toda a largura do card */
-  max-width: 200px; /* Limita a largura máxima dos botões */
+  width: calc(100% - 1rem); 
+  max-width: 200px; 
 }
 
 .ver-detalhes {
@@ -441,7 +440,7 @@ nav#top-menu li:hover {
 .contact-btn {
   background: var(--cor5);
   color: var(--branco);
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Transição explícita */
+  transition: 0.3s, transform 0.3s, box-shadow 0.3s; 
   font-weight: bold;
 }
 
@@ -453,7 +452,7 @@ nav#top-menu li:hover {
 
 /* Modals (Product Details & Cart) */
 .modal {
-  display: none; /* Escondido por padrão via JS */
+  display: none; 
   position: fixed;
   top: 0;
   left: 0;
@@ -645,7 +644,7 @@ nav#top-menu li:hover {
 
 /* Estilos específicos para o botão "Finalizar Pedido via WhatsApp" na página do carrinho */
 #finalizar-whatsapp-btn-pagina {
-  background-color: #25D366; /* Cor do WhatsApp */
+  background-color: #25D366; 
   width: 100%;
   max-width: 300px;
   padding: 0.75rem 1.5rem;
@@ -653,26 +652,26 @@ nav#top-menu li:hover {
   font-weight: 700;
   text-align: center;
   margin-top: 1rem;
-  color: var(--branco); /* Garante a cor do texto branca */
-  border: none; /* Garante que não tenha borda */
-  cursor: pointer; /* Garante que o cursor seja um ponteiro */
-  text-decoration: none; /* Remove sublinhado se for um link */
-  display: inline-block; /* Garante que se comporte como um bloco inline */
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transição para hover */
+  color: var(--branco); 
+  border: none; 
+  cursor: pointer; 
+  text-decoration: none; 
+  display: inline-block; 
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 #finalizar-whatsapp-btn-pagina:hover {
-  background-color: #1DA851; /* Tom mais escuro ao passar o mouse */
-  transform: translateY(-2px); /* Animação de levantar */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+  background-color: #1DA851; 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 /* Ajuste para o estado disabled, caso o botão esteja desabilitado */
 #finalizar-whatsapp-btn-pagina:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-  transform: none; /* Remove a transformação de hover quando desabilitado */
-  box-shadow: none; /* Remove a sombra de hover quando desabilitado */
+  transform: none; 
+  box-shadow: none; 
 }
 
 
@@ -686,7 +685,7 @@ nav#top-menu li:hover {
   font-weight: 700;
   text-align: center;
   margin-top: 0.5rem;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Adicionado para transição suave */
+  transition: 0.3s, transform 0.3s, box-shadow 0.3s; 
 }
 
 .continuar-comprando-btn:hover {
@@ -793,16 +792,16 @@ footer p {
 /* Desktop (min-width: 769px) */
 @media (min-width: 769px) {
   #menu-toggle, #botao-carrinho-mobile {
-    display: none; /* Esconde no desktop */
+    display: none; 
   }
   nav#top-menu {
-    position: static; /* Volta para o fluxo normal */
+    position: static; 
     width: auto;
     height: auto;
     background: transparent;
     padding-top: 0;
     flex-direction: row;
-    justify-content: flex-end; /* Alinha itens do menu à direita */
+    justify-content: flex-end; 
   }
   nav#top-menu ul {
     flex-direction: row;
@@ -820,26 +819,26 @@ footer p {
   }
   #finalizar-whatsapp-btn-pagina,
   .continuar-comprando-btn {
-    width: auto; /* Permite que o botão se ajuste ao conteúdo */
-    max-width: 300px; /* Limita a largura máxima */
+    width: auto; 
+    max-width: 300px; 
   }
   .filter-group {
-    flex-direction: row; /* Volta para linha em desktop */
+    flex-direction: row; 
     align-items: center;
   }
 }
 
 /* Tablet e Mobile (max-width: 768px) */
 @media (max-width: 768px) {
-  body { margin-top: 58px; } /* Ajusta para o header menor */
+  body { margin-top: 58px; } 
 
   header {
-    padding: 1rem 1.5rem; /* Padding ajustado para mobile */
+    padding: 1rem 1.5rem; 
   }
 
   /* Mostra o menu toggle e o ícone do carrinho */
   #menu-toggle, #botao-carrinho-mobile {
-    display: block; /* Mostra os elementos no mobile */
+    display: block; 
   }
 
   /* Posicionamento absoluto para os botões de mobile no header */
@@ -861,7 +860,7 @@ footer p {
   nav#top-menu {
     position: fixed;
     top: 0;
-    right: -100%; /* Esconde o menu fora da tela */
+    right: -100%; 
     width: 70%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.671);
@@ -878,7 +877,7 @@ footer p {
   }
 
   nav#top-menu.active {
-    right: 0; /* Mostra o menu */
+    right: 0; 
   }
 
   nav#top-menu ul {
@@ -896,8 +895,8 @@ footer p {
     background-color: var(--cor2);
   }
 
-  .desktop-only { display: none !important; } /* Esconde no mobile */
-  .mobile-only { display: block; } /* Mostra no mobile */
+  .desktop-only { display: none !important; } 
+  .mobile-only { display: block; } 
 
   .filters form { flex-direction: column; }
   .conteudo-modal {
@@ -917,19 +916,19 @@ footer p {
     padding: 1.5rem;
   }
   .resumo-carrinho-pagina {
-    align-items: center; /* Centraliza botões e total no mobile */
+    align-items: center; 
   }
   #finalizar-whatsapp-btn-pagina,
   .continuar-comprando-btn {
-    max-width: 90%; /* Ajusta largura para mobile */
+    max-width: 90%; 
   }
   .filter-group {
-    flex-direction: column; /* Em coluna em mobile */
+    flex-direction: column; 
     align-items: center;
   }
   .filter-group input[type="text"] {
-    width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 250px; /* Limita a largura máxima para não ficar muito grande */
+    width: 100%; 
+    max-width: 250px; 
   }
 }
 
