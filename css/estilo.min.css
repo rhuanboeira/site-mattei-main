@@ -429,7 +429,7 @@ nav#top-menu .cta:hover {
 
 #hero .overlay img {
   width: 30%;
-  max-width: 200px;
+  max-width: 250px; 
   height: auto;
   margin-bottom: 1rem;
 }
@@ -470,7 +470,7 @@ nav#top-menu .cta:hover {
 
   #hero .overlay img {
     width: 50%;
-    max-width: 220px;
+    max-width: 280px; 
   }
 
   #hero .overlay-text h1 {
@@ -511,10 +511,10 @@ nav#top-menu .cta:hover {
    ========================================================================== */
 #brand-carousel {
   padding: 2rem 0;
-  overflow: hidden; 
+  overflow: hidden; /* Garante que apenas uma linha de imagens seja visível */
   background-color: var(--branco);
   border-bottom: 1px solid #eee;
-  white-space: nowrap; 
+  white-space: nowrap; /* Impede que as imagens quebrem para a próxima linha */
   position: relative;
 }
 
@@ -525,25 +525,25 @@ nav#top-menu .cta:hover {
 }
 
 .brand-track {
-  display: inline-block; 
-  white-space: nowrap;
-  animation: scroll-left 20s linear infinite; 
+  display: flex; /* Alterado de inline-block para flex */
+  width: max-content; /* Permite que o conteúdo determine a largura */
+  animation: scroll-left 25s linear infinite; /* Aumentado para 25s por padrão */
 }
 
 .brand-logo {
-  height: 50px; 
-  width: auto; 
-  margin: 0 40px; 
-  display: inline-block; 
-  vertical-align: middle; 
-  filter: grayscale(100%); 
-  opacity: 0.7; 
-  transition: filter 0.3s ease, opacity 0.3s ease;
+  height: 60px; /* Altura padronizada para os logotipos das marcas */
+  width: auto; /* Mantém a proporção da imagem */
+  margin: 0 40px; /* Espaçamento entre os logotipos */
+  flex-shrink: 0; /* Impede que os logos encolham */
+  vertical-align: middle; /* Alinha os logos verticalmente no meio */
+  filter: grayscale(100%); /* Opcional: Deixa os logos em tons de cinza */
+  opacity: 0.7; /* Opcional: Reduz a opacidade */
+  transition: filter 0.3s ease, opacity 0.3s ease; /* Transição suave para hover */
 }
 
 .brand-logo:hover {
-  filter: grayscale(0%); 
-  opacity: 1; 
+  filter: grayscale(0%); /* Opcional: Colore o logo ao passar o mouse */
+  opacity: 1; /* Opcional: Opacidade total ao passar o mouse */
 }
 
 @keyframes scroll-left {
@@ -551,28 +551,33 @@ nav#top-menu .cta:hover {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%); 
+    transform: translateX(-50%); /* Rola metade da largura do track para efeito infinito */
   }
+}
+
+/* Pausa a animação ao passar o mouse */
+.brand-track:hover {
+  animation-play-state: paused;
 }
 
 /* Media Queries para Carrossel de Marcas */
 @media (max-width: 768px) {
   .brand-logo {
-    height: 60px;
-    margin: 0 30px;
+    height: 45px; /* Reduzido um pouco mais para telas médias */
+    margin: 0 15px; /* Reduzido a margem para mais logos caberem */
   }
   .brand-track {
-    animation-duration: 15s; 
+    animation-duration: 40s; /* Aumentado para 40s para rolagem mais lenta e suave */
   }
 }
 
 @media (max-width: 480px) {
   .brand-logo {
-    height: 40px;
-    margin: 0 20px;
+    height: 30px; /* Reduzido para 30px para telas muito pequenas */
+    margin: 0 8px; /* Reduzido ainda mais a margem */
   }
   .brand-track {
-    animation-duration: 10s; 
+    animation-duration: 60s; /* Aumentado significativamente para 60s para garantir a fluidez */
   }
 }
 
@@ -1147,7 +1152,7 @@ textarea#mensagem:focus {
 #contato button {
   background: var(--cor4);
   color: var(--branco);
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem;
   border: none;
   border-radius: 30px;
   font-family: 'Montserrat', sans-serif;
