@@ -507,6 +507,77 @@ nav#top-menu .cta:hover {
 }
 
 /* ==========================================================================
+   Carrossel de Marcas
+   ========================================================================== */
+#brand-carousel {
+  padding: 2rem 0;
+  overflow: hidden; 
+  background-color: var(--branco);
+  border-bottom: 1px solid #eee;
+  white-space: nowrap; 
+  position: relative;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.brand-track {
+  display: inline-block; 
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite; 
+}
+
+.brand-logo {
+  height: 50px; 
+  width: auto; 
+  margin: 0 40px; 
+  display: inline-block; 
+  vertical-align: middle; 
+  filter: grayscale(100%); 
+  opacity: 0.7; 
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.brand-logo:hover {
+  filter: grayscale(0%); 
+  opacity: 1; 
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+/* Media Queries para Carrossel de Marcas */
+@media (max-width: 768px) {
+  .brand-logo {
+    height: 60px;
+    margin: 0 30px;
+  }
+  .brand-track {
+    animation-duration: 15s; 
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    height: 40px;
+    margin: 0 20px;
+  }
+  .brand-track {
+    animation-duration: 10s; 
+  }
+}
+
+
+/* ==========================================================================
    Sobre
    ========================================================================== */
 #sobre {
