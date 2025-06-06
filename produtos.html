@@ -13,13 +13,13 @@
   <meta property="og:url" content="https://matteimateriaiseletricos.com.br/produtos.html">
   <link rel="canonical" href="https://matteimateriaiseletricos.com.br/produtos.html">
   <title>Catálogo de Produtos - Mattei Materiais Elétricos</title>
-  
+
   <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" xintegrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="css/produtos.css">
 
   <script type="application/ld+json">
@@ -81,17 +81,19 @@
 </head>
 <body>
   <header>
+    <!-- Mudei o id para 'cart-count-badge' para ser consistente entre mobile e desktop -->
     <a href="carrinho.html" id="botao-carrinho-mobile" class="mobile-only" aria-label="Ver carrinho">
       <i class="fa-solid fa-cart-shopping"></i>
-      <span id="contador-itens-carrinho-mobile" class="cart-badge">0</span>
+      <span id="cart-count-badge" class="cart-badge">0</span>
     </a>
 
     <nav id="top-menu">
       <ul>
         <li><a href="index.html" aria-current="page">Início</a></li>
       </ul>
+      <!-- Mudei o id para 'cart-count-badge' para ser consistente entre mobile e desktop -->
       <a href="carrinho.html" id="ver-carrinho-btn" class="cta desktop-only">
-        Ver Carrinho (<span id="contador-itens-carrinho-desktop">0</span>)
+        Ver Carrinho (<span id="cart-count-badge-desktop">0</span>)
       </a>
       <a href="https://wa.me/555199640860" target="_blank" class="cta">Faça seu orçamento</a>
     </nav>
@@ -107,7 +109,7 @@
     <section class="catalog">
       <h1>Catálogo de Produtos da Mattei</h1>
       <p class="catalog-intro">Conheça os materiais elétricos da Mattei em Esteio/RS: iluminação LED, disjuntores e mais.</p>
-      
+
       <aside class="filters">
         <h2>Filtros</h2>
         <form aria-label="Filtrar e ordenar produtos">
@@ -142,7 +144,7 @@
           </div>
         </form>
       </aside>
-      
+
       <div class="category-image hidden">
         <img src="" alt="Imagem da categoria filtrada" id="category-image">
       </div>
@@ -186,6 +188,7 @@
   </footer>
 
   <script src="js/catalogo.js"></script>
+  <!-- Verifique se 'scroll-animation.js' é necessário e se está no caminho correto -->
   <script src="js/scroll-animation.js"></script>
 </body>
 </html>

@@ -15,9 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Funções do Carrinho ---
 
-  // Função para salvar o carrinho no localStorage
+  // Função para salvar o carrinho no localStorage e ATUALIZAR O CONTADOR
   function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCountDisplay(); // CHAMA A FUNÇÃO DE ATUALIZAÇÃO DO CONTADOR AQUI!
   }
 
   // Função para renderizar os itens do carrinho na página
@@ -85,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Função para remover um item do carrinho
   function removeFromCart(productId) {
     cart = cart.filter(item => item.id !== productId);
-    saveCart();
+    saveCart(); // saveCart já chama updateCartCountDisplay()
     renderCartItems(); // Renderiza novamente os itens
   }
 
@@ -98,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         item.quantity = newQuantity;
       }
-      saveCart();
+      saveCart(); // saveCart já chama updateCartCountDisplay()
       renderCartItems(); // Renderiza novamente os itens
     }
   }
@@ -110,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const phoneNumber = '555199640860'; 
+    const phoneNumber = '555199640860';
     let message = 'Olá! Gostaria de fazer o seguinte pedido na Mattei Materiais Elétricos:\n\n';
 
     cart.forEach((item, index) => {
@@ -153,6 +154,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // --- FUNÇÃO CENTRAL PARA ATUALIZAR O CONTADOR DE ITENS NO ÍCONE DO CARRINHO ---
+  // Esta função lê diretamente do localStorage e atualiza ambos os contadores.
+  function updateCartCountDisplay() {
+    const currentCart = JSON.parse(localStorage.getItem('cart')) || [];
+    const totalItems = currentCart.reduce((sum, item) => sum + item.quantity, 0);
+
+    const contadorItensCarrinhoDesktop = document.getElementById('cart-count-badge-desktop');
+    const contadorItensCarrinhoMobile = document.getElementById('cart-count-badge');
+
+    // Atualiza o contador para desktop
+    if (contadorItensCarrinhoDesktop) {
+      contadorItensCarrinhoDesktop.textContent = totalItems;
+      // Opcional: mostrar/esconder o contador desktop se for 0
+      contadorItensCarrinhoDesktop.style.display = totalItems > 0 ? 'inline' : 'none';
+    }
+
+    // Atualiza o contador para mobile
+    if (contadorItensCarrinhoMobile) {
+      contadorItensCarrinhoMobile.textContent = totalItems;
+      // Opcional: mostrar/esconder o contador mobile se for 0
+      contadorItensCarrinhoMobile.style.display = totalItems > 0 ? 'block' : 'none';
+    }
+  }
+
   // --- Inicialização da Página do Carrinho ---
   renderCartItems(); // Renderiza os itens do carrinho ao carregar a página
+  updateCartCountDisplay(); // GARANTE QUE O CONTADOR ESTEJA CORRETO AO CARREGAR A PÁGINA DO CARRINHO
 });

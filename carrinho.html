@@ -8,21 +8,32 @@
   <meta name="keywords" content="carrinho de compras, materiais elétricos, iluminação LED, disjuntores, contatoras, Esteio, Mattei">
   <meta name="format-detection" content="telephone=no">
   <title>Seu Carrinho - Mattei Materiais Elétricos</title>
-  
+
   <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" xintegrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="css/produtos.css"> 
+
+  <link rel="stylesheet" href="css/produtos.css">
 </head>
 <body>
   <header>
+    <!-- Botão do carrinho para mobile (Certifique-se de que este elemento exista) -->
+    <a href="carrinho.html" id="botao-carrinho-mobile" class="mobile-only" aria-label="Ver carrinho">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="cart-count-badge" class="cart-badge">0</span>
+    </a>
+
     <nav id="top-menu">
       <ul>
         <li><a href="index.html" aria-current="page">Início</a></li>
-        <li><a href="produtos.html">Catálogo</a></li> </ul>
+        <li><a href="produtos.html">Catálogo</a></li>
+      </ul>
+      <!-- Contador para desktop, se houver -->
+      <a href="carrinho.html" id="ver-carrinho-btn" class="cta desktop-only">
+        Ver Carrinho (<span id="cart-count-badge-desktop">0</span>)
+      </a>
       <a href="https://wa.me/555199640860" target="_blank" class="cta">Faça seu orçamento</a>
     </nav>
 
@@ -36,7 +47,7 @@
   <main>
     <section class="cart-page">
       <h1>Seu Carrinho de Compras</h1>
-      
+
       <div id="itens-carrinho-pagina">
         <p class="empty-cart-message">Seu carrinho está vazio.</p>
       </div>
@@ -74,6 +85,7 @@
   </footer>
 
   <script src="js/carrinho.js"></script>
-  <script src="js/scroll-animation.js"></script> 
+  <!-- Verifique se 'scroll-animation.js' é necessário e se está no caminho correto -->
+  <script src="js/scroll-animation.js"></script>
 </body>
 </html>
