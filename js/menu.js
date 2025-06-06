@@ -11,7 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', () => {
       toggle.classList.toggle('active');
       menu.classList.toggle('active');
+      
+      // Adiciona/remove a classe 'menu-open' no body para aplicar o desfoque
+      document.body.classList.toggle('menu-open', menu.classList.contains('active'));
+      
+      // Controla o overflow do body para evitar rolagem do conteúdo desfocado
       document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+      
       hamburgerLines.forEach(line => line.classList.toggle('active'));
     });
   
@@ -20,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         toggle.classList.remove('active');
         menu.classList.remove('active');
+        
+        // Remove a classe 'menu-open' do body
+        document.body.classList.remove('menu-open');
+        
         document.body.style.overflow = '';
         hamburgerLines.forEach(line => line.classList.remove('active'));
       });
@@ -30,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!menu.contains(event.target) && !toggle.contains(event.target) && menu.classList.contains('active')) {
         toggle.classList.remove('active');
         menu.classList.remove('active');
+        
+        // Remove a classe 'menu-open' do body
+        document.body.classList.remove('menu-open');
+        
         document.body.style.overflow = '';
         hamburgerLines.forEach(line => line.classList.remove('active'));
       }
