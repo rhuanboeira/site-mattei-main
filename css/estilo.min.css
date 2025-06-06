@@ -1074,7 +1074,7 @@ nav#top-menu .cta:hover {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start; /* Alterado de 'stretch' para 'flex-start' */
   flex-wrap: wrap;
 }
 
