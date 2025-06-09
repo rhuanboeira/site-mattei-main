@@ -173,7 +173,10 @@ p, li, label, input, textarea, button {
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1000;
+  /* Essencial: z-index maior para o toggle ficar acima do menu */
+  z-index: 1001; 
+  /* Adicionado position: relative para ser o contexto de posicionamento */
+  position: relative; 
 }
 
 .hamburger {
@@ -182,7 +185,42 @@ p, li, label, input, textarea, button {
   height: 3px;
   margin: 5px 0;
   background: var(--cor1);
-  transition: 0.3s;
+  /* Definido position: absolute para as linhas do hamburger para a animação do 'X' */
+  position: absolute; 
+  left: 0; /* Garante que a linha comece na esquerda do toggle */
+  transition: transform 0.3s ease, opacity 0.1s ease;
+}
+
+/* Mantém as transformações do hamburger para a animação do toggle */
+.hamburger:nth-child(1) {
+  top: 0; 
+}
+
+.hamburger:nth-child(2) {
+  top: 8px; 
+}
+
+.hamburger:nth-child(3) {
+  top: 16px; 
+}
+
+/* Transforma o hamburger em um 'X' */
+#menu-toggle.active .hamburger:nth-child(1) {
+  top: 8px; /* Centraliza a primeira linha para o 'X' */
+  transform: rotate(45deg);
+}
+
+#menu-toggle.active .hamburger:nth-child(2) {
+  opacity: 0; /* Esconde a linha do meio */
+}
+
+#menu-toggle.active .hamburger:nth-child(3) {
+  top: 8px; /* Centraliza a terceira linha para o 'X' */
+  transform: rotate(-45deg);
+}
+
+header.scrolled .hamburger {
+  background: var(--branco);
 }
 
 nav#top-menu {
@@ -272,6 +310,12 @@ nav#top-menu li:hover {
     /* Inverte a ordem: botão à esquerda, menu toggle à direita */
     justify-content: space-between; 
     padding: 1rem 1.5rem; /* Ajusta o padding para melhor espaçamento */
+    /* Z-index para garantir que o header e seus filhos interativos fiquem acima do blur */
+    z-index: 1002; 
+    /* Força um novo contexto de empilhamento para o header */
+    transform: translateZ(0); 
+    /* Adicionado para garantir interatividade no header mesmo com blur no body */
+    pointer-events: auto; 
   }
 
   header.scrolled {
@@ -293,57 +337,36 @@ nav#top-menu li:hover {
 
   #menu-toggle {
     display: block; /* Exibe o toggle no mobile */
-    /* Volta a usar position: absolute para as linhas hamburger poderem ser transformadas corretamente */
     position: relative; /* Pai para as barras */
     order: 2; /* Posiciona-o à direita, depois do CTA móvel */
-    /* Remove estilos de posicionamento absoluto que conflitam com flexbox */
     top: auto; 
     right: auto;
     width: 30px;
     height: 20px; 
     padding: 0;
+    /* Z-index para garantir que o toggle fique acima do menu, ainda mais alto */
+    z-index: 1004; /* Aumentado para garantir prioridade de clique */
+    /* Força um novo contexto de empilhamento para o toggle */
+    transform: translateZ(0); 
+    /* Adicionado para garantir interatividade no toggle */
+    pointer-events: auto; 
   }
 
-  .hamburger {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: var(--cor2);
-    /* Adiciona position: absolute para as linhas do hamburger */
-    position: absolute; 
-    left: 0; /* Garante que a linha comece na esquerda do toggle */
-    transition: transform 0.3s ease, opacity 0.1s ease;
+  /* Adiciona transição de filtro para as seções de conteúdo */
+  #hero, #brand-carousel, main, footer {
+    transition: filter 0.3s ease-in-out;
+    /* Garante que esses elementos criem um novo contexto de empilhamento para o blur */
+    transform: translateZ(0); 
   }
 
-  /* Mantém as transformações do hamburger para a animação do toggle */
-  .hamburger:nth-child(1) {
-    top: 0; 
-  }
-
-  .hamburger:nth-child(2) {
-    top: 8px; 
-  }
-
-  .hamburger:nth-child(3) {
-    top: 16px; 
-  }
-
-  #menu-toggle.active .hamburger:nth-child(1) {
-    top: 8px; /* Centraliza a primeira linha */
-    transform: rotate(45deg);
-  }
-
-  #menu-toggle.active .hamburger:nth-child(2) {
-    opacity: 0; /* Esconde a linha do meio */
-  }
-
-  #menu-toggle.active .hamburger:nth-child(3) {
-    top: 8px; /* Centraliza a terceira linha */
-    transform: rotate(-45deg);
-  }
-
-  header.scrolled .hamburger {
-    background: var(--branco);
+  /* Aplica o desfoque no conteúdo principal quando o menu está aberto */
+  body.menu-open #hero,
+  body.menu-open #brand-carousel,
+  body.menu-open main,
+  body.menu-open footer {
+    filter: blur(5px); /* Aplica o desfoque */
+    /* *** APENAS AQUI pointer-events: none; para o conteúdo desfocado *** */
+    pointer-events: none; 
   }
 
   nav#top-menu {
@@ -361,7 +384,12 @@ nav#top-menu li:hover {
     padding-top: 4rem;
     gap: 1.5rem;
     transition: right 0.3s ease;
-    z-index: 1000;
+    /* Z-index para garantir que o menu fique acima do blur, mas abaixo do toggle */
+    z-index: 1003; 
+    /* Força um novo contexto de empilhamento para o menu */
+    transform: translateZ(0); 
+    /* Adicionado para garantir interatividade no menu */
+    pointer-events: auto; 
   }
 
   nav#top-menu.active {
@@ -1084,8 +1112,8 @@ nav#top-menu li:hover {
     }
   
     .feedback-card p {
-      font-size: 0.9rem;
-    }
+    font-size: 0.9rem;
+  }
   
     .feedback-prev,
     .feedback-next {
@@ -1430,12 +1458,4 @@ footer .social img {
   p, li, a, label, input, textarea, button {
     font-size: 0.9rem;
   }
-}
-
-body.menu-open #hero,
-body.menu-open #brand-carousel,
-body.menu-open main,
-body.menu-open footer {
-  filter: blur(5px); /* Aplica o desfoque */
-  pointer-events: none; /* Desabilita interações com o conteúdo desfocado */
 }
