@@ -370,7 +370,7 @@
   },
   {
     "id": 40,
-    "name": "Disjuntor Monopolar (Schneider)",
+    "name": "Disjuntor DIN Monopolar Curva C (Schneider)",
     "category": "disjuntores",
     "image": "img/prod-dinmono-sch.png",
     "baseDescription": "Disjuntor Monopolar tipo C da Schneider, ideal para proteção de circuitos elétricos contra sobrecargas e curtos-circuitos em instalações residenciais e comerciais. Confiabilidade e segurança.",
@@ -395,156 +395,276 @@
   },
   {
     "id": 41,
-    "name": "Disjuntor Bipolar C32 (WEG)",
+    "name": "Disjuntor DIN Bipolar Curva C (Schneider)",
     "category": "disjuntores",
-    "image": "img/prod-disjuntor.png",
-    "description": "Disjuntor bipolar tipo C de 32A da WEG, essencial para proteção de circuitos fase-fase ou fase-neutro. Garante a segurança de equipamentos e instalações elétricas de maior potência.",
+    "image": "img/prod-dinbi-sch.png",
+    "description": "Disjuntor bipolar tipo C da Schneider, essencial para proteção de circuitos fase-fase ou fase-neutro. Garante a segurança de equipamentos e instalações elétricas de maior potência.",
     "price": 30.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
+      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
+      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
+      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
+      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
+      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
+      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
+      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
+      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
+      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
+    ]
   },
   {
     "id": 42,
-    "name": "Disjuntor Tripolar C50 (WEG)",
+    "name": "Disjuntor DIN Tripolar Curva C (Schneider)",
     "category": "disjuntores",
-    "image": "img/prod-disjuntor.png",
-    "description": "Disjuntor tripolar tipo C de 50A da WEG, projetado para proteção de circuitos trifásicos. Indispensável em instalações industriais e comerciais que exigem alta capacidade de interrupção.",
+    "image": "img/prod-dintri-sch.png",
+    "description": "Disjuntor tripolar tipo C da Schneider, projetado para proteção de circuitos trifásicos. Indispensável em instalações industriais e comerciais que exigem alta capacidade de interrupção.",
     "price": 45.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
+      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
+      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
+      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
+      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
+      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
+      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
+      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
+      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
+      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
+    ]
   },
   {
     "id": 43,
-    "name": "Contator Tripolar 9A (WEG)",
-    "category": "contatores",
-    "image": "img/prod-contator.png",
-    "description": "Contator tripolar de 9A da WEG, utilizado para acionamento e controle de motores elétricos em aplicações industriais. Alta durabilidade e desempenho confiável em sistemas de automação.",
-    "price": 85.00,
-    "hasVariations": false
+    "name": "Disjuntor DIN Monopolar Curva C (Tramontina)",
+    "category": "disjuntores",
+    "image": "img/prod-dinmono-tra.png",
+    "baseDescription": "Disjuntor Monopolar tipo C da Tramontina, ideal para proteção de circuitos elétricos contra sobrecargas e curtos-circuitos em instalações residenciais e comerciais. Confiabilidade e segurança.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "4A", "price": 12.00, "variationId": "40-4A", "descriptionAddon": "4A para circuitos de baixa corrente." },
+      { "power": "6A", "price": 13.50, "variationId": "40-6A", "descriptionAddon": "6A para iluminação e circuitos leves." },
+      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
+      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
+      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
+      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
+      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
+      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
+      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
+      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
+      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
+      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
+    ]
   },
   {
     "id": 44,
-    "name": "Contator Auxiliar 4NA (WEG)",
-    "category": "contatores",
-    "image": "img/prod-contator.png",
-    "description": "Contator auxiliar com 4 contatos normalmente abertos (4NA) da WEG, ideal para expandir as funcionalidades de circuitos de comando em painéis elétricos. Versatilidade e segurança.",
+    "name": "Disjuntor DIN Bipolar Curva C (Tramontina)",
+    "category": "disjuntores",
+    "image": "img/prod-dinbi-tra.png",
+    "description": "Disjuntor bipolar tipo C da Tramontina, essencial para proteção de circuitos fase-fase ou fase-neutro. Garante a segurança de equipamentos e instalações elétricas de maior potência.",
     "price": 60.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "6A", "price": 13.50, "variationId": "40-6A", "descriptionAddon": "6A para iluminação e circuitos leves." },
+      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
+      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
+      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
+      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
+      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
+      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
+      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
+      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
+      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
+      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
+    ]
   },
   {
     "id": 45,
-    "name": "Relé Térmico RW27 0,8-1,2A (WEG)",
-    "category": "contatores",
-    "image": "img/prod-rele-termico.png",
-    "description": "Relé térmico RW27 com faixa de ajuste de 0,8-1,2A da WEG, projetado para proteção de motores contra sobrecargas e falhas de fase. Garante a longevidade do motor e a segurança do sistema.",
+    "name": "Disjuntor DIN Tripolar Curva C (Tramontina)",
+    "category": "disjuntores",
+    "image": "img/prod-dintri-tra.png",
+    "description": "Disjuntor tripolar tipo C da Tramontina, projetado para proteção de circuitos trifásicos. Indispensável em instalações industriais e comerciais que exigem alta capacidade de interrupção.",
     "price": 70.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
+      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
+      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
+      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
+      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
+      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
+      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
+      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
+      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
+      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
+    ]
   },
   {
     "id": 46,
-    "name": "Fio Rígido 1,5mm (Sil)",
-    "category": "cabos",
-    "image": "img/rolos.png",
+    "name": "Disjuntor IDR Bipolar (Schneider)",
+    "category": "disjuntores",
+    "image": "img/prod-drbi-sch.png",
     "description": "Rolo de fio rígido de 1,5mm² da Sil, ideal para instalações fixas em residências e indústrias. Alta durabilidade e segurança, conforme as normas brasileiras.",
     "price": 180.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "25A", "price": 15.00, "variationId": "40-25A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "40A", "price": 16.50, "variationId": "40-40A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "63A", "price": 18.00, "variationId": "40-63A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+    ]
   },
   {
     "id": 47,
-    "name": "Fio Rígido 10mm (Sil)",
-    "category": "cabos",
-    "image": "img/rolos.png",
+    "name": "Disjuntor IDR Bipolar (Tramontina)",
+    "category": "disjuntores",
+    "image": "img/prod-drbi-tra.png",
     "description": "Rolo de fio rígido de 10mm² da Sil, recomendado para circuitos de alta potência como chuveiros e ar condicionado. Excelente condutividade e segurança para sua instalação.",
     "price": 800.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "25A", "price": 15.00, "variationId": "40-25A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "40A", "price": 16.50, "variationId": "40-40A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "63A", "price": 18.00, "variationId": "40-63A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+    ]
   },
   {
     "id": 48,
-    "name": "Cabo PP 2x1,5mm (Cobrecom)",
-    "category": "cabos",
-    "image": "img/cabos-pp.png",
+    "name": "Disjuntor IDR Tetrapolar (Schneider)",
+    "category": "disjuntores",
+    "image": "img/prod-drtet-sch.png",
     "description": "Cabo flexível PP 2x1,5mm² da Cobrecom, ideal para eletrodomésticos, ferramentas e extensões. Alta resistência e flexibilidade para uso em ambientes diversos.",
     "price": 45.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "25A", "price": 15.00, "variationId": "40-25A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "40A", "price": 16.50, "variationId": "40-40A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "63A", "price": 18.00, "variationId": "40-63A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+    ]
   },
   {
     "id": 49,
-    "name": "Luminária de Emergência LED (Segurimax)",
-    "category": "iluminacao",
-    "image": "img/prod-emergencia.png",
+    "name": "Disjuntor IDR Tetrapolar (Tramontina)",
+    "category": "disjuntores",
+    "image": "img/prod-drtet-tra.png",
     "description": "Luminária de emergência LED da Segurimax, com autonomia de até 6 horas. Essencial para segurança em residências e comércios em caso de falta de energia, garantindo iluminação contínua.",
     "price": 95.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "25A", "price": 15.00, "variationId": "49-25A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "40A", "price": 16.50, "variationId": "49-40A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "63A", "price": 18.00, "variationId": "49-63A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+    ]
   },
   {
     "id": 50,
-    "name": "Spot LED Embutir Direcionável (Stella)",
+    "name": "Lâmpada LED Bulbo 65W (Ourolux)",
     "category": "iluminacao",
-    "image": "img/prod-spot-led.png",
+    "image": "img/prod-bulbo65.png",
     "description": "Spot LED de embutir direcionável da Stella, perfeito para destacar pontos específicos em ambientes residenciais e comerciais. Design moderno e luz de alta qualidade.",
     "price": 60.00,
     "hasVariations": false
   },
   {
     "id": 51,
-    "name": "Placa Cega 4x2 (LIZ)",
-    "category": "interruptoresTomadas",
-    "image": "img/prod-placa-cega.png",
+    "name": "Lâmpada LED Bulbo 75W a 150W (Cristallux)",
+    "category": "iluminacao",
+    "image": "img/prod-bulbo75-150.png",
     "description": "Placa cega 4x2 da linha LIZ, utilizada para cobrir caixas de passagem não utilizadas, mantendo a estética e segurança da instalação elétrica. Acabamento branco e discreto.",
     "price": 3.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "75W", "price": 15.00, "variationId": "51-75W", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "100W", "price": 16.50, "variationId": "51-100W", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "150W", "price": 18.00, "variationId": "51-150W", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+    ]
   },
   {
     "id": 52,
-    "name": "Plafon LED Sobrepor 24W (Ourolux)",
+    "name": "Plafon LED Sobrepor (Ourolux)",
     "category": "iluminacao",
-    "image": "img/prod-plafom-sobrepor.png",
+    "image": "img/prod-plafonsob.png",
     "description": "Plafon LED para sobrepor de 24W, ideal para iluminação geral de ambientes amplos. Proporciona luz uniforme, alta eficiência e fácil instalação em tetos e paredes.",
     "price": 75.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "12W", "price": 15.00, "variationId": "52-12W", "descriptionAddon": "10A para tomadas de uso geral." },  
+      { "power": "18W", "price": 15.00, "variationId": "52-18W", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "24W", "price": 16.50, "variationId": "52-24W", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "36W", "price": 18.00, "variationId": "52-36W", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+    ]
   },
   {
     "id": 53,
-    "name": "Interruptor Paralelo (Aria)",
-    "category": "interruptoresTomadas",
-    "image": "img/prod-inter-paralelo.png",
+    "name": "Plafon LED Embutir (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-plafonemb.png",
     "description": "Interruptor paralelo da linha Aria, permite controlar a mesma luminária de dois pontos diferentes. Essencial para corredores, escadas e ambientes maiores.",
     "price": 6.50,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "12W", "price": 15.00, "variationId": "53-12W", "descriptionAddon": "10A para tomadas de uso geral." },  
+      { "power": "18W", "price": 15.00, "variationId": "53-18W", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "24W", "price": 16.50, "variationId": "53-24W", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "36W", "price": 18.00, "variationId": "553-36W", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+    ]
   },
   {
     "id": 54,
-    "name": "Minidisjuntor DIN Curva B 10A (Siemens)",
-    "category": "disjuntores",
-    "image": "img/prod-minidisjuntor.png",
+    "name": "Refletor Solar 50W (Cristallux)",
+    "category": "iluminacao",
+    "image": "img/prod-refletorsolar.png",
     "description": "Minidisjuntor DIN curva B de 10A da Siemens, para proteção de equipamentos eletrônicos e circuitos sensíveis. Alta precisão e confiabilidade em sistemas elétricos.",
     "price": 22.00,
     "hasVariations": false
   },
   {
     "id": 55,
-    "name": "Contator Tripolar 25A (Schneider Electric)",
-    "category": "contatores",
-    "image": "img/prod-contator-schneider.png",
+    "name": "Espeto Solar 5W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-espetosolar.png",
     "description": "Contator tripolar de 25A da Schneider Electric, para aplicações de comando e proteção em máquinas industriais. Robustez e alta performance para sistemas de automação.",
     "price": 120.00,
     "hasVariations": false
   },
   {
     "id": 56,
-    "name": "Cabo Coaxial RG6 (Multitoc)",
-    "category": "cabos",
-    "image": "img/prod-cabo-coaxial.png",
+    "name": "Holofotes Emergência (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-holofotes.png",
     "description": "Cabo coaxial RG6 da Multitoc, ideal para instalações de antenas de TV e sistemas de CFTV. Alta qualidade de transmissão de sinal e resistência a interferências.",
     "price": 1.50,
     "hasVariations": false
   },
   {
     "id": 57,
-    "name": "Luva de Emenda para Cabos (Tramontina)",
-    "category": "outros",
-    "image": "img/prod-luva-emenda.png",
+    "name": "Contator CWB (WEG)",
+    "category": "contatores",
+    "image": "img/prod-cont-weg.png",
     "description": "Luva de emenda para cabos da Tramontina, utilizada para isolar e proteger conexões elétricas. Essencial para garantir a segurança e durabilidade das emendas em instalações.",
     "price": 0.50,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "9A", "price": 15.00, "variationId": "57-9A", "descriptionAddon": "10A para tomadas de uso geral." },  
+      { "power": "12A", "price": 15.00, "variationId": "57-12A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "18A", "price": 16.50, "variationId": "53-24W", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "36W", "price": 18.00, "variationId": "553-36W", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+    ]
   },
   {
     "id": 58,
