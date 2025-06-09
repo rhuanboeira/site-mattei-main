@@ -29,8 +29,7 @@ html {
 }
 
 body {
-  margin: 0;
-  margin-top: 80px; 
+  margin: 0; /* REMOVIDO: margin-top fixo, será ajustado via JS */
   padding: 0;
   min-height: 100vh; 
   font-family: 'Montserrat', sans-serif;
@@ -46,6 +45,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: clamp(1rem, 2vw, 2rem); 
+  /* IMPORTANTE: O padding-top será adicionado dinamicamente via JavaScript */
 }
 
 img {
@@ -414,6 +414,32 @@ nav#top-menu li:hover {
   margin-bottom: 0.75rem;
 }
 
+/* Estilos para o seletor de variação no cartão do produto */
+.variation-selector-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.variation-selector-group label {
+    font-weight: 600;
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+}
+
+.variation-selector-group select {
+    width: calc(100% - 1rem); /* Ajuste para preencher o espaço do cartão */
+    max-width: 180px; /* Limita a largura */
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+
 .cartao-produto button,
 .cartao-produto a {
   display: block;
@@ -517,12 +543,40 @@ nav#top-menu li:hover {
   color: var(--texto-suave);
 }
 
+/* Novo estilo para o preço no modal */
+#preco-modal-produto {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--cor5);
+  margin-bottom: 1rem;
+}
+
 .conteudo-modal .contact-btn {
   text-decoration: none;
   background-color: var(--cor4);
   padding: 0.5em;
   border-radius: 20px;
 }
+
+/* Estilos para o alerta personalizado */
+.custom-alert {
+  /* Tailwind classes for positioning and initial styling */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #10B981; /* green-500 */
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  font-weight: 600;
+}
+
 
 /* Estilos Específicos do Carrinho (Página carrinho.html) */
 .cart-page {
@@ -830,7 +884,9 @@ footer p {
 
 /* Tablet e Mobile (max-width: 768px) */
 @media (max-width: 768px) {
-  body { margin-top: 58px; } 
+  body { 
+    margin-top: 0; /* Remover margin-top fixo também para mobile, será ajustado via JS */
+  } 
 
   header {
     padding: 1rem 1.5rem; 

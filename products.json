@@ -1,0 +1,711 @@
+[
+  {
+    "id": 1,
+    "name": "Ducha Fluir (Zagonel)",
+    "category": "duchas",
+    "image": "img/prod-fluir.png",
+    "description": "A Ducha Fluir da Zagonel oferece um design moderno e slim, com alta tecnologia de aquecimento rápido e controle de temperatura, proporcionando um banho confortável e econômico. Ideal para quem busca eficiência e estilo no banheiro.",
+    "price": 69.90,
+    "hasVariations": false
+  },
+  {
+    "id": 2,
+    "name": "Ducha Moment (Zagonel)",
+    "category": "duchas",
+    "image": "img/prod-moment.png",
+    "description": "A Ducha Moment da Zagonel é perfeita para o dia a dia, combinando praticidade e desempenho. Com sistema de aquecimento eficiente, garante água quente instantaneamente, ideal para um banho relaxante a qualquer momento.",
+    "price": 109.90,
+    "hasVariations": false
+  },
+  {
+    "id": 3,
+    "name": "Ducha Ducali Branca (Zagonel)",
+    "category": "duchas",
+    "image": "img/prod-ducali-b.png",
+    "description": "Com design clássico e elegante na cor branca, a Ducha Ducali da Zagonel integra-se perfeitamente a qualquer estilo de banheiro. Proporciona um fluxo de água agradável e aquecimento eficiente, sendo uma excelente escolha para o seu lar.",
+    "price": 12.50,
+    "hasVariations": false
+  },
+  {
+    "id": 4,
+    "name": "Ducha Ducali Preta (Zagonel)",
+    "category": "duchas",
+    "image": "img/prod-ducali-p.png",
+    "description": "A Ducha Ducali da Zagonel na cor preta oferece um toque de sofisticação e modernidade ao seu banheiro. Além do design arrojado, garante um banho com temperatura agradável e constante, graças à sua tecnologia de aquecimento.",
+    "price": 30.00,
+    "hasVariations": false
+  },
+  {
+    "id": 5,
+    "name": "Ducha Ducali Premium Branca (Zagonel)",
+    "category": "duchas",
+    "image": "img/prod-ducali-premium-b.png",
+    "description": "A Ducha Ducali Premium Branca da Zagonel eleva o nível do seu banho com um jato intenso e regulável. Seu acabamento superior e tecnologia avançada garantem conforto, durabilidade e um visual impecável para banheiros sofisticados.",
+    "price": 75.00,
+    "hasVariations": false
+  },
+  {
+    "id": 6,
+    "name": "Ducha Ducali Premium Preta (Zagonel)",
+    "category": "duchas",
+    "image": "img/prod-ducali-premium-p.png",
+    "description": "Sofisticação e performance se encontram na Ducha Ducali Premium Preta da Zagonel. Com um design elegante e alta potência, oferece um banho revigorante e controle de temperatura preciso, complementando o estilo do seu ambiente.",
+    "price": 99.90,
+    "hasVariations": false
+  },
+  {
+    "id": 7,
+    "name": "Ducha Optima (Zagonel)",
+    "category": "duchas",
+    "image": "img/prod-optima.png",
+    "description": "A Ducha Optima da Zagonel é sinônimo de eficiência e praticidade. Com um sistema de troca rápida de temperatura e design compacto, é a escolha ideal para quem busca um banho confortável e sem complicações.",
+    "price": 139.90,
+    "hasVariations": false
+  },
+  {
+    "id": 8,
+    "name": "Ducha ND (Zagonel)",
+    "category": "duchas",
+    "image": "img/prod-nd.png",
+    "description": "A Ducha ND da Zagonel é a opção mais econômica e funcional para o seu banheiro. Simples e eficaz, oferece a temperatura ideal para o seu banho com a qualidade e durabilidade que você espera da marca Zagonel.",
+    "price": 89.90,
+    "hasVariations": false
+  },
+  {
+    "id": 9,
+    "name": "Bella Ducha (Lorenzetti)",
+    "category": "duchas",
+    "image": "img/prod-belladucha.png",
+    "description": "A Bella Ducha da Lorenzetti é conhecida pela sua economia e praticidade. Com fácil instalação e design compacto, oferece um banho agradável e um ótimo custo-benefício para o seu dia a dia.",
+    "price": 79.90,
+    "hasVariations": false
+  },
+  {
+    "id": 10,
+    "name": "Loren Shower (Lorenzetti)",
+    "category": "duchas",
+    "image": "img/prod-lorenshower.png",
+    "description": "A Loren Shower da Lorenzetti proporciona um banho relaxante com seu grande espalhador e fluxo de água intenso. É uma opção popular pela sua durabilidade e desempenho consistente, perfeita para toda a família.",
+    "price": 119.90,
+    "hasVariations": false
+  },
+  {
+    "id": 11,
+    "name": "Advanced Eletrônica (Lorenzetti)",
+    "category": "duchas",
+    "image": "img/prod-advanced.png",
+    "description": "A Ducha Advanced Eletrônica da Lorenzetti oferece controle de temperatura gradual e preciso, permitindo que você personalize seu banho. Com seu sistema eletrônico, garante conforto e economia de energia.",
+    "price": 169.90,
+    "hasVariations": false
+  },
+  {
+    "id": 12,
+    "name": "Torneira Prima Preta (Zagonel)",
+    "category": "torneiras",
+    "image": "img/prod-prima-p.png",
+    "description": "A Torneira Prima Preta da Zagonel combina design moderno e funcionalidade. Com aquecimento elétrico integrado, oferece água quente instantaneamente na pia da cozinha ou lavabo, com um toque de elegância na cor preta.",
+    "price": 289.90,
+    "hasVariations": false
+  },
+  {
+    "id": 13,
+    "name": "Torneira Prima Branca (Zagonel)",
+    "category": "torneiras",
+    "image": "img/prod-prima-b.png",
+    "description": "Elegância e praticidade definem a Torneira Prima Branca da Zagonel. Com aquecimento elétrico, é ideal para otimizar o uso de água quente em cozinhas e lavabos, adicionando um acabamento clean e sofisticado ao ambiente.",
+    "price": 279.90,
+    "hasVariations": false
+  },
+  {
+    "id": 14,
+    "name": "Torneira Lumen (Zagonel)",
+    "category": "torneiras",
+    "image": "img/prod-lumen.png",
+    "description": "A Torneira Lumen da Zagonel se destaca pelo seu design contemporâneo e iluminação LED no bico, que indica a temperatura da água. É uma solução inovadora para cozinhas e banheiros, unindo estética e tecnologia.",
+    "price": 254.90,
+    "hasVariations": false
+  },
+  {
+    "id": 15,
+    "name": "Torneira Luna (Zagonel)",
+    "category": "torneiras",
+    "image": "img/prod-luna.png",
+    "description": "Com linhas suaves e design minimalista, a Torneira Luna da Zagonel é ideal para ambientes que valorizam a simplicidade e a eficiência. Oferece água quente rapidamente, tornando as tarefas diárias mais confortáveis.",
+    "price": 229.90,
+    "hasVariations": false
+  },
+  {
+    "id": 16,
+    "name": "Torneira Essence (Lorenzetti)",
+    "category": "torneiras",
+    "image": "img/prod-essence.png",
+    "description": "A Torneira Essence da Lorenzetti combina design elegante e alta performance. Com bico giratório e aquecimento elétrico eficiente, é a escolha ideal para cozinhas que buscam um toque de modernidade e funcionalidade.",
+    "price": 199.90,
+    "hasVariations": false
+  },
+  {
+    "id": 17,
+    "name": "Tomada Simples 2P+T 10A (Aria)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-aria.png",
+    "description": "Tomada simples 2P+T (2 Pinos + Terra) de 10A da linha Aria. Ideal para uso residencial e comercial, oferece segurança e durabilidade, com design clean que se adapta a qualquer ambiente.",
+    "price": 5.90,
+    "hasVariations": false
+  },
+  {
+    "id": 18,
+    "name": "Interruptor Simples (Aria)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-aria.png",
+    "description": "Interruptor simples da linha Aria, ideal para controle de iluminação em ambientes residenciais e comerciais. Design discreto e funcional, garante acionamento suave e confiável.",
+    "price": 45.00,
+    "hasVariations": false
+  },
+  {
+    "id": 19,
+    "name": "Tomada 2P+T 10A + Interruptor Simples (Aria)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-tom-aria.png",
+    "description": "Conjunto completo com tomada 2P+T de 10A e interruptor simples da linha Aria. Solução prática e elegante para instalações elétricas, combinando funcionalidade e estética.",
+    "price": 80.00,
+    "hasVariations": false
+  },
+  {
+    "id": 20,
+    "name": "Tomada 2P+T 10A Dupla (Aria)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-dupla-aria.png",
+    "description": "Tomada dupla 2P+T de 10A da linha Aria. Oferece duas saídas em um único módulo, otimizando o espaço e a funcionalidade em paredes e painéis.",
+    "price": 150.00,
+    "hasVariations": false
+  },
+  {
+    "id": 21,
+    "name": "Tomada Simples 2P+T 10A (LIZ)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-liz.png",
+    "description": "Tomada simples 2P+T de 10A da linha LIZ, design tradicional e discreto. Perfeita para instalações que exigem praticidade e segurança, com acabamento branco brilhante.",
+    "price": 180.00,
+    "hasVariations": false
+  },
+  {
+    "id": 22,
+    "name": "Interruptor Simples (LIZ)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-liz.png",
+    "description": "Interruptor simples da linha LIZ, ideal para controle de pontos de luz. Com design funcional e acabamento branco, é uma solução confiável e fácil de instalar.",
+    "price": 110.00,
+    "hasVariations": false
+  },
+  {
+    "id": 23,
+    "name": "Tomada 2P+T 10A + Interruptor Simples (LIZ)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-tomada-liz.png",
+    "description": "Conjunto de tomada 2P+T 10A e interruptor simples da linha LIZ. Solução completa para instalações elétricas, oferecendo funcionalidade e um visual harmonioso em branco.",
+    "price": 7.00,
+    "hasVariations": false
+  },
+  {
+    "id": 24,
+    "name": "Tomada 2P+T 10A Dupla (LIZ)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-dupla-liz.png",
+    "description": "Tomada dupla 2P+T 10A da linha LIZ. Permite a conexão de dois aparelhos em uma única placa, ideal para otimizar o espaço e a organização de ambientes.",
+    "price": 0.80,
+    "hasVariations": false
+  },
+  {
+    "id": 25,
+    "name": "Tomada Simples 2P+T 10A Grafite (LIZ)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-grafite.png",
+    "description": "Tomada simples 2P+T 10A da linha LIZ com acabamento grafite. Modernidade e segurança para suas instalações, adicionando um toque de sofisticação ao ambiente.",
+    "price": 6.50,
+    "hasVariations": false
+  },
+  {
+    "id": 26,
+    "name": "Interruptor Simples Grafite (LIZ)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-grafite.png",
+    "description": "Interruptor simples da linha LIZ com acabamento grafite. Ideal para ambientes modernos, oferece controle de iluminação com um design elegante e discreto.",
+    "price": 55.00,
+    "hasVariations": false
+  },
+  {
+    "id": 27,
+    "name": "Tomada 2P+T 10A + Interruptor Simples Grafite (LIZ)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-tom-grafite.png",
+    "description": "Conjunto de tomada 2P+T 10A e interruptor simples da linha LIZ em grafite. A combinação perfeita de funcionalidade e design contemporâneo para suas instalações elétricas.",
+    "price": 70.00,
+    "hasVariations": false
+  },
+  {
+    "id": 28,
+    "name": "Tomada 2P+T 10A Dupla Grafite (LIZ)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-dupla-grafite.png",
+    "description": "Tomada dupla 2P+T 10A da linha LIZ com acabamento grafite. Solução versátil para múltiplos equipamentos, mantendo a organização e o estilo do ambiente.",
+    "price": 250.00,
+    "hasVariations": false
+  },
+  {
+    "id": 29,
+    "name": "Tomada Simples 2P+T 10A (LizFlex)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-lizflex.png",
+    "description": "Tomada simples 2P+T 10A da linha LizFlex, conhecida pela sua flexibilidade e resistência. Ideal para instalações que exigem durabilidade e segurança em ambientes diversos.",
+    "price": 180.00,
+    "hasVariations": false
+  },
+  {
+    "id": 30,
+    "name": "Interruptor Simples (LizFlex)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-lizflex.png",
+    "description": "Interruptor simples da linha LizFlex, projetado para alta durabilidade e fácil manuseio. Perfeito para controle de iluminação em locais de grande fluxo e uso frequente.",
+    "price": 9.50,
+    "hasVariations": false
+  },
+  {
+    "id": 31,
+    "name": "Tomada 2P+T 10A + Interruptor Simples (LizFlex)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-tom-lizflex.png",
+    "description": "Conjunto de tomada 2P+T 10A e interruptor simples da linha LizFlex. Oferece a robustez e a segurança necessárias para instalações residenciais e comerciais, com a praticidade de um único módulo.",
+    "price": 40.00,
+    "hasVariations": false
+  },
+  {
+    "id": 32,
+    "name": "Tomada 2P+T 10A Dupla (LizFlex)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-dupla-lizflex.png",
+    "description": "Tomada dupla 2P+T 10A da linha LizFlex. Uma solução eficiente para múltiplos aparelhos, garantindo a segurança e a organização da sua instalação elétrica.",
+    "price": 40.00,
+    "hasVariations": false
+  },
+  {
+    "id": 33,
+    "name": "Rolo Cabo Flexível 2,5mm (RCM & Energy)",
+    "category": "cabos",
+    "image": "img/rolos.png",
+    "description": "Rolo de cabo elétrico flexível de 2,5mm², ideal para instalações residenciais e comerciais de uso geral. Oferece alta condutividade e segurança, certificado pelas normas técnicas.",
+    "price": 234.00,
+    "hasVariations": false
+  },
+  {
+    "id": 34,
+    "name": "Rolo Cabo Flexível 4,0mm (RCM & Energy)",
+    "category": "cabos",
+    "image": "img/rolos.png",
+    "description": "Rolo de cabo elétrico flexível de 4,0mm², recomendado para circuitos de maior potência em residências e indústrias. Garante eficiência e segurança na distribuição de energia.",
+    "price": 379.00,
+    "hasVariations": false
+  },
+  {
+    "id": 35,
+    "name": "Rolo Cabo Flexível 6,0mm (RCM & Energy)",
+    "category": "cabos",
+    "image": "img/rolos.png",
+    "description": "Rolo de cabo elétrico flexível de 6,0mm², essencial para instalações com alta demanda de corrente, como chuveiros e ar-condicionados. Alta capacidade e durabilidade para projetos elétricos robustos.",
+    "price": 569.00,
+    "hasVariations": false
+  },
+  {
+    "id": 36,
+    "name": "Refletor LED (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-refletor.png",
+    "baseDescription": "Refletor LED de luz branca da Ourolux, ideal para iluminação externa de fachadas, jardins e áreas de segurança.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "10W", "price": 89.90, "variationId": "36-10W", "descriptionAddon": "10W de potência para áreas menores." },
+      { "power": "20W", "price": 120.00, "variationId": "36-20W", "descriptionAddon": "20W de potência para iluminação geral." },
+      { "power": "30W", "price": 120.00, "variationId": "36-30W", "descriptionAddon": "30W de potência para iluminação geral maior." },
+      { "power": "50W", "price": 250.00, "variationId": "36-50W", "descriptionAddon": "50W de potência para grandes áreas." },
+      { "power": "100W", "price": 450.00, "variationId": "36-100W", "descriptionAddon": "100W de potência para máxima visibilidade." },
+      { "power": "150W", "price": 600.00, "variationId": "36-150W", "descriptionAddon": "150W para iluminação de alta intensidade." },
+      { "power": "200W", "price": 750.00, "variationId": "36-200W", "descriptionAddon": "200W para projetos industriais e esportivos." },
+      { "power": "300W", "price": 900.00, "variationId": "36-300W", "descriptionAddon": "300W para o máximo de luz e alcance." }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Lâmpada LED Bulbo 9W a 15W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-bulbo9-15.png",
+    "description": "Lâmpada LED tipo bulbo de 9W, ideal para iluminação geral. Oferece alta economia de energia, longa vida útil e luz brilhante, sendo perfeita para substituir lâmpadas incandescentes.",
+    "price": 12.00,
+    "hasVariations": true,
+    "variations": [
+      { "power": "9W", "price": 89.90, "variationId": "36-10W", "descriptionAddon": "10W de potência para áreas menores." },
+      { "power": "12W", "price": 120.00, "variationId": "36-20W", "descriptionAddon": "20W de potência para iluminação geral." },
+      { "power": "15W", "price": 120.00, "variationId": "36-30W", "descriptionAddon": "30W de potência para iluminação geral maior." }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Lâmpada LED Bulbo 20W e 30W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-bulbo20-30.png",
+    "description": "Lâmpada LED tipo bulbo de 9W, ideal para iluminação geral. Oferece alta economia de energia, longa vida útil e luz brilhante, sendo perfeita para substituir lâmpadas incandescentes.",
+    "price": 12.00,
+    "hasVariations": true,
+    "variations": [
+      { "power": "20W", "price": 89.90, "variationId": "36-10W", "descriptionAddon": "10W de potência para áreas menores." },
+      { "power": "30W", "price": 120.00, "variationId": "36-20W", "descriptionAddon": "20W de potência para iluminação geral." }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Lâmpada LED Bulbo 50W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-bulbo50.png",
+    "description": "Fita LED de 5 metros, flexível e versátil, perfeita para iluminação decorativa em sancas, nichos, móveis e espelhos. Cria ambientes aconchegantes e modernos com baixo consumo de energia.",
+    "price": 49.90,
+    "hasVariations": false
+  },
+  {
+    "id": 40,
+    "name": "Disjuntor Monopolar (Schneider)",
+    "category": "disjuntores",
+    "image": "img/prod-dinmono-sch.png",
+    "baseDescription": "Disjuntor Monopolar tipo C da Schneider, ideal para proteção de circuitos elétricos contra sobrecargas e curtos-circuitos em instalações residenciais e comerciais. Confiabilidade e segurança.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "4A", "price": 12.00, "variationId": "40-4A", "descriptionAddon": "4A para circuitos de baixa corrente." },
+      { "power": "6A", "price": 13.50, "variationId": "40-6A", "descriptionAddon": "6A para iluminação e circuitos leves." },
+      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
+      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
+      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
+      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
+      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
+      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
+      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
+      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
+      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
+      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Disjuntor Bipolar C32 (WEG)",
+    "category": "disjuntores",
+    "image": "img/prod-disjuntor.png",
+    "description": "Disjuntor bipolar tipo C de 32A da WEG, essencial para proteção de circuitos fase-fase ou fase-neutro. Garante a segurança de equipamentos e instalações elétricas de maior potência.",
+    "price": 30.00,
+    "hasVariations": false
+  },
+  {
+    "id": 42,
+    "name": "Disjuntor Tripolar C50 (WEG)",
+    "category": "disjuntores",
+    "image": "img/prod-disjuntor.png",
+    "description": "Disjuntor tripolar tipo C de 50A da WEG, projetado para proteção de circuitos trifásicos. Indispensável em instalações industriais e comerciais que exigem alta capacidade de interrupção.",
+    "price": 45.00,
+    "hasVariations": false
+  },
+  {
+    "id": 43,
+    "name": "Contator Tripolar 9A (WEG)",
+    "category": "contatores",
+    "image": "img/prod-contator.png",
+    "description": "Contator tripolar de 9A da WEG, utilizado para acionamento e controle de motores elétricos em aplicações industriais. Alta durabilidade e desempenho confiável em sistemas de automação.",
+    "price": 85.00,
+    "hasVariations": false
+  },
+  {
+    "id": 44,
+    "name": "Contator Auxiliar 4NA (WEG)",
+    "category": "contatores",
+    "image": "img/prod-contator.png",
+    "description": "Contator auxiliar com 4 contatos normalmente abertos (4NA) da WEG, ideal para expandir as funcionalidades de circuitos de comando em painéis elétricos. Versatilidade e segurança.",
+    "price": 60.00,
+    "hasVariations": false
+  },
+  {
+    "id": 45,
+    "name": "Relé Térmico RW27 0,8-1,2A (WEG)",
+    "category": "contatores",
+    "image": "img/prod-rele-termico.png",
+    "description": "Relé térmico RW27 com faixa de ajuste de 0,8-1,2A da WEG, projetado para proteção de motores contra sobrecargas e falhas de fase. Garante a longevidade do motor e a segurança do sistema.",
+    "price": 70.00,
+    "hasVariations": false
+  },
+  {
+    "id": 46,
+    "name": "Fio Rígido 1,5mm (Sil)",
+    "category": "cabos",
+    "image": "img/rolos.png",
+    "description": "Rolo de fio rígido de 1,5mm² da Sil, ideal para instalações fixas em residências e indústrias. Alta durabilidade e segurança, conforme as normas brasileiras.",
+    "price": 180.00,
+    "hasVariations": false
+  },
+  {
+    "id": 47,
+    "name": "Fio Rígido 10mm (Sil)",
+    "category": "cabos",
+    "image": "img/rolos.png",
+    "description": "Rolo de fio rígido de 10mm² da Sil, recomendado para circuitos de alta potência como chuveiros e ar condicionado. Excelente condutividade e segurança para sua instalação.",
+    "price": 800.00,
+    "hasVariations": false
+  },
+  {
+    "id": 48,
+    "name": "Cabo PP 2x1,5mm (Cobrecom)",
+    "category": "cabos",
+    "image": "img/cabos-pp.png",
+    "description": "Cabo flexível PP 2x1,5mm² da Cobrecom, ideal para eletrodomésticos, ferramentas e extensões. Alta resistência e flexibilidade para uso em ambientes diversos.",
+    "price": 45.00,
+    "hasVariations": false
+  },
+  {
+    "id": 49,
+    "name": "Luminária de Emergência LED (Segurimax)",
+    "category": "iluminacao",
+    "image": "img/prod-emergencia.png",
+    "description": "Luminária de emergência LED da Segurimax, com autonomia de até 6 horas. Essencial para segurança em residências e comércios em caso de falta de energia, garantindo iluminação contínua.",
+    "price": 95.00,
+    "hasVariations": false
+  },
+  {
+    "id": 50,
+    "name": "Spot LED Embutir Direcionável (Stella)",
+    "category": "iluminacao",
+    "image": "img/prod-spot-led.png",
+    "description": "Spot LED de embutir direcionável da Stella, perfeito para destacar pontos específicos em ambientes residenciais e comerciais. Design moderno e luz de alta qualidade.",
+    "price": 60.00,
+    "hasVariations": false
+  },
+  {
+    "id": 51,
+    "name": "Placa Cega 4x2 (LIZ)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-placa-cega.png",
+    "description": "Placa cega 4x2 da linha LIZ, utilizada para cobrir caixas de passagem não utilizadas, mantendo a estética e segurança da instalação elétrica. Acabamento branco e discreto.",
+    "price": 3.00,
+    "hasVariations": false
+  },
+  {
+    "id": 52,
+    "name": "Plafon LED Sobrepor 24W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-plafom-sobrepor.png",
+    "description": "Plafon LED para sobrepor de 24W, ideal para iluminação geral de ambientes amplos. Proporciona luz uniforme, alta eficiência e fácil instalação em tetos e paredes.",
+    "price": 75.00,
+    "hasVariations": false
+  },
+  {
+    "id": 53,
+    "name": "Interruptor Paralelo (Aria)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-paralelo.png",
+    "description": "Interruptor paralelo da linha Aria, permite controlar a mesma luminária de dois pontos diferentes. Essencial para corredores, escadas e ambientes maiores.",
+    "price": 6.50,
+    "hasVariations": false
+  },
+  {
+    "id": 54,
+    "name": "Minidisjuntor DIN Curva B 10A (Siemens)",
+    "category": "disjuntores",
+    "image": "img/prod-minidisjuntor.png",
+    "description": "Minidisjuntor DIN curva B de 10A da Siemens, para proteção de equipamentos eletrônicos e circuitos sensíveis. Alta precisão e confiabilidade em sistemas elétricos.",
+    "price": 22.00,
+    "hasVariations": false
+  },
+  {
+    "id": 55,
+    "name": "Contator Tripolar 25A (Schneider Electric)",
+    "category": "contatores",
+    "image": "img/prod-contator-schneider.png",
+    "description": "Contator tripolar de 25A da Schneider Electric, para aplicações de comando e proteção em máquinas industriais. Robustez e alta performance para sistemas de automação.",
+    "price": 120.00,
+    "hasVariations": false
+  },
+  {
+    "id": 56,
+    "name": "Cabo Coaxial RG6 (Multitoc)",
+    "category": "cabos",
+    "image": "img/prod-cabo-coaxial.png",
+    "description": "Cabo coaxial RG6 da Multitoc, ideal para instalações de antenas de TV e sistemas de CFTV. Alta qualidade de transmissão de sinal e resistência a interferências.",
+    "price": 1.50,
+    "hasVariations": false
+  },
+  {
+    "id": 57,
+    "name": "Luva de Emenda para Cabos (Tramontina)",
+    "category": "outros",
+    "image": "img/prod-luva-emenda.png",
+    "description": "Luva de emenda para cabos da Tramontina, utilizada para isolar e proteger conexões elétricas. Essencial para garantir a segurança e durabilidade das emendas em instalações.",
+    "price": 0.50,
+    "hasVariations": false
+  },
+  {
+    "id": 58,
+    "name": "Fita Isolante (3M)",
+    "category": "outros",
+    "image": "img/prod-fita-isolante.png",
+    "description": "Fita isolante de alta qualidade da 3M, ideal para isolamento de fios e cabos elétricos. Oferece alta adesão, resistência e segurança para instalações residenciais e industriais.",
+    "price": 8.00,
+    "hasVariations": false
+  },
+  {
+    "id": 59,
+    "name": "Conector Wago 3 Vias (Wago)",
+    "category": "outros",
+    "image": "img/prod-conector-wago.png",
+    "description": "Conector Wago de 3 vias, para conexões elétricas rápidas e seguras. Ideal para caixas de passagem e instalações que exigem praticidade e confiabilidade.",
+    "price": 4.00,
+    "hasVariations": false
+  },
+  {
+    "id": 60,
+    "name": "Caixa de Passagem 4x2 (Amanco)",
+    "category": "outros",
+    "image": "img/prod-caixa-passagem.png",
+    "description": "Caixa de passagem 4x2 da Amanco, para instalações elétricas em paredes e painéis. Alta resistência e durabilidade, garantindo a organização e proteção dos fios.",
+    "price": 5.00,
+    "hasVariations": false
+  },
+  {
+    "id": 61,
+    "name": "Eletroduto Corrugado 3/4 (Tigre)",
+    "category": "outros",
+    "image": "img/prod-eletroduto.png",
+    "description": "Eletroduto corrugado de 3/4 polegadas da Tigre, para proteção de fios e cabos em instalações elétricas. Flexibilidade e resistência para uso embutido em paredes e lajes.",
+    "price": 10.00,
+    "hasVariations": false
+  },
+  {
+    "id": 62,
+    "name": "Tomada de Embutir 2P+T 20A (Tramontina)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-embutir.png",
+    "description": "Tomada de embutir 2P+T de 20A da Tramontina, ideal para aparelhos de maior potência como micro-ondas e ar-condicionado. Segurança e durabilidade em instalações residenciais.",
+    "price": 18.00,
+    "hasVariations": false
+  },
+  {
+    "id": 63,
+    "name": "Disjuntor DR Bipolar 25A (Schneider)",
+    "category": "disjuntores",
+    "image": "img/prod-dr-schneider.png",
+    "description": "Disjuntor Diferencial Residual (DR) bipolar de 25A da Schneider, para proteção contra choques elétricos e fugas de corrente. Indispensável para a segurança em ambientes úmidos.",
+    "price": 150.00,
+    "hasVariations": false
+  },
+  {
+    "id": 64,
+    "name": "Sensor de Presença (Exatron)",
+    "category": "outros",
+    "image": "img/prod-sensor-presenca.png",
+    "description": "Sensor de presença da Exatron, ideal para automação de iluminação em ambientes residenciais e comerciais. Economia de energia e praticidade no dia a dia.",
+    "price": 45.00,
+    "hasVariations": false
+  },
+  {
+    "id": 65,
+    "name": "Temporizador Digital (Coel)",
+    "category": "outros",
+    "image": "img/prod-temporizador.png",
+    "description": "Temporizador digital da Coel, programável para ligar e desligar equipamentos em horários específicos. Ideal para automação de sistemas de iluminação, irrigação e outros.",
+    "price": 110.00,
+    "hasVariations": false
+  },
+  {
+    "id": 66,
+    "name": "Fonte Chaveada 12V 5A (Intelbras)",
+    "category": "outros",
+    "image": "img/prod-fonte-chaveada.png",
+    "description": "Fonte chaveada 12V 5A da Intelbras, para alimentação de câmeras de segurança, fitas de LED e outros dispositivos eletrônicos. Estabilidade e segurança na alimentação.",
+    "price": 55.00,
+    "hasVariations": false
+  },
+  {
+    "id": 67,
+    "name": "Luminária de Teto para Lâmpada LED (Brilia)",
+    "category": "iluminacao",
+    "image": "img/prod-luminaria-teto.png",
+    "description": "Luminária de teto para lâmpada LED da Brilia, design moderno e elegante, ideal para salas, quartos e cozinhas. Compatível com diversas potências de lâmpadas LED.",
+    "price": 80.00,
+    "hasVariations": false
+  },
+  {
+    "id": 68,
+    "name": "Cabo de Rede Cat5e (Furukawa)",
+    "category": "cabos",
+    "image": "img/prod-cabo-rede.png",
+    "description": "Rolo de cabo de rede Cat5e da Furukawa, ideal para redes de computadores e internet de alta velocidade. Qualidade e confiabilidade em instalações de rede.",
+    "price": 300.00,
+    "hasVariations": false
+  },
+  {
+    "id": 69,
+    "name": "Tomada USB de Parede (Excellence)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tomada-usb.png",
+    "description": "Tomada USB de parede da Excellence, com duas portas USB para carregamento de celulares e tablets. Praticidade e modernidade para suas instalações elétricas.",
+    "price": 45.00,
+    "hasVariations": false
+  },
+  {
+    "id": 70,
+    "name": "Módulo Interruptor Wi-Fi (Smart Home)",
+    "category": "outros",
+    "image": "img/prod-modulo-wifi.png",
+    "description": "Módulo interruptor Wi-Fi para automação de iluminação, compatível com assistentes de voz. Transforme sua casa em um ambiente inteligente com controle remoto e agendamento.",
+    "price": 70.00,
+    "hasVariations": false
+  },
+  {
+    "id": 71,
+    "name": "Central de Alarme Monitorada (JFL)",
+    "category": "outros",
+    "image": "img/prod-central-alarme.png",
+    "description": "Central de alarme monitorada da JFL, para segurança residencial e comercial. Integra sensores de presença, sirenes e comunicação com empresas de monitoramento.",
+    "price": 350.00,
+    "hasVariations": false
+  },
+  {
+    "id": 72,
+    "name": "Campainha Sem Fio (Intelbras)",
+    "category": "outros",
+    "image": "img/prod-campainha.png",
+    "description": "Campainha sem fio da Intelbras, fácil instalação e diversos toques. Ideal para residências e escritórios, sem a necessidade de fiação.",
+    "price": 60.00,
+    "hasVariations": false
+  },
+  {
+    "id": 73,
+    "name": "Quadro de Distribuição 12 Disjuntores (Cemar)",
+    "category": "outros",
+    "image": "img/prod-qd.png",
+    "description": "Quadro de distribuição para 12 disjuntores da Cemar, para organização e proteção de circuitos elétricos. Essencial para instalações residenciais e comerciais.",
+    "price": 90.00,
+    "hasVariations": false
+  },
+  {
+    "id": 74,
+    "name": "Chave Seletora 3 Posições (Metaltru)",
+    "category": "outros",
+    "image": "img/prod-chave-seletora.png",
+    "description": "Chave seletora de 3 posições da Metaltru, para controle de funções em painéis e máquinas industriais. Robustez e alta durabilidade em ambientes exigentes.",
+    "price": 25.00,
+    "hasVariations": false
+  },
+  {
+    "id": 75,
+    "name": "Sinalizador LED Vermelho (Sibratec)",
+    "category": "outros",
+    "image": "img/prod-sinalizador.png",
+    "description": "Sinalizador LED vermelho da Sibratec, para indicação de status em painéis elétricos e máquinas. Alta visibilidade e baixo consumo de energia.",
+    "price": 15.00,
+    "hasVariations": false
+  }
+]
