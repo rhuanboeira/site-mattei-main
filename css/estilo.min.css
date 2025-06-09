@@ -823,16 +823,16 @@ nav#top-menu li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 8px;
+  margin: 0 8px; /* O espaçamento estabelecido */
 }
 
-.slide {
+/* REMOVIDO: width: 200px; daqui para que o JS controle a largura */
+.slide { 
   flex-shrink: 0;
-  width: 200px;
 }
 
 .slides img {
-  width: 200px;
+  width: 100%; /* Garante que a imagem preencha a largura definida pelo JS */
   height: auto;
   border-radius: 8px;
 }
@@ -874,23 +874,25 @@ nav#top-menu li:hover {
   }
 
   .slides li {
-    flex: 0 0 50%;
-    margin: 0;
+    flex: 0 0 auto; /* Mantido para flexbox */
+    margin: 0 8px; /* Mantido o espaçamento */
   }
 
+  /* REMOVIDO: width: 100%; daqui, o JS define a largura */
   .slide {
-    width: 100%;
+    flex-shrink: 0;
   }
 
   .slides img {
-    width: 100%;
-    max-width: 300px;
+    /* width: 100%; - Já está no estilo geral, não precisa repetir aqui */
+    max-width: 300px; /* Se desejar um limite máximo para imagens */
   }
 }
 
 @media (max-width: 600px) {
   .slides li {
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; - Removido pois o JS controlará a largura */
+    margin: 0 8px; /* Mantido o espaçamento */
   }
 }
 
@@ -1458,4 +1460,16 @@ footer .social img {
   p, li, a, label, input, textarea, button {
     font-size: 0.9rem;
   }
+}
+
+/* Regras para aplicar o desfoque quando o menu está aberto */
+/* Mover essa parte para o final do CSS garante que ela tenha prioridade. */
+body.menu-open #hero,
+body.menu-open #brand-carousel,
+body.menu-open main,
+body.menu-open footer {
+  filter: blur(5px); /* Aplica o desfoque */
+  /* Removido pointer-events: none; daqui. */
+  /* Adicionado transform: translateZ(0); para garantir contexto de empilhamento */
+  transform: translateZ(0); 
 }
