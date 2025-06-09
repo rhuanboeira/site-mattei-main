@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         variationSelectorHtml = `
           <div class="variation-selector-group">
-            <label for="variation-${product.id}">Potência/Amperagem:</label>
+            <label for="variation-${product.id}">Opção:</label>
             <select id="variation-${product.id}" class="variation-select" data-product-id="${product.id}">
               ${product.variations.map(v => `<option value="${v.power}" data-price="${v.price}">${v.power}</option>`).join('')}
             </select>
