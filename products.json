@@ -4,8 +4,8 @@
     "name": "Ducha Fluir (Zagonel)",
     "category": "duchas",
     "image": "img/prod-fluir.png",
-    "description": "A Ducha Fluir da Zagonel oferece um design moderno e slim, com alta tecnologia de aquecimento rápido e controle de temperatura, proporcionando um banho confortável e econômico. Ideal para quem busca eficiência e estilo no banheiro.",
-    "price": 69.90,
+    "description": "Ducha eletrônica 6800W Fluir 4T da Zagonel, 220V. Design moderno e slim, com alta tecnologia de aquecimento rápido e controle de temperatura, proporcionando um banho confortável e econômico. Ideal para quem busca eficiência e estilo no banheiro.",
+    "price": 69.80,
     "hasVariations": false
   },
   {
@@ -13,62 +13,62 @@
     "name": "Ducha Moment (Zagonel)",
     "category": "duchas",
     "image": "img/prod-moment.png",
-    "description": "A Ducha Moment da Zagonel é perfeita para o dia a dia, combinando praticidade e desempenho. Com sistema de aquecimento eficiente, garante água quente instantaneamente, ideal para um banho relaxante a qualquer momento.",
+    "description": "Ducha eletrônica 7500W Moment da Zagonel, 220V. Perfeita para o dia a dia, combinando praticidade e desempenho. Com sistema de aquecimento eficiente, garante água quente instantaneamente, ideal para um banho relaxante a qualquer momento.",
     "price": 109.90,
     "hasVariations": false
   },
   {
     "id": 3,
-    "name": "Ducha Ducali Branca (Zagonel)",
+    "name": "Ducha Eletrônica Ducali Branca 7500W (Zagonel)",
     "category": "duchas",
     "image": "img/prod-ducali-b.png",
-    "description": "Com design clássico e elegante na cor branca, a Ducha Ducali da Zagonel integra-se perfeitamente a qualquer estilo de banheiro. Proporciona um fluxo de água agradável e aquecimento eficiente, sendo uma excelente escolha para o seu lar.",
-    "price": 12.50,
+    "description": "Ducha eletrônica Ducali Branca 7500W da Zagonel, 220V. Com design clássico e elegante, integra-se perfeitamente a qualquer estilo de banheiro. Proporciona um fluxo de água agradável e aquecimento eficiente, sendo uma excelente escolha para o seu lar.",
+    "price": 399.80,
     "hasVariations": false
   },
   {
     "id": 4,
-    "name": "Ducha Ducali Preta (Zagonel)",
+    "name": "Ducha Eletrônica Ducali Preta 7500W (Zagonel)",
     "category": "duchas",
     "image": "img/prod-ducali-p.png",
-    "description": "A Ducha Ducali da Zagonel na cor preta oferece um toque de sofisticação e modernidade ao seu banheiro. Além do design arrojado, garante um banho com temperatura agradável e constante, graças à sua tecnologia de aquecimento.",
-    "price": 30.00,
+    "description": "Ducha eletrônica Ducali Preta 7500W da Zagonel, 220V. Oferece um toque de sofisticação e modernidade ao seu banheiro. Além do design arrojado, garante um banho com temperatura agradável e constante, graças à sua tecnologia de aquecimento.",
+    "price": 444.90,
     "hasVariations": false
   },
   {
     "id": 5,
-    "name": "Ducha Ducali Premium Branca (Zagonel)",
+    "name": "Ducha Eletrônica Ducali Branca Premium 7500W (Zagonel)",
     "category": "duchas",
     "image": "img/prod-ducali-premium-b.png",
-    "description": "A Ducha Ducali Premium Branca da Zagonel eleva o nível do seu banho com um jato intenso e regulável. Seu acabamento superior e tecnologia avançada garantem conforto, durabilidade e um visual impecável para banheiros sofisticados.",
-    "price": 75.00,
+    "description": "Ducha eletrônica Ducali Branca Premium 7500W da Zagonel, 220V. Eleva o nível do seu banho com um jato intenso e regulável. Seu acabamento superior e tecnologia avançada garantem conforto, durabilidade e um visual impecável para banheiros sofisticados.",
+    "price": 729.90,
     "hasVariations": false
   },
   {
     "id": 6,
-    "name": "Ducha Ducali Premium Preta (Zagonel)",
+    "name": "Ducha Eletrônica Ducali Preta Premium 7500W (Zagonel)",
     "category": "duchas",
     "image": "img/prod-ducali-premium-p.png",
-    "description": "Sofisticação e performance se encontram na Ducha Ducali Premium Preta da Zagonel. Com um design elegante e alta potência, oferece um banho revigorante e controle de temperatura preciso, complementando o estilo do seu ambiente.",
-    "price": 99.90,
+    "description": "Ducha eletrônica Ducali Preta Premium 7500W da Zagonel, 220V. Sofisticação e performance se encontram. Com um design elegante e alta potência, oferece um banho revigorante e controle de temperatura preciso, complementando o estilo do seu ambiente.",
+    "price": 783.90,
     "hasVariations": false
   },
   {
     "id": 7,
-    "name": "Ducha Optima (Zagonel)",
+    "name": "Ducha Eletrônica Optima 7700W (Zagonel)",
     "category": "duchas",
     "image": "img/prod-optima.png",
-    "description": "A Ducha Optima da Zagonel é sinônimo de eficiência e praticidade. Com um sistema de troca rápida de temperatura e design compacto, é a escolha ideal para quem busca um banho confortável e sem complicações.",
-    "price": 139.90,
+    "description": "Ducha eletrônica 7700W Optima da Zagonel, 220V. Sinônimo de eficiência e praticidade. Com um sistema de troca rápida de temperatura e design compacto, é a escolha ideal para quem busca um banho confortável e sem complicações.",
+    "price": 169.90,
     "hasVariations": false
   },
   {
     "id": 8,
-    "name": "Ducha ND (Zagonel)",
+    "name": "Ducha Eletrônica ND 7700W (Zagonel)",
     "category": "duchas",
     "image": "img/prod-nd.png",
-    "description": "A Ducha ND da Zagonel é a opção mais econômica e funcional para o seu banheiro. Simples e eficaz, oferece a temperatura ideal para o seu banho com a qualidade e durabilidade que você espera da marca Zagonel.",
-    "price": 89.90,
+    "description": "Ducha eletrônica 7700W ND da Zagonel, 220V. A opção mais econômica e funcional para o seu banheiro. Simples e eficaz, oferece a temperatura ideal para o seu banho com a qualidade e durabilidade que você espera da marca Zagonel.",
+    "price": 139.90,
     "hasVariations": false
   },
   {
@@ -100,38 +100,38 @@
   },
   {
     "id": 12,
-    "name": "Torneira Prima Preta (Zagonel)",
+    "name": "Torneira Elétrica Luna Parede 5500W (Zagonel)",
     "category": "torneiras",
-    "image": "img/prod-prima-p.png",
-    "description": "A Torneira Prima Preta da Zagonel combina design moderno e funcionalidade. Com aquecimento elétrico integrado, oferece água quente instantaneamente na pia da cozinha ou lavabo, com um toque de elegância na cor preta.",
-    "price": 289.90,
+    "image": "img/prod-luna.png",
+    "description": "Torneira elétrica Luna Parede 5500W da Zagonel, 220V. Com linhas suaves e design minimalista, é ideal para ambientes que valorizam a simplicidade e a eficiência. Oferece água quente rapidamente, tornando as tarefas diárias mais confortáveis.",
+    "price": 156.90,
     "hasVariations": false
   },
   {
     "id": 13,
-    "name": "Torneira Prima Branca (Zagonel)",
-    "category": "torneiras",
-    "image": "img/prod-prima-b.png",
-    "description": "Elegância e praticidade definem a Torneira Prima Branca da Zagonel. Com aquecimento elétrico, é ideal para otimizar o uso de água quente em cozinhas e lavabos, adicionando um acabamento clean e sofisticado ao ambiente.",
-    "price": 279.90,
-    "hasVariations": false
-  },
-  {
-    "id": 14,
-    "name": "Torneira Lumen (Zagonel)",
+    "name": "Torneira Eletrônica Lumen 5500W (Zagonel)",
     "category": "torneiras",
     "image": "img/prod-lumen.png",
-    "description": "A Torneira Lumen da Zagonel se destaca pelo seu design contemporâneo e iluminação LED no bico, que indica a temperatura da água. É uma solução inovadora para cozinhas e banheiros, unindo estética e tecnologia.",
+    "description": "Torneira eletrônica Lumen 5500W da Zagonel, 220V. Se destaca pelo seu design contemporâneo e iluminação LED no bico, que indica a temperatura da água. É uma solução inovadora para cozinhas e banheiros, unindo estética e tecnologia.",
     "price": 254.90,
     "hasVariations": false
   },
   {
-    "id": 15,
-    "name": "Torneira Luna (Zagonel)",
+    "id": 14,
+    "name": "Torneira Eletrônica Prima Branca Parede e Mesa 5500W (Zagonel)",
     "category": "torneiras",
-    "image": "img/prod-luna.png",
-    "description": "Com linhas suaves e design minimalista, a Torneira Luna da Zagonel é ideal para ambientes que valorizam a simplicidade e a eficiência. Oferece água quente rapidamente, tornando as tarefas diárias mais confortáveis.",
-    "price": 229.90,
+    "image": "img/prod-prima-b.png",
+    "description": "Torneira eletrônica Prima Branca Parede e Mesa 5500W da Zagonel, 220V. Elegância e praticidade definem esta torneira. Com aquecimento elétrico, é ideal para otimizar o uso de água quente em cozinhas e lavabos, adicionando um acabamento clean e sofisticado ao ambiente.",
+    "price": 297.90,
+    "hasVariations": false
+  },
+  {
+    "id": 15,
+    "name": "Torneira Eletrônica Prima Preta Parede e Mesa 5500W (Zagonel)",
+    "category": "torneiras",
+    "image": "img/prod-prima-p.png",
+    "description": "Torneira eletrônica Prima Preta Parede e Mesa 5500W da Zagonel, 220V. Combina design moderno e funcionalidade. Com aquecimento elétrico integrado, oferece água quente instantaneamente na pia da cozinha ou lavabo, com um toque de elegância na cor preta.",
+    "price": 346.90,
     "hasVariations": false
   },
   {
@@ -145,704 +145,893 @@
   },
   {
     "id": 17,
-    "name": "Tomada Simples 2P+T 10A (Aria)",
+    "name": "Tomada Liz Branca 4x2 10A (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-tom-aria.png",
-    "description": "Tomada simples 2P+T (2 Pinos + Terra) de 10A da linha Aria. Ideal para uso residencial e comercial, oferece segurança e durabilidade, com design clean que se adapta a qualquer ambiente.",
-    "price": 5.90,
+    "image": "img/prod-tom-liz.png",
+    "description": "Tomada simples 2P+T (2 Pinos + Terra) de 10A da linha Liz Branca 4x2 da Tramontina. Ideal para uso residencial e comercial, oferece segurança e durabilidade, com design clean que se adapta a qualquer ambiente.",
+    "price": 9.90,
     "hasVariations": false
   },
   {
     "id": 18,
-    "name": "Interruptor Simples (Aria)",
+    "name": "Interruptor Liz Branca 4x2 Simples (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-inter-aria.png",
-    "description": "Interruptor simples da linha Aria, ideal para controle de iluminação em ambientes residenciais e comerciais. Design discreto e funcional, garante acionamento suave e confiável.",
-    "price": 45.00,
+    "image": "img/prod-inter-liz.png",
+    "description": "Interruptor simples da linha Liz Branca 4x2 da Tramontina. Ideal para controle de iluminação em ambientes residenciais e comerciais. Design discreto e funcional, garante acionamento suave e confiável.",
+    "price": 9.90,
     "hasVariations": false
   },
   {
     "id": 19,
-    "name": "Tomada 2P+T 10A + Interruptor Simples (Aria)",
+    "name": "Interruptor Liz Branca 4x2 Simples + Tomada 10A (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-inter-tom-aria.png",
-    "description": "Conjunto completo com tomada 2P+T de 10A e interruptor simples da linha Aria. Solução prática e elegante para instalações elétricas, combinando funcionalidade e estética.",
-    "price": 80.00,
+    "image": "img/prod-inter-tomada-liz.png",
+    "description": "Conjunto completo com interruptor simples e tomada 2P+T de 10A da linha Liz Branca 4x2 da Tramontina. Solução prática e elegante para instalações elétricas, combinando funcionalidade e estética.",
+    "price": 14.30,
     "hasVariations": false
   },
   {
     "id": 20,
-    "name": "Tomada 2P+T 10A Dupla (Aria)",
+    "name": "Tomada Liz Branca 4x2 Dupla 10A (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-tom-dupla-aria.png",
-    "description": "Tomada dupla 2P+T de 10A da linha Aria. Oferece duas saídas em um único módulo, otimizando o espaço e a funcionalidade em paredes e painéis.",
-    "price": 150.00,
+    "image": "img/prod-tom-dupla-liz.png",
+    "description": "Tomada dupla 2P+T de 10A da linha Liz Branca 4x2 da Tramontina. Oferece duas saídas em um único módulo, otimizando o espaço e a funcionalidade em paredes e painéis.",
+    "price": 14.40,
     "hasVariations": false
   },
   {
     "id": 21,
-    "name": "Tomada Simples 2P+T 10A (LIZ)",
+    "name": "Tomada Liz Grafite 4x2 10A (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-tom-liz.png",
-    "description": "Tomada simples 2P+T de 10A da linha LIZ, design tradicional e discreto. Perfeita para instalações que exigem praticidade e segurança, com acabamento branco brilhante.",
-    "price": 180.00,
+    "image": "img/prod-tom-grafite.png",
+    "description": "Tomada simples 2P+T de 10A da linha Liz Grafite 4x2 da Tramontina. Modernidade e segurança para suas instalações, adicionando um toque de sofisticação ao ambiente.",
+    "price": 11.95,
     "hasVariations": false
   },
   {
     "id": 22,
-    "name": "Interruptor Simples (LIZ)",
+    "name": "Interruptor Liz Grafite 4x2 Simples (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-inter-liz.png",
-    "description": "Interruptor simples da linha LIZ, ideal para controle de pontos de luz. Com design funcional e acabamento branco, é uma solução confiável e fácil de instalar.",
-    "price": 110.00,
+    "image": "img/prod-inter-grafite.png",
+    "description": "Interruptor simples da linha Liz Grafite 4x2 da Tramontina. Ideal para ambientes modernos, oferece controle de iluminação com um design elegante e discreto.",
+    "price": 10.90,
     "hasVariations": false
   },
   {
     "id": 23,
-    "name": "Tomada 2P+T 10A + Interruptor Simples (LIZ)",
+    "name": "Interruptor Liz Grafite 4x2 Simples + Tomada 10A (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-inter-tomada-liz.png",
-    "description": "Conjunto de tomada 2P+T 10A e interruptor simples da linha LIZ. Solução completa para instalações elétricas, oferecendo funcionalidade e um visual harmonioso em branco.",
-    "price": 7.00,
+    "image": "img/prod-inter-tom-grafite.png",
+    "description": "Conjunto de interruptor simples e tomada 2P+T 10A da linha Liz Grafite 4x2 da Tramontina. A combinação perfeita de funcionalidade e design contemporâneo para suas instalações elétricas.",
+    "price": 17.90,
     "hasVariations": false
   },
   {
     "id": 24,
-    "name": "Tomada 2P+T 10A Dupla (LIZ)",
+    "name": "Tomada Liz Grafite 4x2 Dupla 10A (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-tom-dupla-liz.png",
-    "description": "Tomada dupla 2P+T 10A da linha LIZ. Permite a conexão de dois aparelhos em uma única placa, ideal para otimizar o espaço e a organização de ambientes.",
-    "price": 0.80,
+    "image": "img/prod-tom-dupla-grafite.png",
+    "description": "Tomada dupla 2P+T 10A da linha Liz Grafite 4x2 da Tramontina. Solução versátil para múltiplos equipamentos, mantendo a organização e o estilo do ambiente.",
+    "price": 16.90,
     "hasVariations": false
   },
   {
     "id": 25,
-    "name": "Tomada Simples 2P+T 10A Grafite (LIZ)",
+    "name": "Tomada LizFlex 10A (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-tom-grafite.png",
-    "description": "Tomada simples 2P+T 10A da linha LIZ com acabamento grafite. Modernidade e segurança para suas instalações, adicionando um toque de sofisticação ao ambiente.",
-    "price": 6.50,
+    "image": "img/prod-tom-lizflex.png",
+    "description": "Tomada simples 2P+T 10A da linha LizFlex da Tramontina, conhecida pela sua flexibilidade e resistência. Ideal para instalações que exigem durabilidade e segurança em ambientes diversos.",
+    "price": 9.90,
     "hasVariations": false
   },
   {
     "id": 26,
-    "name": "Interruptor Simples Grafite (LIZ)",
+    "name": "Interruptor LizFlex Simples (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-inter-grafite.png",
-    "description": "Interruptor simples da linha LIZ com acabamento grafite. Ideal para ambientes modernos, oferece controle de iluminação com um design elegante e discreto.",
-    "price": 55.00,
+    "image": "img/prod-inter-lizflex.png",
+    "description": "Interruptor simples da linha LizFlex da Tramontina, projetado para alta durabilidade e fácil manuseio. Perfeito para controle de iluminação em locais de grande fluxo e uso frequente.",
+    "price": 9.40,
     "hasVariations": false
   },
   {
     "id": 27,
-    "name": "Tomada 2P+T 10A + Interruptor Simples Grafite (LIZ)",
+    "name": "Interruptor LizFlex Simples + Tomada 10A (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-inter-tom-grafite.png",
-    "description": "Conjunto de tomada 2P+T 10A e interruptor simples da linha LIZ em grafite. A combinação perfeita de funcionalidade e design contemporâneo para suas instalações elétricas.",
-    "price": 70.00,
+    "image": "img/prod-inter-tom-lizflex.png",
+    "description": "Conjunto de interruptor simples e tomada 2P+T 10A da linha LizFlex da Tramontina. Oferece a robustez e a segurança necessárias para instalações residenciais e comerciais, com a praticidade de um único módulo.",
+    "price": 15.90,
     "hasVariations": false
   },
   {
     "id": 28,
-    "name": "Tomada 2P+T 10A Dupla Grafite (LIZ)",
+    "name": "Tomada LizFlex Dupla 10A (Tramontina)",
     "category": "interruptoresTomadas",
-    "image": "img/prod-tom-dupla-grafite.png",
-    "description": "Tomada dupla 2P+T 10A da linha LIZ com acabamento grafite. Solução versátil para múltiplos equipamentos, mantendo a organização e o estilo do ambiente.",
-    "price": 250.00,
+    "image": "img/prod-tom-dupla-lizflex.png",
+    "description": "Tomada dupla 2P+T 10A da linha LizFlex da Tramontina. Uma solução eficiente para múltiplos aparelhos, garantindo a segurança e a organização da sua instalação elétrica.",
+    "price": 15.90,
     "hasVariations": false
   },
   {
     "id": 29,
-    "name": "Tomada Simples 2P+T 10A (LizFlex)",
-    "category": "interruptoresTomadas",
-    "image": "img/prod-tom-lizflex.png",
-    "description": "Tomada simples 2P+T 10A da linha LizFlex, conhecida pela sua flexibilidade e resistência. Ideal para instalações que exigem durabilidade e segurança em ambientes diversos.",
-    "price": 180.00,
-    "hasVariations": false
-  },
-  {
-    "id": 30,
-    "name": "Interruptor Simples (LizFlex)",
-    "category": "interruptoresTomadas",
-    "image": "img/prod-inter-lizflex.png",
-    "description": "Interruptor simples da linha LizFlex, projetado para alta durabilidade e fácil manuseio. Perfeito para controle de iluminação em locais de grande fluxo e uso frequente.",
-    "price": 9.50,
-    "hasVariations": false
-  },
-  {
-    "id": 31,
-    "name": "Tomada 2P+T 10A + Interruptor Simples (LizFlex)",
-    "category": "interruptoresTomadas",
-    "image": "img/prod-inter-tom-lizflex.png",
-    "description": "Conjunto de tomada 2P+T 10A e interruptor simples da linha LizFlex. Oferece a robustez e a segurança necessárias para instalações residenciais e comerciais, com a praticidade de um único módulo.",
-    "price": 40.00,
-    "hasVariations": false
-  },
-  {
-    "id": 32,
-    "name": "Tomada 2P+T 10A Dupla (LizFlex)",
-    "category": "interruptoresTomadas",
-    "image": "img/prod-tom-dupla-lizflex.png",
-    "description": "Tomada dupla 2P+T 10A da linha LizFlex. Uma solução eficiente para múltiplos aparelhos, garantindo a segurança e a organização da sua instalação elétrica.",
-    "price": 40.00,
-    "hasVariations": false
-  },
-  {
-    "id": 33,
     "name": "Rolo Cabo Flexível 2,5mm (RCM & Energy)",
     "category": "cabos",
     "image": "img/rolos.png",
-    "description": "Rolo de cabo elétrico flexível de 2,5mm², ideal para instalações residenciais e comerciais de uso geral. Oferece alta condutividade e segurança, certificado pelas normas técnicas.",
+    "description": "Rolo de cabo elétrico flexível de 2,5mm² da RCM & Energy. Ideal para instalações residenciais e comerciais de uso geral, oferece alta condutividade e segurança, certificado pelas normas técnicas.",
     "price": 234.00,
     "hasVariations": false
   },
   {
-    "id": 34,
+    "id": 30,
     "name": "Rolo Cabo Flexível 4,0mm (RCM & Energy)",
     "category": "cabos",
     "image": "img/rolos.png",
-    "description": "Rolo de cabo elétrico flexível de 4,0mm², recomendado para circuitos de maior potência em residências e indústrias. Garante eficiência e segurança na distribuição de energia.",
+    "description": "Rolo de cabo elétrico flexível de 4,0mm² da RCM & Energy. Recomendado para circuitos de maior potência em residências e indústrias, garante eficiência e segurança na distribuição de energia.",
     "price": 379.00,
     "hasVariations": false
   },
   {
-    "id": 35,
+    "id": 31,
     "name": "Rolo Cabo Flexível 6,0mm (RCM & Energy)",
     "category": "cabos",
     "image": "img/rolos.png",
-    "description": "Rolo de cabo elétrico flexível de 6,0mm², essencial para instalações com alta demanda de corrente, como chuveiros e ar-condicionados. Alta capacidade e durabilidade para projetos elétricos robustos.",
+    "description": "Rolo de cabo elétrico flexível de 6,0mm² da RCM & Energy. Essencial para instalações com alta demanda de corrente, como chuveiros e ar-condicionados. Alta capacidade e durabilidade para projetos elétricos robustos.",
     "price": 569.00,
     "hasVariations": false
   },
   {
-    "id": 36,
-    "name": "Refletor LED (Ourolux)",
+    "id": 32,
+    "name": "Refletor LED Luz Branca (Ourolux)",
     "category": "iluminacao",
     "image": "img/prod-refletor.png",
-    "baseDescription": "Refletor LED de luz branca da Ourolux, ideal para iluminação externa de fachadas, jardins e áreas de segurança.",
+    "baseDescription": "Refletor LED de luz branca Bivolt IP65 da Ourolux. Ideal para iluminação externa de fachadas, jardins e áreas de segurança. Alta potência e resistência às intempéries, garantindo visibilidade e segurança.",
     "hasVariations": true,
     "variations": [
-      { "power": "10W", "price": 89.90, "variationId": "36-10W", "descriptionAddon": "10W de potência para áreas menores." },
-      { "power": "20W", "price": 120.00, "variationId": "36-20W", "descriptionAddon": "20W de potência para iluminação geral." },
-      { "power": "30W", "price": 120.00, "variationId": "36-30W", "descriptionAddon": "30W de potência para iluminação geral maior." },
-      { "power": "50W", "price": 250.00, "variationId": "36-50W", "descriptionAddon": "50W de potência para grandes áreas." },
-      { "power": "100W", "price": 450.00, "variationId": "36-100W", "descriptionAddon": "100W de potência para máxima visibilidade." },
-      { "power": "150W", "price": 600.00, "variationId": "36-150W", "descriptionAddon": "150W para iluminação de alta intensidade." },
-      { "power": "200W", "price": 750.00, "variationId": "36-200W", "descriptionAddon": "200W para projetos industriais e esportivos." },
-      { "power": "300W", "price": 900.00, "variationId": "36-300W", "descriptionAddon": "300W para o máximo de luz e alcance." }
+      { "power": "10W (800lm)", "price": 16.90, "variationId": "32-10W", "descriptionAddon": "Potência de 10W com 800 lúmens para áreas menores." },
+      { "power": "20W (1600lm)", "price": 21.90, "variationId": "32-20W", "descriptionAddon": "Potência de 20W com 1600 lúmens para iluminação geral." },
+      { "power": "30W (2400lm)", "price": 26.90, "variationId": "32-30W", "descriptionAddon": "Potência de 30W com 2400 lúmens para iluminação de médio porte." },
+      { "power": "50W (4000lm)", "price": 33.90, "variationId": "32-50W", "descriptionAddon": "Potência de 50W com 4000 lúmens para grandes áreas." },
+      { "power": "100W (8000lm)", "price": 62.90, "variationId": "32-100W", "descriptionAddon": "Potência de 100W com 8000 lúmens para máxima visibilidade." },
+      { "power": "150W (12000lm)", "price": 122.90, "variationId": "32-150W", "descriptionAddon": "Potência de 150W com 12000 lúmens para alta intensidade." },
+      { "power": "200W (16000lm)", "price": 169.90, "variationId": "32-200W", "descriptionAddon": "Potência de 200W com 16000 lúmens para projetos industriais e esportivos." },
+      { "power": "300W (24000lm)", "price": 218.90, "variationId": "32-300W", "descriptionAddon": "300W de potência com 24000 lúmens para o máximo de luz e alcance." }
     ]
+  },
+  {
+    "id": 33,
+    "name": "Refletor Solar LED Luz Branca 50W (Cristallux)",
+    "category": "iluminacao",
+    "image": "img/prod-refletorsolar.png",
+    "description": "Refletor Solar LED de Luz Branca 50W (550lm) IP66 da Cristallux. Bivolt. Ideal para locais sem acesso à rede elétrica, com autonomia e eficiência energética.",
+    "price": 269.00,
+    "hasVariations": false
+  },
+  {
+    "id": 34,
+    "name": "Luminária Espeto LED Jardim 3W 6500K Solar (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-espetosolar.png",
+    "description": "Luminária Espeto LED para Jardim 3W 6500K Solar Bivolt da Ourolux. Perfeita para iluminação decorativa e de destaque em jardins, sem necessidade de fiação.",
+    "price": 89.90,
+    "hasVariations": false
+  },
+  {
+    "id": 35,
+    "name": "Luminária de Emergência LED 2 Faróis 20W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-holofotes.png",
+    "description": "Luminária de Emergência LED com 2 Faróis 20W (2200lm) da Ourolux. Essencial para segurança em residências e comércios em caso de falta de energia, garantindo iluminação contínua e potente.",
+    "price": 184.90,
+    "hasVariations": false
+  },
+  {
+    "id": 36,
+    "name": "Spot LED Quadrado Direcionável 5W 6400K (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-spot-quad.png",
+    "description": "Spot LED Quadrado Direcionável 5W 6400K Bivolt da Ourolux. Perfeito para destacar pontos específicos em ambientes residenciais e comerciais, com design moderno e luz de alta qualidade.",
+    "price": 14.90,
+    "hasVariations": false
   },
   {
     "id": 37,
-    "name": "Lâmpada LED Bulbo 9W a 15W (Ourolux)",
+    "name": "Spot LED Redondo Direcionável 5W 6400K (Ourolux)",
     "category": "iluminacao",
-    "image": "img/prod-bulbo9-15.png",
-    "description": "Lâmpada LED tipo bulbo de 9W, ideal para iluminação geral. Oferece alta economia de energia, longa vida útil e luz brilhante, sendo perfeita para substituir lâmpadas incandescentes.",
-    "price": 12.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "9W", "price": 89.90, "variationId": "36-10W", "descriptionAddon": "10W de potência para áreas menores." },
-      { "power": "12W", "price": 120.00, "variationId": "36-20W", "descriptionAddon": "20W de potência para iluminação geral." },
-      { "power": "15W", "price": 120.00, "variationId": "36-30W", "descriptionAddon": "30W de potência para iluminação geral maior." }
-    ]
+    "image": "img/prod-spot-red.png",
+    "description": "Spot LED Redondo Direcionável 5W 6400K Bivolt da Ourolux. Ideal para iluminação de destaque, com um design discreto que se integra a diversos ambientes.",
+    "price": 14.90,
+    "hasVariations": false
   },
   {
     "id": 38,
-    "name": "Lâmpada LED Bulbo 20W e 30W (Ourolux)",
+    "name": "Plafon LED Quadrado Sobrepor ABS 18W (Ourolux)",
     "category": "iluminacao",
-    "image": "img/prod-bulbo20-30.png",
-    "description": "Lâmpada LED tipo bulbo de 9W, ideal para iluminação geral. Oferece alta economia de energia, longa vida útil e luz brilhante, sendo perfeita para substituir lâmpadas incandescentes.",
-    "price": 12.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "20W", "price": 89.90, "variationId": "36-10W", "descriptionAddon": "10W de potência para áreas menores." },
-      { "power": "30W", "price": 120.00, "variationId": "36-20W", "descriptionAddon": "20W de potência para iluminação geral." }
-    ]
+    "image": "img/prod-plafonsob.png",
+    "description": "Plafon LED Quadrado de Sobrepor 18W (1350lm - 20x20cm) 6500K ABS Bivolt da Ourolux. Design slim e moderno, ideal para ambientes que buscam iluminação uniforme e discreta.",
+    "price": 22.90,
+    "hasVariations": false
   },
   {
     "id": 39,
-    "name": "Lâmpada LED Bulbo 50W (Ourolux)",
+    "name": "Plafon LED Quadrado Sobrepor 18W (Ourolux)",
     "category": "iluminacao",
-    "image": "img/prod-bulbo50.png",
-    "description": "Fita LED de 5 metros, flexível e versátil, perfeita para iluminação decorativa em sancas, nichos, móveis e espelhos. Cria ambientes aconchegantes e modernos com baixo consumo de energia.",
-    "price": 49.90,
+    "image": "img/prod-plafonsob.png",
+    "description": "Plafon LED Quadrado de Sobrepor 18W (1080lm - 22x22cm) 6500K Bivolt da Ourolux. Proporciona luz uniforme, alta eficiência e fácil instalação em tetos e paredes.",
+    "price": 26.50,
     "hasVariations": false
   },
   {
     "id": 40,
-    "name": "Disjuntor DIN Monopolar Curva C (Schneider)",
-    "category": "disjuntores",
-    "image": "img/prod-dinmono-sch.png",
-    "baseDescription": "Disjuntor Monopolar tipo C da Schneider, ideal para proteção de circuitos elétricos contra sobrecargas e curtos-circuitos em instalações residenciais e comerciais. Confiabilidade e segurança.",
-    "hasVariations": true,
-    "variations": [
-      { "power": "4A", "price": 12.00, "variationId": "40-4A", "descriptionAddon": "4A para circuitos de baixa corrente." },
-      { "power": "6A", "price": 13.50, "variationId": "40-6A", "descriptionAddon": "6A para iluminação e circuitos leves." },
-      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
-      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
-      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
-      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
-      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
-      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
-      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
-      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
-      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
-      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
-    ]
+    "name": "Plafon LED Quadrado Sobrepor ABS 24W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-plafonsob.png",
+    "description": "Plafon LED Quadrado de Sobrepor 24W (1800lm - 27x27cm) 6500K ABS Bivolt da Ourolux. Ideal para iluminação geral de ambientes amplos, com alta eficiência energética.",
+    "price": 38.90,
+    "hasVariations": false
   },
   {
     "id": 41,
-    "name": "Disjuntor DIN Bipolar Curva C (Schneider)",
-    "category": "disjuntores",
-    "image": "img/prod-dinbi-sch.png",
-    "description": "Disjuntor bipolar tipo C da Schneider, essencial para proteção de circuitos fase-fase ou fase-neutro. Garante a segurança de equipamentos e instalações elétricas de maior potência.",
-    "price": 30.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
-      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
-      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
-      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
-      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
-      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
-      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
-      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
-      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
-      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
-    ]
+    "name": "Plafon LED Quadrado Sobrepor 24W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-plafonsob.png",
+    "description": "Plafon LED Quadrado de Sobrepor 24W (1440lm - 28x28cm) 6500K Bivolt da Ourolux. Oferece iluminação potente e homogênea, perfeito para espaços que exigem boa luminosidade.",
+    "price": 44.90,
+    "hasVariations": false
   },
   {
     "id": 42,
-    "name": "Disjuntor DIN Tripolar Curva C (Schneider)",
-    "category": "disjuntores",
-    "image": "img/prod-dintri-sch.png",
-    "description": "Disjuntor tripolar tipo C da Schneider, projetado para proteção de circuitos trifásicos. Indispensável em instalações industriais e comerciais que exigem alta capacidade de interrupção.",
-    "price": 45.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
-      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
-      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
-      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
-      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
-      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
-      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
-      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
-      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
-      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
-    ]
+    "name": "Plafon LED Quadrado Embutir 18W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-plafonemb.png",
+    "description": "Plafon LED Quadrado de Embutir 18W (1080lm - 22x22cm) 6500K Bivolt da Ourolux. Design discreto e funcional, ideal para rebaixos de gesso e tetos modulares.",
+    "price": 23.90,
+    "hasVariations": false
   },
   {
     "id": 43,
-    "name": "Disjuntor DIN Monopolar Curva C (Tramontina)",
-    "category": "disjuntores",
-    "image": "img/prod-dinmono-tra.png",
-    "baseDescription": "Disjuntor Monopolar tipo C da Tramontina, ideal para proteção de circuitos elétricos contra sobrecargas e curtos-circuitos em instalações residenciais e comerciais. Confiabilidade e segurança.",
-    "hasVariations": true,
-    "variations": [
-      { "power": "4A", "price": 12.00, "variationId": "40-4A", "descriptionAddon": "4A para circuitos de baixa corrente." },
-      { "power": "6A", "price": 13.50, "variationId": "40-6A", "descriptionAddon": "6A para iluminação e circuitos leves." },
-      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
-      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
-      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
-      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
-      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
-      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
-      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
-      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
-      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
-      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
-    ]
+    "name": "Plafon LED Quadrado Embutir 24W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-plafonemb.png",
+    "description": "Plafon LED Quadrado de Embutir 24W (1440lm - 30x30cm) 6500K Bivolt da Ourolux. Proporciona luz uniforme e de alta qualidade, ideal para ambientes internos.",
+    "price": 39.90,
+    "hasVariations": false
   },
   {
     "id": 44,
-    "name": "Disjuntor DIN Bipolar Curva C (Tramontina)",
-    "category": "disjuntores",
-    "image": "img/prod-dinbi-tra.png",
-    "description": "Disjuntor bipolar tipo C da Tramontina, essencial para proteção de circuitos fase-fase ou fase-neutro. Garante a segurança de equipamentos e instalações elétricas de maior potência.",
-    "price": 60.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "6A", "price": 13.50, "variationId": "40-6A", "descriptionAddon": "6A para iluminação e circuitos leves." },
-      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
-      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
-      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
-      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
-      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
-      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
-      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
-      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
-      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
-      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
-    ]
+    "name": "Lâmpada LED Bulbo E27 9W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-bulbo9-15.png",
+    "description": "Lâmpada LED Bulbo E27 9W (803lm) Bivolt da Ourolux. Com temperatura de cor 6500K (Luz Branca Fria), ideal para iluminação geral, oferecendo alta economia de energia e longa vida útil.",
+    "price": 5.90,
+    "hasVariations": false
   },
   {
     "id": 45,
-    "name": "Disjuntor DIN Tripolar Curva C (Tramontina)",
-    "category": "disjuntores",
-    "image": "img/prod-dintri-tra.png",
-    "description": "Disjuntor tripolar tipo C da Tramontina, projetado para proteção de circuitos trifásicos. Indispensável em instalações industriais e comerciais que exigem alta capacidade de interrupção.",
-    "price": 70.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "10A", "price": 15.00, "variationId": "40-10A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "16A", "price": 16.50, "variationId": "40-16A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "20A", "price": 18.00, "variationId": "40-20A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "25A", "price": 20.00, "variationId": "40-25A", "descriptionAddon": "25A para chuveiros e equipamentos de média potência." },
-      { "power": "32A", "price": 25.00, "variationId": "40-32A", "descriptionAddon": "32A para chuveiros e equipamentos mais robustos." },
-      { "power": "40A", "price": 30.00, "variationId": "40-40A", "descriptionAddon": "40A para grandes chuveiros e aparelhos de alto consumo." },
-      { "power": "50A", "price": 35.00, "variationId": "40-50A", "descriptionAddon": "50A para circuitos de força e alta demanda." },
-      { "power": "63A", "price": 40.00, "variationId": "40-63A", "descriptionAddon": "63A para proteção de circuitos principais." },
-      { "power": "70A", "price": 50.00, "variationId": "40-70A", "descriptionAddon": "70A para cargas elevadas." },
-      { "power": "80A", "price": 60.00, "variationId": "40-80A", "descriptionAddon": "80A para alimentação de quadros e equipamentos industriais." },
-      { "power": "90A", "price": 70.00, "variationId": "40-90A", "descriptionAddon": "90A para sistemas de grande porte." },
-      { "power": "100A", "price": 80.00, "variationId": "40-100A", "descriptionAddon": "100A para proteção de entradas de energia." },
-      { "power": "125A", "price": 100.00, "variationId": "40-125A", "descriptionAddon": "125A para aplicações de altíssima demanda." }
-    ]
+    "name": "Lâmpada LED Bulbo E27 12W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-bulbo9-15.png",
+    "description": "Lâmpada LED Bulbo E27 12W (1080lm) Bivolt da Ourolux. Com temperatura de cor 6500K (Luz Branca Fria), oferece maior luminosidade e eficiência energética para diversos ambientes.",
+    "price": 7.90,
+    "hasVariations": false
   },
   {
     "id": 46,
-    "name": "Disjuntor IDR Bipolar (Schneider)",
-    "category": "disjuntores",
-    "image": "img/prod-drbi-sch.png",
-    "description": "Rolo de fio rígido de 1,5mm² da Sil, ideal para instalações fixas em residências e indústrias. Alta durabilidade e segurança, conforme as normas brasileiras.",
-    "price": 180.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "25A", "price": 15.00, "variationId": "40-25A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "40A", "price": 16.50, "variationId": "40-40A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "63A", "price": 18.00, "variationId": "40-63A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
-    ]
+    "name": "Lâmpada LED Bulbo E27 15W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-bulbo9-15.png",
+    "description": "Lâmpada LED Bulbo E27 15W (1350lm) Bivolt da Ourolux. Com temperatura de cor 6500K (Luz Branca Fria), garante uma iluminação potente e econômica para uso diário.",
+    "price": 9.90,
+    "hasVariations": false
   },
   {
     "id": 47,
-    "name": "Disjuntor IDR Bipolar (Tramontina)",
-    "category": "disjuntores",
-    "image": "img/prod-drbi-tra.png",
-    "description": "Rolo de fio rígido de 10mm² da Sil, recomendado para circuitos de alta potência como chuveiros e ar condicionado. Excelente condutividade e segurança para sua instalação.",
-    "price": 800.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "25A", "price": 15.00, "variationId": "40-25A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "40A", "price": 16.50, "variationId": "40-40A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "63A", "price": 18.00, "variationId": "40-63A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
-    ]
+    "name": "Lâmpada LED Bulbo E27 20W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-bulbo20-30.png",
+    "description": "Lâmpada LED Bulbo E27 20W (1600lm) Bivolt da Ourolux. Com temperatura de cor 6500K (Luz Branca Fria), ideal para ambientes maiores que necessitam de mais luz, mantendo a economia.",
+    "price": 13.90,
+    "hasVariations": false
   },
   {
     "id": 48,
-    "name": "Disjuntor IDR Tetrapolar (Schneider)",
-    "category": "disjuntores",
-    "image": "img/prod-drtet-sch.png",
-    "description": "Cabo flexível PP 2x1,5mm² da Cobrecom, ideal para eletrodomésticos, ferramentas e extensões. Alta resistência e flexibilidade para uso em ambientes diversos.",
-    "price": 45.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "25A", "price": 15.00, "variationId": "40-25A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "40A", "price": 16.50, "variationId": "40-40A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "63A", "price": 18.00, "variationId": "40-63A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
-    ]
+    "name": "Lâmpada LED Bulbo E27 30W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-bulbo20-30.png",
+    "description": "Lâmpada LED Bulbo E27 30W (2400lm) Bivolt da Ourolux. Com temperatura de cor 6500K (Luz Branca Fria), é uma solução robusta para iluminação de grandes áreas, com alta performance e durabilidade.",
+    "price": 21.90,
+    "hasVariations": false
   },
   {
     "id": 49,
-    "name": "Disjuntor IDR Tetrapolar (Tramontina)",
-    "category": "disjuntores",
-    "image": "img/prod-drtet-tra.png",
-    "description": "Luminária de emergência LED da Segurimax, com autonomia de até 6 horas. Essencial para segurança em residências e comércios em caso de falta de energia, garantindo iluminação contínua.",
-    "price": 95.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "25A", "price": 15.00, "variationId": "49-25A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "40A", "price": 16.50, "variationId": "49-40A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "63A", "price": 18.00, "variationId": "49-63A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
-    ]
+    "name": "Lâmpada LED Bulbo E27 50W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-bulbo50.png",
+    "description": "Lâmpada LED Bulbo E27 50W (4000lm) Bivolt da Ourolux. Com temperatura de cor 6500K (Luz Branca Fria), ideal para uso comercial e industrial, oferecendo máxima luminosidade e eficiência.",
+    "price": 36.90,
+    "hasVariations": false
   },
   {
     "id": 50,
-    "name": "Lâmpada LED Bulbo 65W (Ourolux)",
+    "name": "Lâmpada LED Bulbo E27 65W (Ourolux)",
     "category": "iluminacao",
     "image": "img/prod-bulbo65.png",
-    "description": "Spot LED de embutir direcionável da Stella, perfeito para destacar pontos específicos em ambientes residenciais e comerciais. Design moderno e luz de alta qualidade.",
-    "price": 60.00,
+    "description": "Lâmpada LED Bulbo E27 65W (5000lm) Bivolt da Ourolux. Com temperatura de cor 6500K (Luz Branca Fria), é a escolha perfeita para ambientes que exigem altíssima iluminação e economia de energia.",
+    "price": 64.90,
     "hasVariations": false
   },
   {
     "id": 51,
-    "name": "Lâmpada LED Bulbo 75W a 150W (Cristallux)",
+    "name": "Lâmpada LED Bulbo E27 (Cristallux)",
     "category": "iluminacao",
     "image": "img/prod-bulbo75-150.png",
-    "description": "Placa cega 4x2 da linha LIZ, utilizada para cobrir caixas de passagem não utilizadas, mantendo a estética e segurança da instalação elétrica. Acabamento branco e discreto.",
-    "price": 3.00,
+    "baseDescription": "Lâmpada LED Bulbo E27 Bivolt 6500K (Luz Branca Fria) da Cristallux. Alta eficiência e longa vida útil, ideal para iluminação geral em diversos ambientes.",
     "hasVariations": true,
     "variations": [
-      { "power": "75W", "price": 15.00, "variationId": "51-75W", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "100W", "price": 16.50, "variationId": "51-100W", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "150W", "price": 18.00, "variationId": "51-150W", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+      { "power": "75W (7500lm)", "price": 89.90, "variationId": "51-75W", "descriptionAddon": "75W de potência com 7500 lúmens para maior luminosidade." },
+      { "power": "100W (10000lm)", "price": 111.90, "variationId": "51-100W", "descriptionAddon": "100W de potência com 10000 lúmens para ambientes que demandam mais luz." },
+      { "power": "150W (15000lm)", "price": 134.90, "variationId": "51-150W", "descriptionAddon": "150W de potência com 15000 lúmens para máxima iluminação." }
     ]
   },
   {
     "id": 52,
-    "name": "Plafon LED Sobrepor (Ourolux)",
-    "category": "iluminacao",
-    "image": "img/prod-plafonsob.png",
-    "description": "Plafon LED para sobrepor de 24W, ideal para iluminação geral de ambientes amplos. Proporciona luz uniforme, alta eficiência e fácil instalação em tetos e paredes.",
-    "price": 75.00,
+    "name": "Disjuntor DIN Monopolar Curva C (Schneider)",
+    "category": "disjuntores",
+    "image": "img/prod-dinmono-sch.png",
+    "baseDescription": "Disjuntor DIN Monopolar tipo C da Schneider, 3KA (ou 4.5KA para 70A+). Para proteção de circuitos elétricos contra sobrecargas e curtos-circuitos em instalações residenciais e comerciais. Confiabilidade e segurança.",
     "hasVariations": true,
     "variations": [
-      { "power": "12W", "price": 15.00, "variationId": "52-12W", "descriptionAddon": "10A para tomadas de uso geral." },  
-      { "power": "18W", "price": 15.00, "variationId": "52-18W", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "24W", "price": 16.50, "variationId": "52-24W", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "36W", "price": 18.00, "variationId": "52-36W", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+      { "power": "10A", "price": 12.90, "variationId": "52-10A", "descriptionAddon": "10A de capacidade." },
+      { "power": "16A", "price": 12.90, "variationId": "52-16A", "descriptionAddon": "16A de capacidade." },
+      { "power": "20A", "price": 12.90, "variationId": "52-20A", "descriptionAddon": "20A de capacidade." },
+      { "power": "25A", "price": 12.90, "variationId": "52-25A", "descriptionAddon": "25A de capacidade." },
+      { "power": "32A", "price": 12.90, "variationId": "52-32A", "descriptionAddon": "32A de capacidade." },
+      { "power": "40A", "price": 15.90, "variationId": "52-40A", "descriptionAddon": "40A de capacidade." },
+      { "power": "50A", "price": 15.90, "variationId": "52-50A", "descriptionAddon": "50A de capacidade." },
+      { "power": "63A", "price": 20.90, "variationId": "52-63A", "descriptionAddon": "63A de capacidade." }
     ]
   },
   {
     "id": 53,
-    "name": "Plafon LED Embutir (Ourolux)",
-    "category": "iluminacao",
-    "image": "img/prod-plafonemb.png",
-    "description": "Interruptor paralelo da linha Aria, permite controlar a mesma luminária de dois pontos diferentes. Essencial para corredores, escadas e ambientes maiores.",
-    "price": 6.50,
+    "name": "Disjuntor DIN Bipolar Curva C (Schneider)",
+    "category": "disjuntores",
+    "image": "img/prod-dinbi-sch.png",
+    "baseDescription": "Disjuntor DIN Bipolar tipo C da Schneider, 3KA (ou 4.5KA para 70A+). Essencial para proteção de circuitos fase-fase ou fase-neutro. Garante a segurança de equipamentos e instalações elétricas de maior potência.",
     "hasVariations": true,
     "variations": [
-      { "power": "12W", "price": 15.00, "variationId": "53-12W", "descriptionAddon": "10A para tomadas de uso geral." },  
-      { "power": "18W", "price": 15.00, "variationId": "53-18W", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "24W", "price": 16.50, "variationId": "53-24W", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "36W", "price": 18.00, "variationId": "553-36W", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+      { "power": "10A", "price": 49.80, "variationId": "53-10A", "descriptionAddon": "10A de capacidade." },
+      { "power": "16A", "price": 49.80, "variationId": "53-16A", "descriptionAddon": "16A de capacidade." },
+      { "power": "20A", "price": 49.80, "variationId": "53-20A", "descriptionAddon": "20A de capacidade." },
+      { "power": "25A", "price": 49.80, "variationId": "53-25A", "descriptionAddon": "25A de capacidade." },
+      { "power": "32A", "price": 49.80, "variationId": "53-32A", "descriptionAddon": "32A de capacidade." },
+      { "power": "40A", "price": 55.80, "variationId": "53-40A", "descriptionAddon": "40A de capacidade." },
+      { "power": "50A", "price": 55.80, "variationId": "53-50A", "descriptionAddon": "50A de capacidade." },
+      { "power": "63A", "price": 75.90, "variationId": "53-63A", "descriptionAddon": "63A de capacidade." },
+      { "power": "70A", "price": 79.90, "variationId": "53-70A", "descriptionAddon": "70A de capacidade (4.5KA)." }
     ]
   },
   {
     "id": 54,
-    "name": "Refletor Solar 50W (Cristallux)",
-    "category": "iluminacao",
-    "image": "img/prod-refletorsolar.png",
-    "description": "Minidisjuntor DIN curva B de 10A da Siemens, para proteção de equipamentos eletrônicos e circuitos sensíveis. Alta precisão e confiabilidade em sistemas elétricos.",
-    "price": 22.00,
-    "hasVariations": false
-  },
-  {
-    "id": 55,
-    "name": "Espeto Solar 5W (Ourolux)",
-    "category": "iluminacao",
-    "image": "img/prod-espetosolar.png",
-    "description": "Contator tripolar de 25A da Schneider Electric, para aplicações de comando e proteção em máquinas industriais. Robustez e alta performance para sistemas de automação.",
-    "price": 120.00,
-    "hasVariations": false
-  },
-  {
-    "id": 56,
-    "name": "Holofotes Emergência (Ourolux)",
-    "category": "iluminacao",
-    "image": "img/prod-holofotes.png",
-    "description": "Cabo coaxial RG6 da Multitoc, ideal para instalações de antenas de TV e sistemas de CFTV. Alta qualidade de transmissão de sinal e resistência a interferências.",
-    "price": 1.50,
-    "hasVariations": false
-  },
-  {
-    "id": 57,
-    "name": "Contator CWB 220V (WEG)",
-    "category": "contatores",
-    "image": "img/prod-cont-weg.png",
-    "description": "Luva de emenda para cabos da Tramontina, utilizada para isolar e proteger conexões elétricas. Essencial para garantir a segurança e durabilidade das emendas em instalações.",
-    "price": 0.50,
+    "name": "Disjuntor DIN Tripolar Curva C (Schneider)",
+    "category": "disjuntores",
+    "image": "img/prod-dintri-sch.png",
+    "baseDescription": "Disjuntor DIN Tripolar tipo C da Schneider, 3KA (ou 4.5KA). Projetado para proteção de circuitos trifásicos. Indispensável em instalações industriais e comerciais que exigem alta capacidade de interrupção.",
     "hasVariations": true,
     "variations": [
-      { "power": "9A", "price": 15.00, "variationId": "57-9A", "descriptionAddon": "10A para tomadas de uso geral." },  
-      { "power": "12A", "price": 15.00, "variationId": "57-12A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "18A", "price": 16.50, "variationId": "57-18A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "25A", "price": 18.00, "variationId": "57-25A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "32A", "price": 18.00, "variationId": "57-32A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "38A", "price": 18.00, "variationId": "57-38A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "40A", "price": 18.00, "variationId": "57-40A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "50A", "price": 18.00, "variationId": "57-50A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
-      { "power": "65A", "price": 18.00, "variationId": "57-65A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+      { "power": "10A", "price": 68.90, "variationId": "54-10A", "descriptionAddon": "10A de capacidade." },
+      { "power": "16A", "price": 68.90, "variationId": "54-16A", "descriptionAddon": "16A de capacidade." },
+      { "power": "20A", "price": 68.90, "variationId": "54-20A", "descriptionAddon": "20A de capacidade." },
+      { "power": "25A", "price": 68.90, "variationId": "54-25A", "descriptionAddon": "25A de capacidade." },
+      { "power": "32A", "price": 68.90, "variationId": "54-32A", "descriptionAddon": "32A de capacidade." },
+      { "power": "40A", "price": 69.90, "variationId": "54-40A", "descriptionAddon": "40A de capacidade." },
+      { "power": "50A", "price": 69.90, "variationId": "54-50A", "descriptionAddon": "50A de capacidade." },
+      { "power": "63A", "price": 89.90, "variationId": "54-63A", "descriptionAddon": "63A de capacidade." },
+      { "power": "70A", "price": 156.90, "variationId": "54-70A", "descriptionAddon": "70A de capacidade (4.5KA)." },
+      { "power": "80A", "price": 224.90, "variationId": "54-80A", "descriptionAddon": "80A de capacidade (4.5KA)." },
+      { "power": "100A", "price": 228.90, "variationId": "54-100A", "descriptionAddon": "100A de capacidade (4.5KA)." },
+      { "power": "125A", "price": 356.90, "variationId": "54-125A", "descriptionAddon": "125A de capacidade (4.5KA)." }
     ]
   },
   {
+    "id": 55,
+    "name": "IDR Bipolar (1P+N) 30mA (Schneider)",
+    "category": "disjuntores",
+    "image": "img/prod-drbi-sch.png",
+    "baseDescription": "Dispositivo Diferencial Residual (IDR) Bipolar (1P+N) 30mA da Schneider. Essencial para proteção contra choques elétricos e fugas de corrente, garantindo segurança em ambientes úmidos e instalações que exigem alta proteção.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "25A", "price": 164.90, "variationId": "55-25A", "descriptionAddon": "25A de capacidade." },
+      { "power": "40A", "price": 164.90, "variationId": "55-40A", "descriptionAddon": "40A de capacidade." },
+      { "power": "63A", "price": 183.90, "variationId": "55-63A", "descriptionAddon": "63A de capacidade." }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "IDR Tetrapolar (3P+N) 30mA (Schneider)",
+    "category": "disjuntores",
+    "image": "img/prod-drtet-sch.png",
+    "baseDescription": "Dispositivo Diferencial Residual (IDR) Tetrapolar (3P+N) 30mA da Schneider. Proporciona proteção abrangente contra choques elétricos e fugas de corrente em sistemas trifásicos, essencial para segurança industrial e comercial.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "25A", "price": 239.90, "variationId": "56-25A", "descriptionAddon": "25A de capacidade." },
+      { "power": "40A", "price": 209.90, "variationId": "56-40A", "descriptionAddon": "40A de capacidade." },
+      { "power": "63A", "price": 229.90, "variationId": "56-63A", "descriptionAddon": "63A de capacidade." }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Tomada Aria 4x2 10A (Tramontina)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-aria.png",
+    "description": "Tomada simples 2P+T (2 Pinos + Terra) de 10A da linha Aria 4x2 da Tramontina. Design clean que se adapta a qualquer ambiente, oferece segurança e durabilidade para uso residencial e comercial.",
+    "price": 5.90,
+    "hasVariations": false
+  },
+  {
     "id": 58,
-    "name": "Mini Contator CWC (WEG)",
-    "category": "contatores",
-    "image": "img/prod-minicont-weg.png",
-    "description": "Fita isolante de alta qualidade da 3M, ideal para isolamento de fios e cabos elétricos. Oferece alta adesão, resistência e segurança para instalações residenciais e industriais.",
-    "price": 8.00,
+    "name": "Interruptor Aria 4x2 Simples (Tramontina)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-aria.png",
+    "description": "Interruptor simples da linha Aria 4x2 da Tramontina. Ideal para controle de iluminação em ambientes residenciais e comerciais, com design discreto e funcional que garante acionamento suave e confiável.",
+    "price": 5.70,
     "hasVariations": false
   },
   {
     "id": 59,
-    "name": "Relé Térmico RTW (WEG)",
-    "category": "contatores",
-    "image": "img/prod-rele-weg.png",
-    "description": "Conector Wago de 3 vias, para conexões elétricas rápidas e seguras. Ideal para caixas de passagem e instalações que exigem praticidade e confiabilidade.",
-    "price": 4.00,
+    "name": "Interruptor Aria 4x2 Simples + Tomada 10A (Tramontina)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-tom-aria.png",
+    "description": "Conjunto completo com interruptor simples e tomada 2P+T de 10A da linha Aria 4x2 da Tramontina. Solução prática e elegante para instalações elétricas, combinando funcionalidade e estética.",
+    "price": 11.30,
     "hasVariations": false
   },
   {
     "id": 60,
-    "name": "Caixa Condulete Branca (Inpol)",
-    "category": "condulete",
-    "image": "img/prod-caixinha-b.png",
-    "description": "Caixa de passagem 4x2 da Amanco, para instalações elétricas em paredes e painéis. Alta resistência e durabilidade, garantindo a organização e proteção dos fios.",
-    "price": 5.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "1/2", "price": 15.00, "variationId": "60-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
-      { "power": "3/4", "price": 15.00, "variationId": "60-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "1", "price": 16.50, "variationId": "60-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
-    ]
+    "name": "Tomada Aria 4x2 Dupla 10A (Tramontina)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-dupla-aria.png",
+    "description": "Tomada dupla 2P+T de 10A da linha Aria 4x2 da Tramontina. Oferece duas saídas em um único módulo, otimizando o espaço e a funcionalidade em paredes e painéis.",
+    "price": 11.50,
+    "hasVariations": false
   },
   {
     "id": 61,
-    "name": "Caixa Condulete Preta 3/4 (Inpol)",
+    "name": "Abraçadeira Condulete Branca 3/4 (Inpol)",
     "category": "condulete",
-    "image": "img/prod-caixinha-p.png",
-    "description": "Eletroduto corrugado de 3/4 polegadas da Tigre, para proteção de fios e cabos em instalações elétricas. Flexibilidade e resistência para uso embutido em paredes e lajes.",
-    "price": 10.00,
+    "image": "img/prod-abra-b.png",
+    "description": "Abraçadeira Branca de 3/4 polegadas da Inpol, para fixação de conduletes. Garante uma instalação firme e segura, mantendo a organização da fiação aparente com acabamento limpo.",
+    "price": 1.10,
     "hasVariations": false
   },
   {
     "id": 62,
-    "name": "Conector Saída Branca (Inpol)",
+    "name": "Box Reto Condulete Branca 3/4 (Inpol)",
     "category": "condulete",
-    "image": "img/prod-con-b.png",
-    "description": "Tomada de embutir 2P+T de 20A da Tramontina, ideal para aparelhos de maior potência como micro-ondas e ar-condicionado. Segurança e durabilidade em instalações residenciais.",
-    "price": 18.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "1/2", "price": 15.00, "variationId": "62-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
-      { "power": "3/4", "price": 15.00, "variationId": "62-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "1", "price": 16.50, "variationId": "62-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
-    ]
-  },
-  {
-    "id": 63,
-    "name": "Conector Saída Preta 3/4 (Inpol)",
-    "category": "condulete",
-    "image": "img/prod-con-p.png",
-    "description": "Disjuntor Diferencial Residual (DR) bipolar de 25A da Schneider, para proteção contra choques elétricos e fugas de corrente. Indispensável para a segurança em ambientes úmidos.",
-    "price": 150.00,
+    "image": "img/prod-box-b.png",
+    "description": "Box Reto Branca de 3/4 polegadas da Inpol para instalações de conduletes. Permite a passagem e derivação de fios de forma organizada e segura, com acabamento discreto e resistente.",
+    "price": 3.65,
     "hasVariations": false
   },
   {
-    "id": 64,
-    "name": "Box Reto Branca (Inpol)",
+    "id": 63,
+    "name": "Condulete Caixa PVC 5 Entradas (Inpol)",
     "category": "condulete",
-    "image": "img/prod-box-b.png",
-    "description": "Sensor de presença da Exatron, ideal para automação de iluminação em ambientes residenciais e comerciais. Economia de energia e praticidade no dia a dia.",
-    "price": 45.00,
+    "image": "img/prod-caixinha-b.png",
+    "baseDescription": "Caixa Condulete de PVC com 5 entradas da Inpol. Disponível em tamanhos 1/2 e 3/4, ideal para instalações elétricas aparentes, oferecendo proteção e organização para fios e cabos.",
     "hasVariations": true,
     "variations": [
-      { "power": "1/2", "price": 15.00, "variationId": "64-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
-      { "power": "3/4", "price": 15.00, "variationId": "64-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "1", "price": 16.50, "variationId": "64-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
+      { "power": "1/2", "price": 4.85, "variationId": "63-1/2", "descriptionAddon": "Caixa de 1/2 polegada." },
+      { "power": "3/4", "price": 4.85, "variationId": "63-3/4", "descriptionAddon": "Caixa de 3/4 polegadas." }
     ]
   },
   {
-    "id": 65,
-    "name": "Box Reto Preta 3/4 (Inpol)",
+    "id": 64,
+    "name": "Conector Saída Condulete Branca 3/4 (Inpol)",
     "category": "condulete",
-    "image": "img/prod-box-p.png",
-    "description": "Temporizador digital da Coel, programável para ligar e desligar equipamentos em horários específicos. Ideal para automação de sistemas de iluminação, irrigação e outros.",
-    "price": 110.00,
+    "image": "img/prod-con-b.png",
+    "description": "Conector de Saída Branca de 3/4 polegadas da Inpol para conduletes. Permite a conexão de eletrodutos com segurança e acabamento. Essencial para direcionamento de fiações em instalações aparentes.",
+    "price": 1.10,
+    "hasVariations": false
+  },
+  {
+    "id": 65,
+    "name": "Cotovelo 90º Condulete Branca 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-coto-b.png",
+    "description": "Cotovelo 90º Branco de 3/4 polegadas da Inpol para sistemas de condulete. Permite curvas e mudanças de direção na fiação aparente, mantendo a organização e a estética da instalação.",
+    "price": 4.40,
     "hasVariations": false
   },
   {
     "id": 66,
-    "name": "Abraçadeira Branca (Inpol)",
+    "name": "Curva Longa Condulete Branca 3/4 (Inpol)",
     "category": "condulete",
-    "image": "img/prod-abra-b.png",
-    "description": "Fonte chaveada 12V 5A da Intelbras, para alimentação de câmeras de segurança, fitas de LED e outros dispositivos eletrônicos. Estabilidade e segurança na alimentação.",
-    "price": 55.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "1/2", "price": 15.00, "variationId": "66-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
-      { "power": "3/4", "price": 15.00, "variationId": "66-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "1", "price": 16.50, "variationId": "66-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
-    ]
+    "image": "img/prod-cur-b.png",
+    "description": "Curva Longa Branca de 3/4 polegadas com bolsa da Inpol para conduletes. Essencial para criar curvas suaves em instalações elétricas aparentes, mantendo a integridade dos cabos e a estética do ambiente.",
+    "price": 3.50,
+    "hasVariations": false
   },
   {
     "id": 67,
-    "name": "Abraçadeira Preta 3/4 (Inpol)",
+    "name": "Luva Condulete Branca 3/4 (Inpol)",
     "category": "condulete",
-    "image": "img/prod-abra-p.png",
-    "description": "Luminária de teto para lâmpada LED da Brilia, design moderno e elegante, ideal para salas, quartos e cozinhas. Compatível com diversas potências de lâmpadas LED.",
-    "price": 80.00,
+    "image": "img/prod-luva-b.png",
+    "description": "Luva Branca de 3/4 polegadas da Inpol para conduletes. Utilizada para emendar eletrodutos de forma segura e eficiente, garantindo a continuidade da instalação elétrica aparente.",
+    "price": 1.55,
     "hasVariations": false
   },
   {
     "id": 68,
-    "name": "Cotovelo Branca (Inpol)",
+    "name": "Abraçadeira Condulete Preta 3/4 (Inpol)",
     "category": "condulete",
-    "image": "img/prod-coto-b.png",
-    "description": "Rolo de cabo de rede Cat5e da Furukawa, ideal para redes de computadores e internet de alta velocidade. Qualidade e confiabilidade em instalações de rede.",
-    "price": 300.00,
-    "hasVariations": true,
-    "variations": [
-      { "power": "1/2", "price": 15.00, "variationId": "68-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
-      { "power": "3/4", "price": 15.00, "variationId": "68-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "1", "price": 16.50, "variationId": "68-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
-    ]
+    "image": "img/prod-abra-p.png",
+    "description": "Abraçadeira Preta de 3/4 polegadas da Inpol para fixação de conduletes. Ideal para instalações aparentes onde a discrição é necessária, oferecendo fixação segura e durável.",
+    "price": 1.30,
+    "hasVariations": false
   },
   {
     "id": 69,
-    "name": "Cotovelo Preta 3/4 (Inpol)",
+    "name": "Box Reto Condulete Preta 3/4 (Inpol)",
     "category": "condulete",
-    "image": "img/prod-coto-p.png",
-    "description": "Tomada USB de parede da Excellence, com duas portas USB para carregamento de celulares e tablets. Praticidade e modernidade para suas instalações elétricas.",
-    "price": 45.00,
+    "image": "img/prod-box-p.png",
+    "description": "Box Reto Preta de 3/4 polegadas da Inpol para instalações de conduletes. Solução robusta e discreta para a organização e proteção de fios e cabos em instalações aparentes.",
+    "price": 3.60,
     "hasVariations": false
   },
   {
     "id": 70,
-    "name": "Curva Branca (Inpol)",
+    "name": "Condulete Caixa PVC Preta 5 Entradas (Inpol)",
     "category": "condulete",
-    "image": "img/prod-cur-b.png",
-    "description": "Módulo interruptor Wi-Fi para automação de iluminação, compatível com assistentes de voz. Transforme sua casa em um ambiente inteligente com controle remoto e agendamento.",
-    "price": 70.00,
+    "image": "img/prod-caixinha-p.png",
+    "baseDescription": "Caixa Condulete de PVC Preta com 5 entradas da Inpol. Disponível em tamanhos 1/2 e 3/4, ideal para instalações elétricas aparentes que exigem discrição e proteção para fios e cabos.",
     "hasVariations": true,
     "variations": [
-      { "power": "1/2", "price": 15.00, "variationId": "70-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
-      { "power": "3/4", "price": 15.00, "variationId": "70-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "1", "price": 16.50, "variationId": "70-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
+      { "power": "1/2", "price": 5.30, "variationId": "70-1/2", "descriptionAddon": "Caixa de 1/2 polegada." },
+      { "power": "3/4", "price": 5.30, "variationId": "70-3/4", "descriptionAddon": "Caixa de 3/4 polegadas." }
     ]
   },
   {
     "id": 71,
-    "name": "Curva Preta 3/4 (Inpol)",
+    "name": "Conector Saída Condulete Preta 3/4 (Inpol)",
     "category": "condulete",
-    "image": "img/prod-cur-p.png",
-    "description": "Central de alarme monitorada da JFL, para segurança residencial e comercial. Integra sensores de presença, sirenes e comunicação com empresas de monitoramento.",
-    "price": 350.00,
+    "image": "img/prod-con-p.png",
+    "description": "Conector de Saída Preta de 3/4 polegadas da Inpol para conduletes. Oferece uma solução discreta e resistente para a condução de fiações elétricas, ideal para instalações aparentes em diversas superfícies.",
+    "price": 1.20,
     "hasVariations": false
   },
   {
     "id": 72,
-    "name": "Spot LED Quadrado 5W (Ourolux)",
-    "category": "iluminacao",
-    "image": "img/prod-spot-quad.png",
-    "description": "Campainha sem fio da Intelbras, fácil instalação e diversos toques. Ideal para residências e escritórios, sem a necessidade de fiação.",
-    "price": 60.00,
+    "name": "Cotovelo 90º Condulete Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-coto-p.png",
+    "description": "Cotovelo 90º Preto de 3/4 polegadas da Inpol para sistemas de condulete. Ideal para criar curvas discretas em instalações elétricas aparentes, garantindo proteção e estética.",
+    "price": 4.70,
     "hasVariations": false
   },
   {
     "id": 73,
-    "name": "Spot LED Redondo 5W (Ourolux)",
-    "category": "iluminacao",
-    "image": "img/prod-spot-red.png",
-    "description": "Quadro de distribuição para 12 disjuntores da Cemar, para organização e proteção de circuitos elétricos. Essencial para instalações residenciais e comerciais.",
-    "price": 90.00,
+    "name": "Curva Longa Condulete Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-cur-p.png",
+    "description": "Curva Longa Preta de 3/4 polegadas com bolsa da Inpol para conduletes. Essencial para criar curvas suaves em instalações elétricas aparentes, mantendo a integridade dos cabos e a estética do ambiente com discrição.",
+    "price": 2.97,
     "hasVariations": false
+  },
+  {
+    "id": 74,
+    "name": "Luva Condulete Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-luva-p.png",
+    "description": "Luva Preta de 3/4 polegadas da Inpol para conduletes. Utilizada para emendar eletrodutos de forma segura e eficiente, garantindo a continuidade da instalação elétrica aparente com acabamento discreto.",
+    "price": 1.70,
+    "hasVariations": false
+  },
+  {
+    "id": 75,
+    "name": "Contator CWB 220V (WEG)",
+    "category": "contatores",
+    "image": "img/prod-cont-weg.png",
+    "baseDescription": "Contator Tripolar CWB 220V com 3P+1NA+1NF da WEG. Utilizado para acionamento e controle de motores elétricos em aplicações industriais e automação. Alta durabilidade e desempenho confiável.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "9A", "price": 129.90, "variationId": "75-9A", "descriptionAddon": "(CWB9-11-30D23)." },
+      { "power": "12A", "price": 139.90, "variationId": "75-12A", "descriptionAddon": "(CWB12-11-30D23)." },
+      { "power": "18A", "price": 149.90, "variationId": "75-18A", "descriptionAddon": "(CWB18-11-30D23)." },
+      { "power": "25A", "price": 170.90, "variationId": "75-25A", "descriptionAddon": "(CWB25-11-30D23)." },
+      { "power": "32A", "price": 297.70, "variationId": "75-32A", "descriptionAddon": "(CWB32-11-30D23)." },
+      { "power": "38A", "price": 363.90, "variationId": "75-38A", "descriptionAddon": "(CWB38-11-30D23)." },
+      { "power": "40A", "price": 499.80, "variationId": "75-40A", "descriptionAddon": "(CWB40-11-30D23)." },
+      { "power": "50A", "price": 595.80, "variationId": "75-50A", "descriptionAddon": "(CWB50-11-30D23)." },
+      { "power": "65A", "price": 770.90, "variationId": "75-65A", "descriptionAddon": "(CWB65-11-30D23)." }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Relé Térmico RW27 (WEG)",
+    "category": "contatores",
+    "image": "img/prod-rele-weg.png",
+    "baseDescription": "Relé Térmico RW27 de 3 Pinos da WEG, para Contatores CWB9-38. Essencial para proteção de motores elétricos contra sobrecargas e falhas de fase, garantindo a longevidade do motor e a segurança do sistema. Ajustável para diversas correntes.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "1.2-1.8A", "price": 134.90, "variationId": "76-1.2-1.8A", "descriptionAddon": "Faixa de ajuste de 1.2 a 1.8A (RW27-2D3-D018)." },
+      { "power": "4-6.3A", "price": 134.90, "variationId": "76-4-6.3A", "descriptionAddon": "Faixa de ajuste de 4 a 6.3A (RW27-2D3-D063)." },
+      { "power": "2.8-4A", "price": 134.90, "variationId": "76-2.8-4A", "descriptionAddon": "Faixa de ajuste de 2.8 a 4A (RW27-2D3-U004)." },
+      { "power": "5.6-8A", "price": 134.90, "variationId": "76-5.6-8A", "descriptionAddon": "Faixa de ajuste de 5.6 a 8A (RW27-2D3-U008)." },
+      { "power": "7-10A", "price": 134.90, "variationId": "76-7-10A", "descriptionAddon": "Faixa de ajuste de 7 a 10A (RW27-2D3-U010)." },
+      { "power": "10-15A", "price": 136.80, "variationId": "76-10-15A", "descriptionAddon": "Faixa de ajuste de 10 a 15A (RW27-2D3-U015)." },
+      { "power": "11-17A", "price": 136.80, "variationId": "76-11-17A", "descriptionAddon": "Faixa de ajuste de 11 a 17A (RW27-2D3-U017)." },
+      { "power": "15-23A", "price": 136.80, "variationId": "76-15-23A", "descriptionAddon": "Faixa de ajuste de 15 a 23A (RW27-2D3-U023)." },
+      { "power": "22-32A", "price": 136.80, "variationId": "76-22-32A", "descriptionAddon": "Faixa de ajuste de 22 a 32A (RW27-2D3-U032)." }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Mini Contator CWC (WEG)",
+    "category": "contatores",
+    "image": "img/prod-minicont-weg.png",
+    "baseDescription": "Mini Contator CWC 220VCA 3P+1NA da WEG. Compacto e eficiente, ideal para automação residencial e industrial leve, controle de pequenas cargas e sinalização. Alta durabilidade e baixo consumo de energia.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "7A", "price": 79.90, "variationId": "77-7A", "descriptionAddon": "(CW07-10-30V25)." },
+      { "power": "9A", "price": 107.80, "variationId": "77-9A", "descriptionAddon": "(CWC09-10-30V26)." },
+      { "power": "12A", "price": 114.50, "variationId": "77-12A", "descriptionAddon": "(CWC012-10-30V26)." },
+      { "power": "Auxiliar 2NA+2NF", "price": 79.90, "variationId": "77-Aux", "descriptionAddon": "Mini Contator Auxiliar 10A 220VCA (CWCA0-22-00V26)." }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Tomada Aria 4x2 10A (Tramontina)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-aria.png",
+    "description": "Tomada simples 2P+T (2 Pinos + Terra) de 10A da linha Aria 4x2 da Tramontina. Design clean que se adapta a qualquer ambiente, oferece segurança e durabilidade para uso residencial e comercial.",
+    "price": 5.90,
+    "hasVariations": false
+  },
+  {
+    "id": 79,
+    "name": "Interruptor Aria 4x2 Simples (Tramontina)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-aria.png",
+    "description": "Interruptor simples da linha Aria 4x2 da Tramontina. Ideal para controle de iluminação em ambientes residenciais e comerciais, com design discreto e funcional que garante acionamento suave e confiável.",
+    "price": 5.70,
+    "hasVariations": false
+  },
+  {
+    "id": 80,
+    "name": "Interruptor Aria 4x2 Simples + Tomada 10A (Tramontina)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-inter-tom-aria.png",
+    "description": "Conjunto completo com interruptor simples e tomada 2P+T de 10A da linha Aria 4x2 da Tramontina. Solução prática e elegante para instalações elétricas, combinando funcionalidade e estética.",
+    "price": 11.30,
+    "hasVariations": false
+  },
+  {
+    "id": 81,
+    "name": "Tomada Aria 4x2 Dupla 10A (Tramontina)",
+    "category": "interruptoresTomadas",
+    "image": "img/prod-tom-dupla-aria.png",
+    "description": "Tomada dupla 2P+T de 10A da linha Aria 4x2 da Tramontina. Oferece duas saídas em um único módulo, otimizando o espaço e a funcionalidade em paredes e painéis.",
+    "price": 11.50,
+    "hasVariations": false
+  },
+  {
+    "id": 82,
+    "name": "Abraçadeira Condulete Branca 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-abra-b.png",
+    "description": "Abraçadeira Branca de 3/4 polegadas da Inpol, para fixação de conduletes. Garante uma instalação firme e segura, mantendo a organização da fiação aparente com acabamento limpo.",
+    "price": 1.10,
+    "hasVariations": false
+  },
+  {
+    "id": 83,
+    "name": "Box Reto Condulete Branca 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-box-b.png",
+    "description": "Box Reto Branca de 3/4 polegadas da Inpol para instalações de conduletes. Permite a passagem e derivação de fios de forma organizada e segura, com acabamento discreto e resistente.",
+    "price": 3.65,
+    "hasVariations": false
+  },
+  {
+    "id": 84,
+    "name": "Condulete Caixa PVC 5 Entradas (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-caixinha-b.png",
+    "baseDescription": "Caixa Condulete de PVC com 5 entradas da Inpol. Ideal para instalações elétricas aparentes, oferecendo proteção e organização para fios e cabos.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "1/2", "price": 4.85, "variationId": "84-1/2", "descriptionAddon": "Caixa de 1/2 polegada." },
+      { "power": "3/4", "price": 4.85, "variationId": "84-3/4", "descriptionAddon": "Caixa de 3/4 polegadas." }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Conector Saída Condulete Branca 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-con-b.png",
+    "description": "Conector de Saída Branca de 3/4 polegadas da Inpol para conduletes. Permite a conexão de eletrodutos com segurança e acabamento. Essencial para direcionamento de fiações em instalações aparentes.",
+    "price": 1.10,
+    "hasVariations": false
+  },
+  {
+    "id": 86,
+    "name": "Cotovelo 90º Condulete Branca 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-coto-b.png",
+    "description": "Cotovelo 90º Branco de 3/4 polegadas da Inpol para sistemas de condulete. Permite curvas e mudanças de direção na fiação aparente, mantendo a organização e a estética da instalação.",
+    "price": 4.40,
+    "hasVariations": false
+  },
+  {
+    "id": 87,
+    "name": "Curva Longa Condulete Branca 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-cur-b.png",
+    "description": "Curva Longa Branca de 3/4 polegadas com bolsa da Inpol para conduletes. Essencial para criar curvas suaves em instalações elétricas aparentes, mantendo a integridade dos cabos e a estética do ambiente.",
+    "price": 3.50,
+    "hasVariations": false
+  },
+  {
+    "id": 88,
+    "name": "Luva Condulete Branca 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-luva-b.png",
+    "description": "Luva Branca de 3/4 polegadas da Inpol para conduletes. Utilizada para emendar eletrodutos de forma segura e eficiente, garantindo a continuidade da instalação elétrica aparente.",
+    "price": 1.55,
+    "hasVariations": false
+  },
+  {
+    "id": 89,
+    "name": "Abraçadeira Condulete Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-abra-p.png",
+    "description": "Abraçadeira Preta de 3/4 polegadas da Inpol para fixação de conduletes. Ideal para instalações aparentes onde a discrição é necessária, oferecendo fixação segura e durável.",
+    "price": 1.30,
+    "hasVariations": false
+  },
+  {
+    "id": 90,
+    "name": "Box Reto Condulete Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-box-p.png",
+    "description": "Box Reto Preta de 3/4 polegadas da Inpol para instalações de conduletes. Solução robusta e discreta para a organização e proteção de fios e cabos em instalações aparentes.",
+    "price": 3.60,
+    "hasVariations": false
+  },
+  {
+    "id": 91,
+    "name": "Condulete Caixa PVC Preta 5 Entradas (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-caixinha-p.png",
+    "baseDescription": "Caixa Condulete de PVC Preta com 5 entradas da Inpol. Ideal para instalações elétricas aparentes que exigem discrição e proteção para fios e cabos.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "1/2", "price": 5.30, "variationId": "93-1/2", "descriptionAddon": "Caixa de 1/2 polegada." },
+      { "power": "3/4", "price": 5.30, "variationId": "93-3/4", "descriptionAddon": "Caixa de 3/4 polegadas." }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Conector Saída Condulete Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-con-p.png",
+    "description": "Conector de Saída Preta de 3/4 polegadas da Inpol para conduletes. Oferece uma solução discreta e resistente para a condução de fiações elétricas, ideal para instalações aparentes em diversas superfícies.",
+    "price": 1.20,
+    "hasVariations": false
+  },
+  {
+    "id": 93,
+    "name": "Cotovelo 90º Condulete Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-coto-p.png",
+    "description": "Cotovelo 90º Preto de 3/4 polegadas da Inpol para sistemas de condulete. Ideal para criar curvas discretas em instalações elétricas aparentes, garantindo proteção e estética.",
+    "price": 4.70,
+    "hasVariations": false
+  },
+  {
+    "id": 94,
+    "name": "Curva Longa Condulete Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-cur-p.png",
+    "description": "Curva Longa Preta de 3/4 polegadas com bolsa da Inpol para conduletes. Essencial para criar curvas suaves em instalações elétricas aparentes, mantendo a integridade dos cabos e a estética do ambiente com discrição.",
+    "price": 2.97,
+    "hasVariations": false
+  },
+  {
+    "id": 95,
+    "name": "Luva Condulete Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-luva-p.png",
+    "description": "Luva Preta de 3/4 polegadas da Inpol para conduletes. Utilizada para emendar eletrodutos de forma segura e eficiente, garantindo a continuidade da instalação elétrica aparente com acabamento discreto.",
+    "price": 1.70,
+    "hasVariations": false
+  },
+  
+  {
+    "id": 96,
+    "name": "Disjuntor DIN Monopolar Curva C (Tramontina)",
+    "category": "disjuntores",
+    "image": "img/prod-dinmono-tra.png",
+    "baseDescription": "Disjuntor DIN Monopolar Curva C da Tramontina, 3KA (ou 6KA para 63A). Ideal para proteção de circuitos elétricos contra sobrecargas e curtos-circuitos em instalações residenciais e comerciais. Confiabilidade e segurança.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "4A", "price": 24.40, "variationId": "96-4A", "descriptionAddon": "4A de capacidade." },
+      { "power": "6A", "price": 23.80, "variationId": "96-6A", "descriptionAddon": "6A de capacidade." },
+      { "power": "10A", "price": 10.90, "variationId": "96-10A", "descriptionAddon": "10A de capacidade." },
+      { "power": "16A", "price": 10.90, "variationId": "96-16A", "descriptionAddon": "16A de capacidade." },
+      { "power": "20A", "price": 10.90, "variationId": "96-20A", "descriptionAddon": "20A de capacidade." },
+      { "power": "25A", "price": 10.90, "variationId": "96-25A", "descriptionAddon": "25A de capacidade." },
+      { "power": "32A", "price": 10.90, "variationId": "96-32A", "descriptionAddon": "32A de capacidade." },
+      { "power": "40A", "price": 13.90, "variationId": "96-40A", "descriptionAddon": "40A de capacidade." },
+      { "power": "50A", "price": 13.90, "variationId": "96-50A", "descriptionAddon": "50A de capacidade." },
+      { "power": "63A (3KA)", "price": 15.90, "variationId": "96-63A-3KA", "descriptionAddon": "63A de capacidade (3KA)." },
+      { "power": "63A (6KA)", "price": 29.90, "variationId": "96-63A-6KA", "descriptionAddon": "63A de capacidade (6KA)." }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Disjuntor DIN Bipolar Curva C (Tramontina)",
+    "category": "disjuntores",
+    "image": "img/prod-dinbi-tra.png",
+    "baseDescription": "Disjuntor DIN Bipolar Curva C da Tramontina, 3KA (ou 6KA). Essencial para proteção de circuitos fase-fase ou fase-neutro. Garante a segurança de equipamentos e instalações elétricas de maior potência.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "10A", "price": 38.90, "variationId": "97-10A", "descriptionAddon": "10A de capacidade." },
+      { "power": "16A", "price": 38.90, "variationId": "97-16A", "descriptionAddon": "16A de capacidade." },
+      { "power": "20A", "price": 38.90, "variationId": "97-20A", "descriptionAddon": "20A de capacidade." },
+      { "power": "25A", "price": 38.90, "variationId": "97-25A", "descriptionAddon": "25A de capacidade." },
+      { "power": "32A", "price": 38.90, "variationId": "97-32A", "descriptionAddon": "32A de capacidade." },
+      { "power": "40A", "price": 38.90, "variationId": "97-40A", "descriptionAddon": "40A de capacidade." },
+      { "power": "50A", "price": 38.90, "variationId": "97-50A", "descriptionAddon": "50A de capacidade." },
+      { "power": "63A (3KA)", "price": 38.90, "variationId": "97-63A-3KA", "descriptionAddon": "63A de capacidade (3KA)." },
+      { "power": "63A (6KA)", "price": 42.90, "variationId": "97-63A-6KA", "descriptionAddon": "63A de capacidade (6KA)." }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Disjuntor DIN Tripolar Curva C (Tramontina)",
+    "category": "disjuntores",
+    "image": "img/prod-dintri-tra.png",
+    "baseDescription": "Disjuntor DIN Tripolar Curva C da Tramontina, 3KA (ou 6KA/10KA). Projetado para proteção de circuitos trifásicos. Indispensável em instalações industriais e comerciais que exigem alta capacidade de interrupção.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "10A", "price": 54.90, "variationId": "98-10A", "descriptionAddon": "10A de capacidade." },
+      { "power": "16A", "price": 54.90, "variationId": "98-16A", "descriptionAddon": "16A de capacidade." },
+      { "power": "20A", "price": 54.90, "variationId": "98-20A", "descriptionAddon": "20A de capacidade." },
+      { "power": "25A", "price": 54.90, "variationId": "98-25A", "descriptionAddon": "25A de capacidade." },
+      { "power": "32A", "price": 54.90, "variationId": "98-32A", "descriptionAddon": "32A de capacidade." },
+      { "power": "40A", "price": 58.80, "variationId": "98-40A", "descriptionAddon": "40A de capacidade." },
+      { "power": "50A", "price": 58.80, "variationId": "98-50A", "descriptionAddon": "50A de capacidade." },
+      { "power": "63A (3KA)", "price": 58.80, "variationId": "98-63A-3KA", "descriptionAddon": "63A de capacidade (3KA)." },
+      { "power": "63A (6KA)", "price": 89.90, "variationId": "98-63A-6KA", "descriptionAddon": "63A de capacidade (6KA)." },
+      { "power": "70A", "price": 79.90, "variationId": "98-70A", "descriptionAddon": "70A de capacidade (3KA)." },
+      { "power": "80A (10KA)", "price": 174.90, "variationId": "98-80A-10KA", "descriptionAddon": "80A de capacidade (10KA)." },
+      { "power": "100A (10KA)", "price": 179.90, "variationId": "98-100A-10KA", "descriptionAddon": "100A de capacidade (10KA)." },
+      { "power": "125A (10KA)", "price": 239.90, "variationId": "98-125A-10KA", "descriptionAddon": "125A de capacidade (10KA)." }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "IDR Bipolar (1P+N) 30mA (Tramontina)",
+    "category": "disjuntores",
+    "image": "img/prod-drbi-tra.png",
+    "baseDescription": "Dispositivo Diferencial Residual (IDR) Bipolar (1P+N) 30mA da Tramontina. Essencial para proteção contra choques elétricos e fugas de corrente, indispensável para a segurança em ambientes úmidos.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "25A", "price": 106.90, "variationId": "99-25A", "descriptionAddon": "25A de capacidade." },
+      { "power": "40A", "price": 106.90, "variationId": "99-40A", "descriptionAddon": "40A de capacidade." },
+      { "power": "63A", "price": 106.90, "variationId": "99-63A", "descriptionAddon": "63A de capacidade." }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "IDR Tetrapolar (3P+N) 30mA (Tramontina)",
+    "category": "disjuntores",
+    "image": "img/prod-drtet-tra.png",
+    "baseDescription": "Dispositivo Diferencial Residual (IDR) Tetrapolar (3P+N) 30mA da Tramontina. Garante a segurança de instalações trifásicas contra choques elétricos e fugas de corrente, com a qualidade e confiabilidade da marca.",
+    "hasVariations": true,
+    "variations": [
+      { "power": "25A", "price": 158.90, "variationId": "100-25A", "descriptionAddon": "25A de capacidade." },
+      { "power": "40A", "price": 158.90, "variationId": "100-40A", "descriptionAddon": "40A de capacidade." },
+      { "power": "63A", "price": 158.90, "variationId": "100-63A", "descriptionAddon": "63A de capacidade." }
+    ]
   }
 ]
