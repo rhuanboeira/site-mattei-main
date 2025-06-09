@@ -653,7 +653,7 @@
   },
   {
     "id": 57,
-    "name": "Contator CWB (WEG)",
+    "name": "Contator CWB 220V (WEG)",
     "category": "contatores",
     "image": "img/prod-cont-weg.png",
     "description": "Luva de emenda para cabos da Tramontina, utilizada para isolar e proteger conexões elétricas. Essencial para garantir a segurança e durabilidade das emendas em instalações.",
@@ -662,170 +662,187 @@
     "variations": [
       { "power": "9A", "price": 15.00, "variationId": "57-9A", "descriptionAddon": "10A para tomadas de uso geral." },  
       { "power": "12A", "price": 15.00, "variationId": "57-12A", "descriptionAddon": "10A para tomadas de uso geral." },
-      { "power": "18A", "price": 16.50, "variationId": "53-24W", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
-      { "power": "36W", "price": 18.00, "variationId": "553-36W", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
+      { "power": "18A", "price": 16.50, "variationId": "57-18A", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." },
+      { "power": "25A", "price": 18.00, "variationId": "57-25A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "32A", "price": 18.00, "variationId": "57-32A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "38A", "price": 18.00, "variationId": "57-38A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "40A", "price": 18.00, "variationId": "57-40A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "50A", "price": 18.00, "variationId": "57-50A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." },
+      { "power": "65A", "price": 18.00, "variationId": "57-65A", "descriptionAddon": "20A para chuveiros de baixa potência ou ar condicionado." }
     ]
   },
   {
     "id": 58,
-    "name": "Fita Isolante (3M)",
-    "category": "outros",
-    "image": "img/prod-fita-isolante.png",
+    "name": "Mini Contator CWC (WEG)",
+    "category": "contatores",
+    "image": "img/prod-minicont-weg.png",
     "description": "Fita isolante de alta qualidade da 3M, ideal para isolamento de fios e cabos elétricos. Oferece alta adesão, resistência e segurança para instalações residenciais e industriais.",
     "price": 8.00,
     "hasVariations": false
   },
   {
     "id": 59,
-    "name": "Conector Wago 3 Vias (Wago)",
-    "category": "outros",
-    "image": "img/prod-conector-wago.png",
+    "name": "Relé Térmico RTW (WEG)",
+    "category": "contatores",
+    "image": "img/prod-rele-weg.png",
     "description": "Conector Wago de 3 vias, para conexões elétricas rápidas e seguras. Ideal para caixas de passagem e instalações que exigem praticidade e confiabilidade.",
     "price": 4.00,
     "hasVariations": false
   },
   {
     "id": 60,
-    "name": "Caixa de Passagem 4x2 (Amanco)",
-    "category": "outros",
-    "image": "img/prod-caixa-passagem.png",
+    "name": "Caixa Condulete Branca (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-caixinha-b.png",
     "description": "Caixa de passagem 4x2 da Amanco, para instalações elétricas em paredes e painéis. Alta resistência e durabilidade, garantindo a organização e proteção dos fios.",
     "price": 5.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "1/2", "price": 15.00, "variationId": "60-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
+      { "power": "3/4", "price": 15.00, "variationId": "60-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "1", "price": 16.50, "variationId": "60-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
+    ]
   },
   {
     "id": 61,
-    "name": "Eletroduto Corrugado 3/4 (Tigre)",
-    "category": "outros",
-    "image": "img/prod-eletroduto.png",
+    "name": "Caixa Condulete Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-caixinha-p.png",
     "description": "Eletroduto corrugado de 3/4 polegadas da Tigre, para proteção de fios e cabos em instalações elétricas. Flexibilidade e resistência para uso embutido em paredes e lajes.",
     "price": 10.00,
     "hasVariations": false
   },
   {
     "id": 62,
-    "name": "Tomada de Embutir 2P+T 20A (Tramontina)",
-    "category": "interruptoresTomadas",
-    "image": "img/prod-tom-embutir.png",
+    "name": "Conector Saída Branca (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-con-b.png",
     "description": "Tomada de embutir 2P+T de 20A da Tramontina, ideal para aparelhos de maior potência como micro-ondas e ar-condicionado. Segurança e durabilidade em instalações residenciais.",
     "price": 18.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "1/2", "price": 15.00, "variationId": "62-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
+      { "power": "3/4", "price": 15.00, "variationId": "62-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "1", "price": 16.50, "variationId": "62-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
+    ]
   },
   {
     "id": 63,
-    "name": "Disjuntor DR Bipolar 25A (Schneider)",
-    "category": "disjuntores",
-    "image": "img/prod-dr-schneider.png",
+    "name": "Conector Saída Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-con-p.png",
     "description": "Disjuntor Diferencial Residual (DR) bipolar de 25A da Schneider, para proteção contra choques elétricos e fugas de corrente. Indispensável para a segurança em ambientes úmidos.",
     "price": 150.00,
     "hasVariations": false
   },
   {
     "id": 64,
-    "name": "Sensor de Presença (Exatron)",
-    "category": "outros",
-    "image": "img/prod-sensor-presenca.png",
+    "name": "Box Reto Branca (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-box-b.png",
     "description": "Sensor de presença da Exatron, ideal para automação de iluminação em ambientes residenciais e comerciais. Economia de energia e praticidade no dia a dia.",
     "price": 45.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "1/2", "price": 15.00, "variationId": "64-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
+      { "power": "3/4", "price": 15.00, "variationId": "64-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "1", "price": 16.50, "variationId": "64-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
+    ]
   },
   {
     "id": 65,
-    "name": "Temporizador Digital (Coel)",
-    "category": "outros",
-    "image": "img/prod-temporizador.png",
+    "name": "Box Reto Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-box-p.png",
     "description": "Temporizador digital da Coel, programável para ligar e desligar equipamentos em horários específicos. Ideal para automação de sistemas de iluminação, irrigação e outros.",
     "price": 110.00,
     "hasVariations": false
   },
   {
     "id": 66,
-    "name": "Fonte Chaveada 12V 5A (Intelbras)",
-    "category": "outros",
-    "image": "img/prod-fonte-chaveada.png",
+    "name": "Abraçadeira Branca (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-abra-b.png",
     "description": "Fonte chaveada 12V 5A da Intelbras, para alimentação de câmeras de segurança, fitas de LED e outros dispositivos eletrônicos. Estabilidade e segurança na alimentação.",
     "price": 55.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "1/2", "price": 15.00, "variationId": "66-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
+      { "power": "3/4", "price": 15.00, "variationId": "66-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "1", "price": 16.50, "variationId": "66-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
+    ]
   },
   {
     "id": 67,
-    "name": "Luminária de Teto para Lâmpada LED (Brilia)",
-    "category": "iluminacao",
-    "image": "img/prod-luminaria-teto.png",
+    "name": "Abraçadeira Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-abra-p.png",
     "description": "Luminária de teto para lâmpada LED da Brilia, design moderno e elegante, ideal para salas, quartos e cozinhas. Compatível com diversas potências de lâmpadas LED.",
     "price": 80.00,
     "hasVariations": false
   },
   {
     "id": 68,
-    "name": "Cabo de Rede Cat5e (Furukawa)",
-    "category": "cabos",
-    "image": "img/prod-cabo-rede.png",
+    "name": "Cotovelo Branca (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-coto-b.png",
     "description": "Rolo de cabo de rede Cat5e da Furukawa, ideal para redes de computadores e internet de alta velocidade. Qualidade e confiabilidade em instalações de rede.",
     "price": 300.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "1/2", "price": 15.00, "variationId": "68-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
+      { "power": "3/4", "price": 15.00, "variationId": "68-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "1", "price": 16.50, "variationId": "68-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
+    ]
   },
   {
     "id": 69,
-    "name": "Tomada USB de Parede (Excellence)",
-    "category": "interruptoresTomadas",
-    "image": "img/prod-tomada-usb.png",
+    "name": "Cotovelo Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-coto-p.png",
     "description": "Tomada USB de parede da Excellence, com duas portas USB para carregamento de celulares e tablets. Praticidade e modernidade para suas instalações elétricas.",
     "price": 45.00,
     "hasVariations": false
   },
   {
     "id": 70,
-    "name": "Módulo Interruptor Wi-Fi (Smart Home)",
-    "category": "outros",
-    "image": "img/prod-modulo-wifi.png",
+    "name": "Curva Branca (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-cur-b.png",
     "description": "Módulo interruptor Wi-Fi para automação de iluminação, compatível com assistentes de voz. Transforme sua casa em um ambiente inteligente com controle remoto e agendamento.",
     "price": 70.00,
-    "hasVariations": false
+    "hasVariations": true,
+    "variations": [
+      { "power": "1/2", "price": 15.00, "variationId": "70-1/2", "descriptionAddon": "10A para tomadas de uso geral." },  
+      { "power": "3/4", "price": 15.00, "variationId": "70-3/4", "descriptionAddon": "10A para tomadas de uso geral." },
+      { "power": "1", "price": 16.50, "variationId": "70-1", "descriptionAddon": "16A para tomadas e pequenos eletrodomésticos." }
+    ]
   },
   {
     "id": 71,
-    "name": "Central de Alarme Monitorada (JFL)",
-    "category": "outros",
-    "image": "img/prod-central-alarme.png",
+    "name": "Curva Preta 3/4 (Inpol)",
+    "category": "condulete",
+    "image": "img/prod-cur-p.png",
     "description": "Central de alarme monitorada da JFL, para segurança residencial e comercial. Integra sensores de presença, sirenes e comunicação com empresas de monitoramento.",
     "price": 350.00,
     "hasVariations": false
   },
   {
     "id": 72,
-    "name": "Campainha Sem Fio (Intelbras)",
-    "category": "outros",
-    "image": "img/prod-campainha.png",
+    "name": "Spot LED Quadrado 5W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-spot-quad.png",
     "description": "Campainha sem fio da Intelbras, fácil instalação e diversos toques. Ideal para residências e escritórios, sem a necessidade de fiação.",
     "price": 60.00,
     "hasVariations": false
   },
   {
     "id": 73,
-    "name": "Quadro de Distribuição 12 Disjuntores (Cemar)",
-    "category": "outros",
-    "image": "img/prod-qd.png",
+    "name": "Spot LED Redondo 5W (Ourolux)",
+    "category": "iluminacao",
+    "image": "img/prod-spot-red.png",
     "description": "Quadro de distribuição para 12 disjuntores da Cemar, para organização e proteção de circuitos elétricos. Essencial para instalações residenciais e comerciais.",
     "price": 90.00,
-    "hasVariations": false
-  },
-  {
-    "id": 74,
-    "name": "Chave Seletora 3 Posições (Metaltru)",
-    "category": "outros",
-    "image": "img/prod-chave-seletora.png",
-    "description": "Chave seletora de 3 posições da Metaltru, para controle de funções em painéis e máquinas industriais. Robustez e alta durabilidade em ambientes exigentes.",
-    "price": 25.00,
-    "hasVariations": false
-  },
-  {
-    "id": 75,
-    "name": "Sinalizador LED Vermelho (Sibratec)",
-    "category": "outros",
-    "image": "img/prod-sinalizador.png",
-    "description": "Sinalizador LED vermelho da Sibratec, para indicação de status em painéis elétricos e máquinas. Alta visibilidade e baixo consumo de energia.",
-    "price": 15.00,
     "hasVariations": false
   }
 ]

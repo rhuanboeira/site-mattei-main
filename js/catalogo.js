@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     disjuntores: 'img/disjuntores.png',
     duchas: 'img/duchas.jpg',
     torneiras: 'img/torneiras.png',
-    outros: 'https://placehold.co/300x200/E0E0E0/333333?text=Outros+Produtos'
+    condulete: 'img/conexoes.jpg'
   };
 
   // --- Funções para ajuste de layout (Header Fixo) ---
