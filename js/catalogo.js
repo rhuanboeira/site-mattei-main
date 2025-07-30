@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const imagemModalProduto = document.getElementById('imagem-modal-produto');
   const tituloModalProduto = document.getElementById('titulo-modal-produto');
   const descricaoModalProduto = document.getElementById('descricao-modal-produto');
-  const precoModalProduto = document.getElementById('preco-modal-produto');
+  // REMOVIDO: const precoModalProduto = document.getElementById('preco-modal-produto');
   const variacaoSelectModal = document.getElementById('variacao-select-modal');
   const adicionarAoCarrinhoBtnModal = document.getElementById('adicionar-ao-carrinho-btn-modal');
   const fecharBtnProduto = modalProduto.querySelector('#fechar-btn-produto');
@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Menu Toggle (Hamburger)
   const menuToggle = document.getElementById('menu-toggle');
   const navMenu = document.getElementById('top-menu');
-  // const header = document.querySelector('header'); // Já obtido acima
 
   // Imagem da categoria
   const categoryImageContainer = document.querySelector('.category-image');
@@ -71,20 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
       productCard.setAttribute('data-category', product.category);
       productCard.setAttribute('data-id', product.id);
 
-      let priceDisplay;
       let addToCartButton;
       let variationSelectorHtml = '';
 
       if (product.hasVariations && product.variations && product.variations.length > 0) {
         // Se o produto tem variações, exibe um seletor de opções
         const defaultVariation = product.variations[0];
-        priceDisplay = `R$ <span class="product-price">${defaultVariation.price.toFixed(2).replace('.', ',')}</span>`;
         
         variationSelectorHtml = `
           <div class="variation-selector-group">
             <label for="variation-${product.id}">Opção:</label>
             <select id="variation-${product.id}" class="variation-select" data-product-id="${product.id}">
-              ${product.variations.map(v => `<option value="${v.power}" data-price="${v.price}">${v.power}</option>`).join('')}
+              ${product.variations.map(v => `<option value="${v.power}">${v.power}</option>`).join('')}
             </select>
           </div>
         `;
@@ -92,15 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
         addToCartButton = `<button class="adicionar-ao-carrinho-btn contact-btn" data-product-id="${product.id}" data-variation-power="${defaultVariation.power}">Adicionar ao Carrinho</button>`;
 
       } else {
-        // Se não tem variações, exibe o preço direto
-        priceDisplay = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
+        // Se não tem variações, apenas o botão de adicionar ao carrinho
         addToCartButton = `<button class="adicionar-ao-carrinho-btn contact-btn" data-product-id="${product.id}">Adicionar ao Carrinho</button>`;
       }
 
       productCard.innerHTML = `
         <img src="${product.image}" alt="${product.name}" loading="lazy">
         <h3>${product.name}</h3>
-        <p class="product-price-display">${priceDisplay}</p>
         ${variationSelectorHtml}
         <button class="ver-detalhes" data-id="${product.id}">Ver Detalhes</button>
         ${addToCartButton}
@@ -112,15 +107,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.variation-select').forEach(select => {
       select.addEventListener('change', (event) => {
         const selectedOption = event.target.options[event.target.selectedIndex];
-        const newPrice = parseFloat(selectedOption.dataset.price);
         const productId = event.target.dataset.productId;
         const productCard = event.target.closest('.cartao-produto');
-        const priceElement = productCard.querySelector('.product-price');
         const addToCartBtn = productCard.querySelector('.adicionar-ao-carrinho-btn');
 
-        if (priceElement) {
-          priceElement.textContent = newPrice.toFixed(2).replace('.', ',');
-        }
         // Atualiza o atributo data-variation-power do botão "Adicionar ao Carrinho"
         if (addToCartBtn) {
           addToCartBtn.dataset.variationPower = selectedOption.value;
@@ -176,20 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'nome-desc':
         currentProducts.sort((a, b) => b.name.localeCompare(a.name));
         break;
-      case 'preco-asc':
-        currentProducts.sort((a, b) => {
-          const priceA = a.hasVariations ? a.variations[0].price : a.price;
-          const priceB = b.hasVariations ? b.variations[0].price : b.price;
-          return priceA - priceB;
-        });
-        break;
-      case 'preco-desc':
-        currentProducts.sort((a, b) => {
-          const priceA = a.hasVariations ? a.variations[0].price : a.price;
-          const priceB = b.hasVariations ? b.variations[0].price : b.price;
-          return priceB - priceA;
-        });
-        break;
+      // REMOVIDO: Lógica de ordenação por preço
       case 'default':
       default:
         break;
@@ -224,12 +201,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       adicionarAoCarrinhoBtnModal.dataset.productId = productId;
 
-      if (product.hasVariations && product.variations && product.variations.length > 0) { // CORREÇÃO: "hasVariations" estava com typo
+      if (product.hasVariations && product.variations && product.variations.length > 0) {
         product.variations.forEach(v => {
           const option = document.createElement('option');
           option.value = v.power;
           option.textContent = v.power;
-          option.dataset.price = v.price;
+          // REMOVIDO: option.dataset.price = v.price;
           option.dataset.descriptionAddon = v.descriptionAddon || '';
           variacaoSelectModal.appendChild(option);
         });
@@ -237,10 +214,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         variacaoSelectModal.onchange = () => {
           const selectedOption = variacaoSelectModal.options[variacaoSelectModal.selectedIndex];
-          const newPrice = parseFloat(selectedOption.dataset.price);
+          // REMOVIDO: const newPrice = parseFloat(selectedOption.dataset.price);
           const descriptionAddon = selectedOption.dataset.descriptionAddon;
 
-          precoModalProduto.textContent = `R$ ${newPrice.toFixed(2).replace('.', ',')}`;
+          // REMOVIDO: precoModalProduto.textContent = `R$ ${newPrice.toFixed(2).replace('.', ',')}`;
           descricaoModalProduto.textContent = `${product.baseDescription} ${descriptionAddon}`.trim();
           
           adicionarAoCarrinhoBtnModal.dataset.variationPower = selectedOption.value;
@@ -250,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
         variacaoSelectModal.onchange();
       } else {
         descricaoModalProduto.textContent = product.description;
-        precoModalProduto.textContent = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
+        // REMOVIDO: precoModalProduto.textContent = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
         delete adicionarAoCarrinhoBtnModal.dataset.variationPower;
       }
       
@@ -314,7 +291,6 @@ document.addEventListener('DOMContentLoaded', () => {
         productId: product.id,
         name: `${product.name} - ${selectedVariation.power}`,
         image: product.image,
-        price: selectedVariation.price,
         power: selectedVariation.power,
         quantity: 1
       };
@@ -323,7 +299,6 @@ document.addEventListener('DOMContentLoaded', () => {
         id: String(product.id),
         name: product.name, 
         image: product.image, 
-        price: product.price, 
         quantity: 1 
       };
     }
